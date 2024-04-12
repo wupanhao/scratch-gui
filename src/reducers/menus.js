@@ -12,6 +12,7 @@ const MENU_SETTINGS = 'settingsMenu';
 const MENU_ACCENT = 'accentMenu';
 const MENU_BLOCKS_THEME = 'blocksThemeMenu';
 const MENU_ERRORS = 'errorsMenu';
+const MENU_DOWNLOAD = 'downloadMenu';
 
 class Menu {
     constructor (id) {
@@ -63,7 +64,8 @@ const rootMenu = new Menu('root')
     .addChild(new Menu(MENU_SETTINGS))
     .addChild(new Menu(MENU_LOGIN))
     .addChild(new Menu(MENU_ACCOUNT))
-    .addChild(new Menu(MENU_ABOUT));
+    .addChild(new Menu(MENU_ABOUT))
+    .addChild(new Menu(MENU_DOWNLOAD))
 
 const initialState = {
     [MENU_ABOUT]: false,
@@ -76,6 +78,7 @@ const initialState = {
     [MENU_SETTINGS]: false,
     [MENU_ACCENT]: false,
     [MENU_BLOCKS_THEME]: false,
+    [MENU_DOWNLOAD]: false,
     [MENU_ERRORS]: false
 };
 
@@ -160,6 +163,10 @@ const openErrorsMenu = () => openMenu(MENU_ERRORS);
 const closeErrorsMenu = () => closeMenu(MENU_ERRORS);
 const errorsMenuOpen = state => state.scratchGui.menus[MENU_ERRORS];
 
+const openDownloadMenu = () => openMenu(MENU_DOWNLOAD);
+const closeDownloadMenu = () => closeMenu(MENU_DOWNLOAD);
+const downloadMenuOpen = state => state.scratchGui.menus[MENU_DOWNLOAD];
+
 export {
     reducer as default,
     initialState as menuInitialState,
@@ -193,6 +200,9 @@ export {
     openBlocksThemeMenu,
     closeBlocksThemeMenu,
     blocksThemeMenuOpen,
+    openDownloadMenu,
+    closeDownloadMenu,
+    downloadMenuOpen,
     openErrorsMenu,
     closeErrorsMenu,
     errorsMenuOpen

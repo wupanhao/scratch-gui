@@ -55,7 +55,9 @@ class Storage extends ScratchStorage {
         this.assetHost = assetHost;
     }
     getAssetGetConfig (asset) {
-        return `${this.assetHost}/internalapi/asset/${asset.assetId}.${asset.dataFormat}/get/`;
+        // return `${this.assetHost}/internalapi/asset/${asset.assetId}.${asset.dataFormat}/get/`;
+        return `${window.location.origin}/build/library-files/${asset.assetId}.${asset.dataFormat}`;
+        // return `${window.location.origin}/assets/build/library-files/${asset.assetId}.${asset.dataFormat}`; // For Android
     }
     getAssetCreateConfig (asset) {
         return {

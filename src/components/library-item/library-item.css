@@ -118,7 +118,7 @@
 
 .featured-image {
     width: 100%;
-    aspect-ratio: 2;
+    /* aspect-ratio: 2; */
 }
 
 .featured-text {

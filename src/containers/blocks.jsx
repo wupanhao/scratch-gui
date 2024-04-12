@@ -219,6 +219,22 @@ class Blocks extends React.Component {
             this.setLocale();
         }
 
+        this.handleEnableProcedureReturns()
+
+        if (this.props.vm.extensionManager.isExtensionLoaded('lepi')) {
+        } else {
+            this.props.vm.extensionManager.loadExtensionURL('lepi').then(() => {
+                // this.props.vm.extensionManager.loadExtensionURL('procedures_enable_return').then(() => {
+                this.props.vm.extensionManager.loadExtensionURL('lepiActuator').then(() => {
+                    this.handleCategorySelected('lepi');
+                });
+                // });
+            });
+            this.props.vm.runtime.on('LEPI_CONNECTED', () => {
+                this.handleCategorySelected('lepi');
+            })
+        }
+
         // tw: Handle when extensions are added when Blocks isn't mounted
         for (const category of this.props.vm.runtime._blockInfo) {
             this.handleExtensionAdded(category);

@@ -1,0 +1,2529 @@
+{
+    "zh-cn": {
+        "lepiObjectDetection.person": "人",
+        "lepiObjectDetection.bicycle": "自行车",
+        "lepiObjectDetection.car": "汽车",
+        "lepiObjectDetection.motorcycle": "摩托车",
+        "lepiObjectDetection.airplane": "飞机",
+        "lepiObjectDetection.bus": "公共汽车",
+        "lepiObjectDetection.train": "火车",
+        "lepiObjectDetection.truck": "卡车",
+        "lepiObjectDetection.boat": "船",
+        "lepiObjectDetection.traffic light": "红绿灯",
+        "lepiObjectDetection.fire hydrant": "消防栓",
+        "lepiObjectDetection.stop sign": "停止标志",
+        "lepiObjectDetection.bench": "板凳",
+        "lepiObjectDetection.bird": "鸟",
+        "lepiObjectDetection.cat": "猫",
+        "lepiObjectDetection.dog": "狗",
+        "lepiObjectDetection.horse": "马",
+        "lepiObjectDetection.sheep": "羊",
+        "lepiObjectDetection.cow": "牛",
+        "lepiObjectDetection.elephant": "大象",
+        "lepiObjectDetection.bear": "熊",
+        "lepiObjectDetection.zebra": "斑马",
+        "lepiObjectDetection.giraffe": "长颈鹿",
+        "lepiObjectDetection.backpack": "背包",
+        "lepiObjectDetection.umbrella": "雨伞",
+        "lepiObjectDetection.handbag": "手提包",
+        "lepiObjectDetection.tie": "领带",
+        "lepiObjectDetection.suitcase": "手提箱",
+        "lepiObjectDetection.frisbee": "飞盘",
+        "lepiObjectDetection.skis": "滑雪板双板",
+        "lepiObjectDetection.snowboard": "滑雪板单板",
+        "lepiObjectDetection.sports ball": "运动球",
+        "lepiObjectDetection.kite": "风筝",
+        "lepiObjectDetection.baseball bat": "棒球棒",
+        "lepiObjectDetection.baseball glove": "棒球手套",
+        "lepiObjectDetection.skateboard": "滑板",
+        "lepiObjectDetection.surfboard": "冲浪板",
+        "lepiObjectDetection.tennis racket": "网球拍",
+        "lepiObjectDetection.bottle": "瓶子",
+        "lepiObjectDetection.wine glass": "红酒杯",
+        "lepiObjectDetection.cup": "杯子",
+        "lepiObjectDetection.fork": "叉子",
+        "lepiObjectDetection.knife": "刀",
+        "lepiObjectDetection.spoon": "汤勺",
+        "lepiObjectDetection.bowl": "碗",
+        "lepiObjectDetection.banana": "香蕉",
+        "lepiObjectDetection.apple": "苹果",
+        "lepiObjectDetection.sandwich": "三明治",
+        "lepiObjectDetection.orange": "橙子",
+        "lepiObjectDetection.broccoli": "西兰花",
+        "lepiObjectDetection.carrot": "胡萝卜",
+        "lepiObjectDetection.hot dog": "热狗",
+        "lepiObjectDetection.pizza": "比萨",
+        "lepiObjectDetection.donut": "甜甜圈",
+        "lepiObjectDetection.cake": "蛋糕",
+        "lepiObjectDetection.chair": "椅子",
+        "lepiObjectDetection.couch": "长椅",
+        "lepiObjectDetection.potted plant": "盆栽",
+        "lepiObjectDetection.bed": "床",
+        "lepiObjectDetection.dining table": "餐桌",
+        "lepiObjectDetection.toilet": "厕所",
+        "lepiObjectDetection.tv": "电视",
+        "lepiObjectDetection.laptop": "笔记本电脑",
+        "lepiObjectDetection.mouse": "鼠标",
+        "lepiObjectDetection.remote": "遥控器",
+        "lepiObjectDetection.keyboard": "键盘",
+        "lepiObjectDetection.cell phone": "手机",
+        "lepiObjectDetection.microwave": "微波炉",
+        "lepiObjectDetection.oven": "烤箱",
+        "lepiObjectDetection.toaster": "烤面包机",
+        "lepiObjectDetection.sink": "水槽",
+        "lepiObjectDetection.refrigerator": "冰箱",
+        "lepiObjectDetection.book": "书",
+        "lepiObjectDetection.clock": "时钟",
+        "lepiObjectDetection.vase": "花瓶",
+        "lepiObjectDetection.scissors": "剪刀",
+        "lepiObjectDetection.teddy bear": "泰迪熊",
+        "lepiObjectDetection.hair drier": "吹风机",
+        "lepiObjectDetection.toothbrush": "牙刷",
+        "gui.menuBar.settings": "设置",
+        "gui.menuBar.language": "语言",
+        "gui.menuBar.index": "返回社区",
+        "gui.menuBar.login": "登录",
+        "gui.menuBar.register": "注册",
+        "gui.menuBar.loadhistroyjob": "加载作品",
+        "gui.menuBar.chooseone": "选择",
+        "gui.menuBar.confirm": "确认",
+        "gui.menuBar.cancel": "取消",
+        "gui.menuBar.close": "关闭",
+        "gui.menuBar.savejob": "保存作品",
+        "gui.jobsave.title": "保存作品",
+        "gui.jobsave.filetitle": "标题",
+        "gui.jobsave.rename": "重命名",
+        "gui.jobsave.update": "更新",
+        "gui.jobsave.suresave": "保存",
+        "gui.jobsave.createname": "给你的作品取个名字",
+        "gui.menuBar.uploadjob": "发布",
+        "gui.released.title": "发布作品",
+        "gui.released.confirm": "发布",
+        "gui.released.uploading": "上传中",
+        "gui.accountMenu.profile": "个人主页",
+        "gui.accountMenu.myStuff": "我的作品",
+        "gui.accountMenu.accountSettings": "账户设置",
+        "gui.accountMenu.school": "进入校园",
+        "gui.accountMenu.signOut": "退出登录",
+        "gui.controls.Pause": "暂停",
+        "gui.controls.connection": "连接",
+        "gui.connection.scanning.instructions": "选择上面列出的设备，或者手动输入IP地址进行连接",
+        "gui.gui.ipInputPlaceholder": "主机IP",
+        "gui.extension.lepi.collaborator": "乐派",
+        "gui.extension.lepi.name": "主机",
+        "gui.extension.lepi.description": "新一代人工智能可编程主机",
+        "gui.extension.lepiSensor.name": "乐派传感器",
+        "gui.extension.lepiSensor.description": "超声、红外、加速度、陀螺仪、地磁等，感知世界",
+        "gui.extension.lepiScienceSensor.name": "科学传感器",
+        "gui.extension.lepiScienceSensor.description": "力、光谱、声音、温度、电压等，探究科学",
+        "gui.extension.lepiActuator.name": "执行器",
+        "gui.extension.lepiActuator.description": "大电机、中电机、舵机，让你的作品动起来.",
+        "gui.extension.lepiCamera.name": "摄像头",
+        "gui.extension.lepiCamera.description": "看到世界",
+        "gui.extension.lepiHandDetect.name": "手势识别",
+        "gui.extension.lepiHandDetect.description": "识别手部22个关键点.",
+        "gui.extension.lepiPoseEstimate.name": "姿态估计",
+        "gui.extension.lepiPoseEstimate.description": "识别身体33个关键点.",
+        "gui.extension.lepiMoveNetPose.name": "姿态估计(快速)",
+        "gui.extension.lepiMoveNetPose.description": "识别身体17个关键点. 速度更快.",
+        "gui.extension.lepiApriltagDetect.name": "标签检测",
+        "gui.extension.lepiApriltagDetect.description": "结合视觉标签进行准确的空间定位.",
+        "gui.extension.lepiLearningMachineImage.name": "机器学习-图像",
+        "gui.extension.lepiLearningMachineImage.description": "加载通过机器学习训练的图像分类模型.",
+        "gui.extension.lepiLearningMachineAudio.name": "机器学习-音频",
+        "gui.extension.lepiLearningMachineAudio.description": "加载通过机器学习训练的音频识别模型.",
+        "gui.extension.lepiLearningMachinePose.name": "机器学习-姿态",
+        "gui.extension.lepiLearningMachinePose.description": "加载通过机器学习训练的姿态识别模型.",
+        "gui.extension.lepiImageProcess.name": "图像处理",
+        "gui.extension.lepiImageProcess.description": "图像预处理.",
+        "gui.extension.lepiSmartAudio.name": "智能语音",
+        "gui.extension.lepiSmartAudio.description": "语音朗读、语音识别、语音合成",
+        "gui.extension.lepiAudio.name": "音频",
+        "gui.extension.lepiAudio.description": "聆听、歌唱.",
+        "gui.extension.lepiWebPlottor.name": "绘图器.",
+        "gui.extension.lepiWebPlottor.description": "把传感数据绘制成图表.",
+        "gui.extension.lepiFaceRecognize.name": "人脸识别",
+        "gui.extension.lepiFaceRecognize.description": "检测人脸，还能进行标记哦.",
+        "gui.extension.lepiColorDetect.name": "颜色检测",
+        "gui.extension.lepiColorDetect.description": "检测摄像头画面中的各种颜色.",
+        "gui.extension.lepiObjectDetection.name": "目标检测",
+        "gui.extension.lepiObjectDetection.description": "检测近百预定义的目标.",
+        "gui.extension.lepiBarcodeScan.name": "二维码扫描.",
+        "gui.extension.lepiBarcodeScan.description": "扫描图像中的二维码.",
+        "gui.extension.lepiTextRecognize.name": "文本识别",
+        "gui.extension.lepiTextRecognize.description": "识别画面中的文本信息.",
+        "gui.extension.lepiJoystick.name": "游戏手柄.",
+        "gui.extension.lepiJoystick.description": "将游戏手柄用作输入控制.",
+        "gui.extension.lepiBalanceCar.name": "平衡车",
+        "gui.extension.lepiBalanceCar.description": "控制平衡车.",
+        "gui.extension.lepiPupper.name": "四足机器人",
+        "gui.extension.lepiPupper.description": "控制四足机器人.",
+        "gui.extension.lepiHexapod.name": "六足机器人",
+        "gui.extension.lepiHexapod.description": "控制六足机器人.",
+        "gui.extension.lepiVariable.name": "共享变量.",
+        "gui.extension.lepiVariable.description": "在多个作品中共享变量.",
+        "gui.extension.lepiCollaborationSheet.name": "协作表格.",
+        "gui.extension.lepiCollaborationSheet.description": "可以协同编辑的表格.",
+        "gui.extension.lepiHttp.name": "HTTP网络通信.",
+        "gui.extension.lepiHttp.description": "使用HTTP/HTTPS进行网络通信.",
+        "gui.extension.lepiRFID.name": "RFID读卡器",
+        "gui.extension.lepiRFID.description": "读写RFID卡片",
+        "gui.extension.lepiComm.name": "主机通信",
+        "gui.extension.lepiComm.description": "在局域网中互相发送消息",
+        "gui.extension.homeassistant.name": "智能家居",
+        "gui.extension.homeassistant.description": "控制智能家居",
+        "gui.extension.lepi_image_classify.description": "分类上千种对象",
+        "gui.extension.lepiSmartClassroom.name": "智慧教室",
+        "gui.extension.lepiSmartClassroom.description": "控制教室里的智能设备",
+        "gui.extension.lepiMQTT.name": "MQTT通信",
+        "gui.extension.lepiMQTT.description": "使用MQTT协议进行通信(基于Websocket)",
+        "gui.extension.lepi.connectingMessage": "连接中",
+        "lepi.menuBar.download_to_host": "下载到主机",
+        "lepi.menuBar.download_as_scratch": "下载为Scratch作品",
+        "lepi.menuBar.debug_on_host": "在主机上调试",
+        "lepi.msg.lepi not connected": "乐派主机未连接",
+        "lepi.not_exists": "不存在",
+        "lepi.ok": "成功",
+        "lepi.failed": "失败",
+        "lepi.isNaN": "不是有效数值",
+        "lepi.error": "错误",
+        "lepi.done": "已执行",
+        "scratch2py/Code": "Python",
+        "lepi.Canny": {
+            "message": "添加Canny边缘提取,最小值[MIN],最大值[MAX]"
+        },
+        "lepi.GaussianBlur": {
+            "message": "添加高斯滤波,宽[X],高[Y],标准差X[SIGMA_X],Y[SIGMA_Y]"
+        },
+        "lepi.SpeakEnd": {
+            "message": "朗读结束?"
+        },
+        "lepi.SpeakOffline": {
+            "message": "离线语音朗读[TEXT], 发音人[SPEAKER], 音量[VOLUME] 速度[RATE] 音调[PITCH]"
+        },
+        "lepi.SpeechRecognitionEnd": {
+            "message": "识别到语音?"
+        },
+        "lepi.SpeechRecognitionOffline": {
+            "message": "离线语音识别"
+        },
+        "lepi.SpeechRecognitionResult": {
+            "message": "语音识别结果"
+        },
+        "lepi.TTSOffline": {
+            "message": "离线语音合成[TEXT], [WAIT]读完"
+        },
+        "lepi._disablePreview": {
+            "message": "关闭图像"
+        },
+        "lepi._setupPreview": {
+            "message": "显示 [TOPIC] 图像"
+        },
+        "lepi.acc": {
+            "message": "加速度"
+        },
+        "lepi.accSensorData": {
+            "message": "[AXIS] 加速度"
+        },
+        "lepi.addFaceLabel": {
+            "message": "标记人脸 [LABEL] "
+        },
+        "lepi.all": {
+            "message": "全部"
+        },
+        "lepi.ambient_temperature": {
+            "message": "环境温度"
+        },
+        "lepi.angle": {
+            "message": "角度"
+        },
+        "lepi.appendXTData": {
+            "message": "添加 折线图 数据 [KEY] 数值 [VALUE]"
+        },
+        "lepi.appendXYData": {
+            "message": "添加 散点图 数据 [KEY] 数值 (x:[X] y:[Y])"
+        },
+        "lepi.aprilTagRotation": {
+            "message": "标志物 [AXIS] 偏移角度"
+        },
+        "lepi.aprilTagTranslation": {
+            "message": "标志物 [AXIS] 偏移距离"
+        },
+        "lepi.apriltag_detect": {
+            "message": "标签检测"
+        },
+        "lepi.audioDetectConfidence": {
+            "message": "音频预测置信度"
+        },
+        "lepi.audioDetectResult": {
+            "message": "音频预测结果"
+        },
+        "lepi.b": {
+            "message": "B分量"
+        },
+        "lepi.barcodeData": {
+            "message": "二维码 [DATA]"
+        },
+        "lepi.barcode_scan": {
+            "message": "二维码扫描"
+        },
+        "lepi.bindDevice": {
+            "message": "绑定设备 [NAME] 到端口 [PORT]"
+        },
+        "lepi.bindDeviceMac": {
+            "message": "绑定地址 [MAC] 到端口 [PORT]"
+        },
+        "lepi.black": {
+            "message": "黑色"
+        },
+        "lepi.blue": {
+            "message": "蓝色"
+        },
+        "lepi.blur": {
+            "message": "添加均值滤波,宽[X],高[Y]"
+        },
+        "lepi.body_height": {
+            "message": "身体高度"
+        },
+        "lepi.brightness": {
+            "message": "亮度"
+        },
+        "lepi.brown": {
+            "message": "棕色"
+        },
+        "lepi.camera": {
+            "message": "摄像头"
+        },
+        "lepi.cameraSetFlip": {
+            "message": "摄像头翻转 [FLIPCODE]"
+        },
+        "lepi.cameraSetRectify": {
+            "message": "摄像头矫正 [ACTION]"
+        },
+        "lepi.center_x": {
+            "message": "中心点x坐标"
+        },
+        "lepi.center_y": {
+            "message": "中心点y坐标"
+        },
+        "lepi.classifiedAsObject": {
+            "message": "分类为 [CLASS] ?"
+        },
+        "lepi.classifyConfidence": {
+            "message": "分类置信度"
+        },
+        "lepi.classifyResult": {
+            "message": "分类结果"
+        },
+        "lepi.classify_images": {
+            "message": "分类图像"
+        },
+        "lepi.clearProcess": {
+            "message": "清空处理过程"
+        },
+        "lepi.clearRect": {
+            "message": "清除矩形"
+        },
+        "lepi.close": {
+            "message": "关闭"
+        },
+        "lepi.closeCamera": {
+            "message": "关闭主机摄像头"
+        },
+        "lepi.closeNineAxis": {
+            "message": "关闭九轴传感器"
+        },
+        "lepi.cm": {
+            "message": "厘米"
+        },
+        "lepi.colorDetected": {
+            "message": "检测到对应颜色?"
+        },
+        "lepi.color_detect": {
+            "message": "颜色检测"
+        },
+        "lepi.confidence": {
+            "message": "置信度"
+        },
+        "lepi.connectDevice": {
+            "message": "连接串口 [PORT]"
+        },
+        "lepi.customize": {
+            "message": "自定义"
+        },
+        "lepi.cvtColor": {
+            "message": "添加灰度转换"
+        },
+        "lepi.deleteVariable": {
+            "message": "删除共享变量 [NAME]"
+        },
+        "lepi.detectAprilTag": {
+            "message": "检测标志物"
+        },
+        "lepi.detectBarcode": {
+            "message": "检测二维码"
+        },
+        "lepi.detectColor": {
+            "message": "检测（[X1],[Y1]）至（[X2],[Y2]）的[COLOR]"
+        },
+        "lepi.detectFaceLabels": {
+            "message": "识别人脸"
+        },
+        "lepi.detectFaces": {
+            "message": "检测人脸"
+        },
+        "lepi.detectHand": {
+            "message": "检测手势"
+        },
+        "lepi.detectKeyPoints": {
+            "message": "进行关键点识别"
+        },
+        "lepi.detectObject": {
+            "message": "检测目标"
+        },
+        "lepi.detectPercentage": {
+            "message": "检测完整度"
+        },
+        "lepi.detectPose": {
+            "message": "检测身体姿态"
+        },
+        "lepi.detectResult": {
+            "message": "识别结果"
+        },
+        "lepi.detectText": {
+            "message": "识别 [LANG] 文本"
+        },
+        "lepi.detectedAprilTag": {
+            "message": "检测到id为 [TAG] 的标志物?"
+        },
+        "lepi.detectedAudioClass": {
+            "message": "检测到音频 [CLASS] ?"
+        },
+        "lepi.detectedBarcode": {
+            "message": "检测到内容包含 [TAG] 的二维码?"
+        },
+        "lepi.detectedFaceLabel": {
+            "message": "识别到 [LABEL] ?"
+        },
+        "lepi.detectedFaceLabel2": {
+            "message": "识别到 [LABEL] ?"
+        },
+        "lepi.detectedHand": {
+            "message": "检测到手?"
+        },
+        "lepi.detectedImageClass": {
+            "message": "识别到图像 [CLASS] ?"
+        },
+        "lepi.detectedKeyPoints": {
+            "message": "识别到关键点 ?"
+        },
+        "lepi.detectedObject": {
+            "message": "检测到 [CLASS] ?"
+        },
+        "lepi.detectedPose": {
+            "message": "检测到人?"
+        },
+        "lepi.detectedPoseClass": {
+            "message": "识别到姿态 [CLASS] ?"
+        },
+        "lepi.deviceConnected": {
+            "message": "串口 [PORT] 已连接?"
+        },
+        "lepi.dilate": {
+            "message": "添加膨胀处理,宽[X],高[Y],迭代次数[N]"
+        },
+        "lepi.disconnectDevice": {
+            "message": "断开连接 [PORT]"
+        },
+        "lepi.drawRect": {
+            "message": "画矩形 (x1:[X1],y1[Y1]) (x2:[X2],y2:[Y2])"
+        },
+        "lepi.erode": {
+            "message": "添加腐蚀处理,宽[X],高[Y],迭代次数[N]"
+        },
+        "lepi.estimatePoseData": {
+            "message": "[AXIS] 方位姿态"
+        },
+        "lepi.execProc": {
+            "message": "执行图像处理"
+        },
+        "lepi.faceCount": {
+            "message": "人脸个数"
+        },
+        "lepi.faceData": {
+            "message": "第 [I] 个人脸的 [DATA] "
+        },
+        "lepi.faceDetected": {
+            "message": "识别到人脸?"
+        },
+        "lepi.faceParams": {
+            "message": "人脸的 [ID]"
+        },
+        "lepi.face_detect": {
+            "message": "人脸检测"
+        },
+        "lepi.face_recognize": {
+            "message": "人脸识别"
+        },
+        "lepi.fast_backward": {
+            "message": "快退10秒"
+        },
+        "lepi.fast_forward": {
+            "message": "快进10秒"
+        },
+        "lepi.fast_pose_estimate": {
+            "message": "姿态估计(快速)"
+        },
+        "lepi.female": {
+            "message": "女声"
+        },
+        "lepi.flip_x": {
+            "message": "左右"
+        },
+        "lepi.flip_xy": {
+            "message": "上下左右"
+        },
+        "lepi.flip_y": {
+            "message": "上下"
+        },
+        "lepi.foot_position": {
+            "message": "足端位置"
+        },
+        "lepi.freezeSnapshot": {
+            "message": "定格当前画面"
+        },
+        "lepi.g": {
+            "message": "G分量"
+        },
+        "lepi.getAudioClassProbability": {
+            "message": "音频分类 [CLASS] 置信度"
+        },
+        "lepi.getColorData": {
+            "message": "检测到颜色的 [ID]"
+        },
+        "lepi.getColorList": {
+            "message": "更新颜色列表"
+        },
+        "lepi.getColorThreshold": {
+            "message": "查询 [COLOR] 检测范围"
+        },
+        "lepi.getEstimatePose": {
+            "message": "读取方位姿态"
+        },
+        "lepi.getHexapodFootLocation": {
+            "message": "六足 [NUMBER]号 腿足端 [AXIS] 坐标"
+        },
+        "lepi.getHexapodRobotState": {
+            "message": "读取六足状态"
+        },
+        "lepi.getHexapodServoAngle": {
+            "message": "六足 [NUMBER]号 舵机角度"
+        },
+        "lepi.getImageClassProbability": {
+            "message": "图像分类 [CLASS] 置信度"
+        },
+        "lepi.getJoyAxisValue": {
+            "message": "手柄坐标轴 [ID] 的值"
+        },
+        "lepi.getJoyButtonState": {
+            "message": "手柄 [ID] 键按下?"
+        },
+        "lepi.getJoyState": {
+            "message": "手柄状态"
+        },
+        "lepi.getLaunchedNodes": {
+            "message": "更新扩展模块信息"
+        },
+        "lepi.getOffset": {
+            "message": "查询 [SENSOR] 偏移量"
+        },
+        "lepi.getPoseClassProbability": {
+            "message": "姿态分类 [CLASS] 置信度"
+        },
+        "lepi.getPupperFootLocation": {
+            "message": "四足 [NUMBER]号 腿足端 [AXIS] 坐标"
+        },
+        "lepi.getPupperRobotState": {
+            "message": "读取四足状态"
+        },
+        "lepi.getPupperServoAngle": {
+            "message": "四足 [NUMBER]号 舵机角度"
+        },
+        "lepi.getResponse": {
+            "message": "响应结果"
+        },
+        "lepi.getStreamList": {
+            "message": "更新图像列表"
+        },
+        "lepi.getVariable": {
+            "message": "共享变量 [NAME]的值"
+        },
+        "lepi.green": {
+            "message": "绿色"
+        },
+        "lepi.gyro": {
+            "message": "角速度"
+        },
+        "lepi.gyroSensorData": {
+            "message": "[AXIS] 角速度"
+        },
+        "lepi.handCount": {
+            "message": "手的数目"
+        },
+        "lepi.handData": {
+            "message": "第[I]只手的 [DATA]"
+        },
+        "lepi.handKeypoints": {
+            "message": "第[I]只手[N]号关键点 [POINT]"
+        },
+        "lepi.hand_detect": {
+            "message": "手势识别"
+        },
+        "lepi.hasFaceLabel": {
+            "message": "有 [LABEL] 的标记?"
+        },
+        "lepi.hasVariable": {
+            "message": "存在共享变量 [NAME] ?"
+        },
+        "lepi.height": {
+            "message": "高度"
+        },
+        "lepi.hello": {
+            "message": "你好"
+        },
+        "lepi.hide": {
+            "message": "隐藏"
+        },
+        "lepi.horizontal_velocity_x": {
+            "message": "水平速度x"
+        },
+        "lepi.horizontal_velocity_y": {
+            "message": "水平速度y"
+        },
+        "lepi.host": {
+            "message": "主机"
+        },
+        "lepi.houghCircles": {
+            "message": "检测霍夫圆,最小半径[MIN],最大半径[MAX]"
+        },
+        "lepi.houghCirclesNumber": {
+            "message": "霍夫圆数量"
+        },
+        "lepi.houghCirclesParam": {
+            "message": "第[ID]个霍夫圆的[PARAM]"
+        },
+        "lepi.id": {
+            "message": "ID"
+        },
+        "lepi.imageDetectConfidence": {
+            "message": "图像识别置信度"
+        },
+        "lepi.imageDetectResult": {
+            "message": "图像识别结果"
+        },
+        "lepi.image_classify": {
+            "message": "图像分类"
+        },
+        "lepi.image_process": {
+            "message": "图像处理"
+        },
+        "lepi.indigo": {
+            "message": "靛青"
+        },
+        "lepi.initPayload": {
+            "message": "新建样本数据"
+        },
+        "lepi.inputString": {
+            "message": "输入 [INPUT] [Enter]"
+        },
+        "lepi.isHotwordDetect": {
+            "message": "检测到关键词?"
+        },
+        "lepi.isRecording": {
+            "message": "录音中?"
+        },
+        "lepi.keyPointsData": {
+            "message": "[KEYPOINT] 关键点 [DATA]"
+        },
+        "lepi.keyPointsScore": {
+            "message": "关键点识别信度"
+        },
+        "lepi.launchNode": {
+            "message": "启动 [NAME] 扩展"
+        },
+        "lepi.left_ankle": {
+            "message": "左脚踝"
+        },
+        "lepi.left_ear": {
+            "message": "左耳"
+        },
+        "lepi.left_elbow": {
+            "message": "左肘"
+        },
+        "lepi.left_eye": {
+            "message": "左眼"
+        },
+        "lepi.left_hip": {
+            "message": "左臀"
+        },
+        "lepi.left_knee": {
+            "message": "左膝"
+        },
+        "lepi.left_right": {
+            "message": "左右"
+        },
+        "lepi.left_right_mirror": {
+            "message": "左右(镜像)"
+        },
+        "lepi.left_shoulder": {
+            "message": "左肩"
+        },
+        "lepi.left_wrist": {
+            "message": "左手腕"
+        },
+        "lepi.lepiActuator": {
+            "message": "执行器"
+        },
+        "lepi.lepiApriltagDetect": {
+            "message": "标签检测"
+        },
+        "lepi.lepiAudio": {
+            "message": "音频"
+        },
+        "lepi.lepiBalanceCar": {
+            "message": "平衡车"
+        },
+        "lepi.lepiBarcodeScan": {
+            "message": "二维码扫描"
+        },
+        "lepi.lepiCamera": {
+            "message": "摄像头"
+        },
+        "lepi.lepiColorDetect": {
+            "message": "颜色检测"
+        },
+        "lepi.lepiFaceRecognize": {
+            "message": "人脸识别"
+        },
+        "lepi.lepiHandDetect": {
+            "message": "手势检测"
+        },
+        "lepi.lepiHexapod": {
+            "message": "六足机器人"
+        },
+        "lepi.lepiHttp": {
+            "message": "HTTP通信"
+        },
+        "lepi.lepiImageClassify": {
+            "message": "图像分类"
+        },
+        "lepi.lepiImageProcess": {
+            "message": "图像处理"
+        },
+        "lepi.lepiJoystick": {
+            "message": "游戏手柄"
+        },
+        "lepi.lepiLearningMachineAudio": {
+            "message": "机器学习-音频"
+        },
+        "lepi.lepiLearningMachineImage": {
+            "message": "机器学习-图像"
+        },
+        "lepi.lepiLearningMachinePose": {
+            "message": "机器学习-姿态"
+        },
+        "lepi.lepiMoveNetPose": {
+            "message": "姿态估计(快速)"
+        },
+        "lepi.lepiObjectDetection": {
+            "message": "目标检测"
+        },
+        "lepi.lepiPoseEstimate": {
+            "message": "姿态估计"
+        },
+        "lepi.lepiPupper": {
+            "message": "四足机器人"
+        },
+        "lepi.lepiSensor": {
+            "message": "传感器"
+        },
+        "lepi.lepiSerial": {
+            "message": "串口通信"
+        },
+        "lepi.lepiSmartAudio": {
+            "message": "智能语音"
+        },
+        "lepi.lepiTextRecognize": {
+            "message": "文本识别"
+        },
+        "lepi.lepiVariable": {
+            "message": "共享变量"
+        },
+        "lepi.lepiWebPlottor": {
+            "message": "图表绘制"
+        },
+        "lepi.line_chart": {
+            "message": "折线图"
+        },
+        "lepi.listCaliFiles": {
+            "message": "更新矫正文件列表"
+        },
+        "lepi.loadAudioModelFromFile": {
+            "message": "从文件导入音频模型"
+        },
+        "lepi.loadAudioModelFromList": {
+            "message": "加载音频模型 [MODEL]"
+        },
+        "lepi.loadCaliFile": {
+            "message": "加载矫正文件 [FILE]"
+        },
+        "lepi.loadImageModelFromFile": {
+            "message": "从文件导入图像模型"
+        },
+        "lepi.loadImageModelFromList": {
+            "message": "加载图像模型 [MODEL]"
+        },
+        "lepi.loadPoseModel": {
+            "message": "加载人体关键点模型"
+        },
+        "lepi.loadPoseModelFromFile": {
+            "message": "从文件导入姿态模型"
+        },
+        "lepi.loadPoseModelFromList": {
+            "message": "加载姿态模型 [MODEL]"
+        },
+        "lepi.lock": {
+            "message": "锁定"
+        },
+        "lepi.magn": {
+            "message": "磁力计"
+        },
+        "lepi.magnSensorData": {
+            "message": "[AXIS] 磁场强度"
+        },
+        "lepi.male": {
+            "message": "男声"
+        },
+        "lepi.max_angle": {
+            "message": "最大角度"
+        },
+        "lepi.max_position": {
+            "message": "最大位置"
+        },
+        "lepi.measured_temperature": {
+            "message": "测量温度"
+        },
+        "lepi.medianBlur": {
+            "message": "添加中值滤波,内核大小[SIZE]"
+        },
+        "lepi.min_angle": {
+            "message": "最小角度"
+        },
+        "lepi.min_position": {
+            "message": "最小位置"
+        },
+        "lepi.mm": {
+            "message": "毫米"
+        },
+        "lepi.motor": {
+            "message": "电机"
+        },
+        "lepi.motorGetPosition": {
+            "message": "电机 [PORT] 编码器的值"
+        },
+        "lepi.motorPositionUpdated": {
+            "message": "电机[PORT]编码器有更新?"
+        },
+        "lepi.motorReadPosition": {
+            "message": "读取电机 [PORT] 编码器数值"
+        },
+        "lepi.motorSetAngle": {
+            "message": "舵机 [PORT] 转到 [ANGLE]度"
+        },
+        "lepi.motorSetCurrentPosition": {
+            "message": "电机 [PORT] 编码器的值设置为 [VALUE]"
+        },
+        "lepi.motorSetHold": {
+            "message": "电机 [PORT] 刹车"
+        },
+        "lepi.motorSetPosition": {
+            "message": "电机 [PORT] 编码器转到 [POSITION]"
+        },
+        "lepi.motorSetRotate": {
+            "message": "电机 [PORT] 转动 [VALUE] 度"
+        },
+        "lepi.motorSetSpeed": {
+            "message": "电机 [PORT] 速度设为 [SPEED]"
+        },
+        "lepi.motorSetType": {
+            "message": "端口 [PORT] 设置为 [TYPE] 模式"
+        },
+        "lepi.muse": {
+            "message": "静音"
+        },
+        "lepi.music": {
+            "message": "音频 [MUSIC]"
+        },
+        "lepi.musicNumber": {
+            "message": "第 [NUM] 段音频"
+        },
+        "lepi.musicPlaying": {
+            "message": "正在播放音频?"
+        },
+        "lepi.nineAxisDataUpdated": {
+            "message": "九轴[PORT]数据有更新?"
+        },
+        "lepi.no_color": {
+            "message": "无颜色"
+        },
+        "lepi.no_enter": {
+            "message": "不加回车"
+        },
+        "lepi.no_offset": {
+            "message": "不修正"
+        },
+        "lepi.no_rotate": {
+            "message": "不翻转"
+        },
+        "lepi.no_save": {
+            "message": "不保存"
+        },
+        "lepi.no_wait": {
+            "message": "不等待"
+        },
+        "lepi.nose": {
+            "message": "鼻子"
+        },
+        "lepi.not_update": {
+            "message": "不更新"
+        },
+        "lepi.objectData": {
+            "message": "目标 [DATA]"
+        },
+        "lepi.object_detect": {
+            "message": "目标检测"
+        },
+        "lepi.off": {
+            "message": "熄灭"
+        },
+        "lepi.open": {
+            "message": "打开"
+        },
+        "lepi.openCamera": {
+            "message": "打开主机摄像头 [ID] "
+        },
+        "lepi.openLearningMachineAudio": {
+            "message": "打开音频训练工具"
+        },
+        "lepi.openLearningMachineImage": {
+            "message": "打开彩色图像训练工具"
+        },
+        "lepi.openLearningMachinePose": {
+            "message": "打开姿态分类训练工具"
+        },
+        "lepi.openLearningMachineTinyImage": {
+            "message": "打开灰度图像训练工具"
+        },
+        "lepi.openNineAxis": {
+            "message": "打开九轴传感器"
+        },
+        "lepi.openVideoPage": {
+            "message": "新窗口打开图像列表"
+        },
+        "lepi.parseJSON": {
+            "message": "解析JSON [STR] 参数 [PARAM]"
+        },
+        "lepi.pitch": {
+            "message": "俯仰角"
+        },
+        "lepi.playControl": {
+            "message": "播放控制 [ACTION]"
+        },
+        "lepi.playMusic": {
+            "message": "播放 [MUSIC] [WAITING]"
+        },
+        "lepi.play_resume": {
+            "message": "暂停/继续"
+        },
+        "lepi.poseDetectResult": {
+            "message": "姿态识别结果"
+        },
+        "lepi.poseDetectScore": {
+            "message": "姿态识别置信度"
+        },
+        "lepi.poseKeypoints": {
+            "message": "人体[N]号关键点 [POINT]"
+        },
+        "lepi.pose_estimate": {
+            "message": "姿态估计"
+        },
+        "lepi.position": {
+            "message": "位置"
+        },
+        "lepi.predictImage": {
+            "message": "进行图像识别"
+        },
+        "lepi.predictPose": {
+            "message": "进行姿态识别"
+        },
+        "lepi.previewRecording": {
+            "message": "回放录音"
+        },
+        "lepi.purple": {
+            "message": "紫色"
+        },
+        "lepi.r": {
+            "message": "R分量"
+        },
+        "lepi.radius": {
+            "message": "半径"
+        },
+        "lepi.readSensorData": {
+            "message": "读取 [SENSOR] 数据, [OFFSET] 偏移量"
+        },
+        "lepi.receiveData": {
+            "message": "接收串口 [PORT] 数据, 长度 [COUNT]"
+        },
+        "lepi.red": {
+            "message": "红色"
+        },
+        "lepi.removeFaceLabel": {
+            "message": "删除标记 [LABEL] "
+        },
+        "lepi.removeFaceLabel2": {
+            "message": "删除标记 [LABEL] "
+        },
+        "lepi.requestSuccess": {
+            "message": "请求成功？"
+        },
+        "lepi.resetPlottor": {
+            "message": "清空图表数据"
+        },
+        "lepi.rest": {
+            "message": "静止"
+        },
+        "lepi.right_ankle": {
+            "message": "右脚踝"
+        },
+        "lepi.right_ear": {
+            "message": "右耳"
+        },
+        "lepi.right_elbow": {
+            "message": "右肘"
+        },
+        "lepi.right_eye": {
+            "message": "右眼"
+        },
+        "lepi.right_hip": {
+            "message": "右臀"
+        },
+        "lepi.right_knee": {
+            "message": "右膝"
+        },
+        "lepi.right_shoulder": {
+            "message": "右肩"
+        },
+        "lepi.right_wrist": {
+            "message": "右手腕"
+        },
+        "lepi.roll": {
+            "message": "横滚角"
+        },
+        "lepi.sampleData": {
+            "message": "样本数据"
+        },
+        "lepi.savePic": {
+            "message": "保存快照为[FILE_NAME].png"
+        },
+        "lepi.save_as": {
+            "message": "保存为"
+        },
+        "lepi.scatter": {
+            "message": "散点图"
+        },
+        "lepi.sendData": {
+            "message": "向串口 [PORT] 发送数据 [DATA]"
+        },
+        "lepi.sendPayload": {
+            "message": "保存样本数据"
+        },
+        "lepi.sendRequest": {
+            "message": "以 [METHOD] 方法请求网页 [URL]"
+        },
+        "lepi.sensorDataUpdated": {
+            "message": "传感器[PORT]数据有更新?"
+        },
+        "lepi.sensorGetColor": {
+            "message": "[PORT] 颜色传感器检测到 [COLOR]"
+        },
+        "lepi.sensorGetColorRGB": {
+            "message": "[PORT] 颜色传感器 [RGBC]"
+        },
+        "lepi.sensorGetDistance": {
+            "message": "[PORT] 超声波传感器 距离 [UNIT]"
+        },
+        "lepi.sensorGetID": {
+            "message": "[PORT] 传感器ID"
+        },
+        "lepi.sensorGetMode": {
+            "message": "[PORT] 传感器工作模式"
+        },
+        "lepi.sensorGetPyroInfrared": {
+            "message": "[PORT] 热释传感器 [CHANNEL]"
+        },
+        "lepi.sensorGetPyroInfraredMotion": {
+            "message": "[PORT] 热释传感器 检测到运动?"
+        },
+        "lepi.sensorGetValue": {
+            "message": "[PORT] 传感器 数值"
+        },
+        "lepi.sensorReadValue": {
+            "message": "读取传感器[PORT]数值"
+        },
+        "lepi.sensorSetColor": {
+            "message": "[PORT] 颜色传感器 设置彩灯颜色[COLOR]"
+        },
+        "lepi.sensorSetColorRGB": {
+            "message": "[PORT] 颜色传感器 设置彩灯颜色(R:[R] G:[G] B:[B])"
+        },
+        "lepi.sensorSetMode": {
+            "message": "设置 [PORT] 传感器工作模式 [VALUE]"
+        },
+        "lepi.servo": {
+            "message": "舵机"
+        },
+        "lepi.servoGetParam": {
+            "message": "总线舵机 [ID] 读取参数[PARAM]"
+        },
+        "lepi.servoReset": {
+            "message": "重置总线舵机 [ID]"
+        },
+        "lepi.servoSetParam": {
+            "message": "总线舵机 [ID] 修改参数[PARAM] 为 [VALUE]"
+        },
+        "lepi.servoSetPosition": {
+            "message": "总线舵机 [ID] 以 [SPEEDTIME] [VALUE] 转到 [POSANGLE] [POSITION]"
+        },
+        "lepi.servo_angle": {
+            "message": "舵机角度"
+        },
+        "lepi.setAudioDetectThreshold": {
+            "message": "将音频检测阈值设为 [VALUE]"
+        },
+        "lepi.setBufferSize": {
+            "message": "设置样本数量 [SIZE]"
+        },
+        "lepi.setClassifyThreshold": {
+            "message": "将分类阈值设为 [VALUE]"
+        },
+        "lepi.setColorHsv": {
+            "message": "设置[COLOR] 检测范围 最低(h[LOW_H],s[LOW_S],v[LOW_V],最高(h[HIGH_H],s[HIGH_S],v[HIGH_V])"
+        },
+        "lepi.setColorThreshold": {
+            "message": "设置[COLOR] 检测范围 最低 [LOW],最高 [HIGH]"
+        },
+        "lepi.setDetectArea": {
+            "message": "设置识别区域 (x1:[X1],y1:[Y1]) (x2:[X2],y2:[Y2])"
+        },
+        "lepi.setDetectThreshold": {
+            "message": "将检测阈值设为 [VALUE]"
+        },
+        "lepi.setFanTemp": {
+            "message": "设置风扇开关温度,[TEMP1]打开 [TEMP2]关闭"
+        },
+        "lepi.setHexapodCommandParam": {
+            "message": "设置六足 [PARAM] 为 [VALUE]"
+        },
+        "lepi.setHexapodFootLocation": {
+            "message": "设置六足 [NUMBER]号 腿足端坐标(x:[X],y:[Y],z:[Z])"
+        },
+        "lepi.setHexapodRobotState": {
+            "message": "更新六足 [CHANNEL]"
+        },
+        "lepi.setHexapodServoAngle": {
+            "message": "设置六足 [NUMBER]号 舵机角度 [VALUE]"
+        },
+        "lepi.setHexpodBehaviorState": {
+            "message": "切换六足运动模式 [MODE]"
+        },
+        "lepi.setImageClassifyThreshold": {
+            "message": "将图像识别阈值设为 [VALUE]"
+        },
+        "lepi.setImageSize": {
+            "message": "设置图像尺寸 宽:[W] 高:[H]"
+        },
+        "lepi.setLed": {
+            "message": "设置指示灯颜色 LED1[COLOR1] LED2[COLOR2]"
+        },
+        "lepi.setNineAxisUpdateFrequence": {
+            "message": "设置九轴自动更新频率[FREQUENCE]"
+        },
+        "lepi.setOffset": {
+            "message": "设置 [SENSOR] 偏移量 x:[X],y:[Y],z:[Z]"
+        },
+        "lepi.setPlotType": {
+            "message": "设置图表类型 [TYPE]"
+        },
+        "lepi.setPoseEstimateThreshold": {
+            "message": "将姿态识别阈值设为 [VALUE]"
+        },
+        "lepi.setPupperBehaviorState": {
+            "message": "切换四足运动模式 [MODE]"
+        },
+        "lepi.setPupperCommandParam": {
+            "message": "设置四足 [PARAM] 为 [VALUE]"
+        },
+        "lepi.setPupperFootLocation": {
+            "message": "设置四足 [NUMBER]号 腿足端坐标(x:[X],y:[Y],z:[Z])"
+        },
+        "lepi.setPupperRobotState": {
+            "message": "更新四足 [CHANNEL]"
+        },
+        "lepi.setPupperServoAngle": {
+            "message": "设置四足 [NUMBER]号 舵机角度 [VALUE]"
+        },
+        "lepi.setResize": {
+            "message": "设置缩放尺寸 宽:[W] 高:[H]"
+        },
+        "lepi.setSensorUpdateFrequence": {
+            "message": "设置传感器自动更新频率[FREQUENCE]"
+        },
+        "lepi.setSize": {
+            "message": "设置图像尺寸 宽:[W] 高:[H]"
+        },
+        "lepi.setSteering": {
+            "message": "设置平衡车转向 [VALUE]"
+        },
+        "lepi.setThreshold": {
+            "message": "将检测阈值设为 [VALUE]"
+        },
+        "lepi.setThrottle": {
+            "message": "设置平衡车速度 [VALUE]"
+        },
+        "lepi.setTitle": {
+            "message": "设置图表标题 [TITLE], 大小 [SIZE]"
+        },
+        "lepi.setUpdateFrequence": {
+            "message": "设置图像更新速率 [FREQUENCE]"
+        },
+        "lepi.setVariable": {
+            "message": "将共享变量 [NAME] 设为 [VALUE]"
+        },
+        "lepi.setVideoTransparency": {
+            "message": "设置透明度 [TRANSPARENCY]"
+        },
+        "lepi.show": {
+            "message": "显示"
+        },
+        "lepi.showSnapshot": {
+            "message": "显示 [TOPIC] 快照"
+        },
+        "lepi.shutdownNode": {
+            "message": "关闭 [NAME] 扩展"
+        },
+        "lepi.speed": {
+            "message": "速度"
+        },
+        "lepi.startAudioPredict": {
+            "message": "开始音频检测,间隔[GAP]秒,持续[DURATION]秒"
+        },
+        "lepi.startRecording": {
+            "message": "开始录音"
+        },
+        "lepi.stopAudioPredict": {
+            "message": "停止音频检测"
+        },
+        "lepi.stopRecordingAndSave": {
+            "message": "结束录音,[SAVE] [FILE_NAME].wav"
+        },
+        "lepi.stop_playing": {
+            "message": "停止播放"
+        },
+        "lepi.switchHotwordModel": {
+            "message": "切换关键词模型[HOTWORD]"
+        },
+        "lepi.switchMicrophone": {
+            "message": "切换麦克风 [DEVICE]"
+        },
+        "lepi.text_content": {
+            "message": "文本内容"
+        },
+        "lepi.text_recognize": {
+            "message": "文本识别"
+        },
+        "lepi.thresh_binary": {
+            "message": "黑白"
+        },
+        "lepi.thresh_binary_inv": {
+            "message": "黑白反相"
+        },
+        "lepi.threshold": {
+            "message": "添加阈值分割,阈值[THRESH],类型[CODE]"
+        },
+        "lepi.time": {
+            "message": "时间(ms)"
+        },
+        "lepi.toggleCamera": {
+            "message": "[ACTION] 电脑摄像头 [CAMERA], 镜像翻转 [ONOFF]"
+        },
+        "lepi.toggleDisplay": {
+            "message": "[TOGGLE] 图表"
+        },
+        "lepi.toggleHotwordDetect": {
+            "message": "[ACTION] 关键词检测"
+        },
+        "lepi.toggleListening": {
+            "message": "[TOGGLE] 蓝牙监听模式"
+        },
+        "lepi.toggleTerminal": {
+            "message": "[TOGGLE] 命令行窗口"
+        },
+        "lepi.transfer_learning": {
+            "message": "迁移学习"
+        },
+        "lepi.trot": {
+            "message": "运动"
+        },
+        "lepi.updateAudioModelList": {
+            "message": "更新音频模型列表"
+        },
+        "lepi.updateDeviceList": {
+            "message": "更新设备列表"
+        },
+        "lepi.updateImageModelList": {
+            "message": "更新图像模型列表"
+        },
+        "lepi.updateMusicList": {
+            "message": "更新音频列表"
+        },
+        "lepi.updatePoseModelList": {
+            "message": "更新姿态模型列表"
+        },
+        "lepi.updateSerialList": {
+            "message": "更新串口列表"
+        },
+        "lepi.updateVariables": {
+            "message": "更新变量列表"
+        },
+        "lepi.visibility": {
+            "message": "可见度"
+        },
+        "lepi.volume_down": {
+            "message": "音量-"
+        },
+        "lepi.volume_up": {
+            "message": "音量+"
+        },
+        "lepi.wait": {
+            "message": "等待"
+        },
+        "lepi.white": {
+            "message": "白色"
+        },
+        "lepi.width": {
+            "message": "宽度"
+        },
+        "lepi.with_enter": {
+            "message": "添加回车"
+        },
+        "lepi.with_offset": {
+            "message": "修正"
+        },
+        "lepi.x": {
+            "message": "x坐标"
+        },
+        "lepi.x_axis": {
+            "message": "x轴"
+        },
+        "lepi.xiao_ming": {
+            "message": "小明"
+        },
+        "lepi.y": {
+            "message": "y坐标"
+        },
+        "lepi.y_axis": {
+            "message": "y轴"
+        },
+        "lepi.yaw": {
+            "message": "方位角"
+        },
+        "lepi.yaw_rate": {
+            "message": "航向角"
+        },
+        "lepi.yellow": {
+            "message": "黄色"
+        },
+        "lepi.z": {
+            "message": "z坐标"
+        },
+        "lepi.z_axis": {
+            "message": "z轴"
+        }
+    },
+    "en": {
+        "lepi.Canny": {
+            "message": "apply Canny edge detector,min [MIN],max [MAX]"
+        },
+        "lepi.GaussianBlur": {
+            "message": "apply Gaussian filter,w [X],h [Y],sigma X[SIGMA_X],Y[SIGMA_Y]"
+        },
+        "lepi.SpeakEnd": {
+            "message": "speak ended?"
+        },
+        "lepi.SpeakOffline": {
+            "message": "offline speak [TEXT], speaker [SPEAKER], vol [VOLUME] rate [RATE] pitch [PITCH]"
+        },
+        "lepi.SpeechRecognitionEnd": {
+            "message": "voice recognized?"
+        },
+        "lepi.SpeechRecognitionOffline": {
+            "message": "offline Speech Recognition"
+        },
+        "lepi.SpeechRecognitionResult": {
+            "message": "Speech Recognition result"
+        },
+        "lepi.TTSOffline": {
+            "message": "offline tts [TEXT], [WAIT] for the end"
+        },
+        "lepi._disablePreview": {
+            "message": "close preview"
+        },
+        "lepi._setupPreview": {
+            "message": "preview [TOPIC] stream"
+        },
+        "lepi.acc": {
+            "message": "accelerometer"
+        },
+        "lepi.accSensorData": {
+            "message": "[AXIS] acceleration"
+        },
+        "lepi.addFaceLabel": {
+            "message": "mark face with [LABEL] "
+        },
+        "lepi.all": {
+            "message": "all"
+        },
+        "lepi.ambient_temperature": {
+            "message": "ambient temperature"
+        },
+        "lepi.angle": {
+            "message": "angle"
+        },
+        "lepi.appendXTData": {
+            "message": "append line chart data [KEY] value [VALUE]"
+        },
+        "lepi.appendXYData": {
+            "message": "append scatter chart data [KEY] value (x:[X] y:[Y])"
+        },
+        "lepi.aprilTagRotation": {
+            "message": "apriltag [AXIS] rotation"
+        },
+        "lepi.aprilTagTranslation": {
+            "message": "apriltag [AXIS] translation"
+        },
+        "lepi.apriltag_detect": {
+            "message": "apriltag detect"
+        },
+        "lepi.audioDetectConfidence": {
+            "message": "audio prediction confidence"
+        },
+        "lepi.audioDetectResult": {
+            "message": "audio prediction result"
+        },
+        "lepi.b": {
+            "message": "blue"
+        },
+        "lepi.barcodeData": {
+            "message": "barcode data [DATA]"
+        },
+        "lepi.barcode_scan": {
+            "message": "barcode scan"
+        },
+        "lepi.bindDevice": {
+            "message": "bind device [NAME] to port [PORT]"
+        },
+        "lepi.bindDeviceMac": {
+            "message": "bind mac [MAC] to port [PORT]"
+        },
+        "lepi.black": {
+            "message": "black"
+        },
+        "lepi.blue": {
+            "message": "blue"
+        },
+        "lepi.blur": {
+            "message": "apply mean filter,w[X],h[Y]"
+        },
+        "lepi.body_height": {
+            "message": "body height"
+        },
+        "lepi.brightness": {
+            "message": "brightness"
+        },
+        "lepi.brown": {
+            "message": "brown"
+        },
+        "lepi.camera": {
+            "message": "camera"
+        },
+        "lepi.cameraSetFlip": {
+            "message": "camera flip [FLIPCODE]"
+        },
+        "lepi.cameraSetRectify": {
+            "message": "camera correction [ACTION]"
+        },
+        "lepi.center_x": {
+            "message": "center x"
+        },
+        "lepi.center_y": {
+            "message": "center y"
+        },
+        "lepi.classifiedAsObject": {
+            "message": "classified as [CLASS] ?"
+        },
+        "lepi.classifyConfidence": {
+            "message": "classification confidence"
+        },
+        "lepi.classifyResult": {
+            "message": "classification result"
+        },
+        "lepi.classify_images": {
+            "message": "classify image"
+        },
+        "lepi.clearProcess": {
+            "message": "clear process"
+        },
+        "lepi.clearRect": {
+            "message": "clear rectangle"
+        },
+        "lepi.close": {
+            "message": "close"
+        },
+        "lepi.closeCamera": {
+            "message": "close camera"
+        },
+        "lepi.closeNineAxis": {
+            "message": "close nine-axis sensor"
+        },
+        "lepi.cm": {
+            "message": "cm"
+        },
+        "lepi.colorDetected": {
+            "message": "color detected?"
+        },
+        "lepi.color_detect": {
+            "message": "color detect"
+        },
+        "lepi.confidence": {
+            "message": "confidence"
+        },
+        "lepi.connectDevice": {
+            "message": "connect port [PORT]"
+        },
+        "lepi.customize": {
+            "message": "customize"
+        },
+        "lepi.cvtColor": {
+            "message": "apply grayscale conversion"
+        },
+        "lepi.deleteVariable": {
+            "message": "delete shared variable [NAME]"
+        },
+        "lepi.detectAprilTag": {
+            "message": "detect apriltag"
+        },
+        "lepi.detectBarcode": {
+            "message": "detect barcode"
+        },
+        "lepi.detectColor": {
+            "message": "detect [COLOR] from ([X1],[Y1]) to ([X2],[Y2])"
+        },
+        "lepi.detectFaceLabels": {
+            "message": "recognize face"
+        },
+        "lepi.detectFaces": {
+            "message": "detect face"
+        },
+        "lepi.detectHand": {
+            "message": "detect gesture"
+        },
+        "lepi.detectKeyPoints": {
+            "message": "detect keypoint"
+        },
+        "lepi.detectObject": {
+            "message": "detect object"
+        },
+        "lepi.detectPercentage": {
+            "message": "detection percentage"
+        },
+        "lepi.detectPose": {
+            "message": "detect pose"
+        },
+        "lepi.detectResult": {
+            "message": "detection result"
+        },
+        "lepi.detectText": {
+            "message": "detect [LANG] text"
+        },
+        "lepi.detectedAprilTag": {
+            "message": "apriltag with id [TAG] detected?"
+        },
+        "lepi.detectedAudioClass": {
+            "message": "audio [CLASS] detected?"
+        },
+        "lepi.detectedBarcode": {
+            "message": "barcode contain [TAG]?"
+        },
+        "lepi.detectedFaceLabel": {
+            "message": "[LABEL] detected?"
+        },
+        "lepi.detectedFaceLabel2": {
+            "message": "[LABEL] detected?"
+        },
+        "lepi.detectedHand": {
+            "message": "hand detected?"
+        },
+        "lepi.detectedImageClass": {
+            "message": "image [CLASS] detected?"
+        },
+        "lepi.detectedKeyPoints": {
+            "message": "keypoint detected?"
+        },
+        "lepi.detectedObject": {
+            "message": "object [CLASS] detected?"
+        },
+        "lepi.detectedPose": {
+            "message": "pose detected?"
+        },
+        "lepi.detectedPoseClass": {
+            "message": "pose [CLASS] detected?"
+        },
+        "lepi.deviceConnected": {
+            "message": "port [PORT] connected?"
+        },
+        "lepi.dilate": {
+            "message": "apply dilate, w[X],h[Y],iterations [N]"
+        },
+        "lepi.disconnectDevice": {
+            "message": "disconnect from port [PORT]"
+        },
+        "lepi.drawRect": {
+            "message": "draw rectangle at (x1:[X1],y1[Y1]) (x2:[X2],y2:[Y2])"
+        },
+        "lepi.erode": {
+            "message": "apply erode, w[X],h[Y],iterations [N]"
+        },
+        "lepi.estimatePoseData": {
+            "message": "[AXIS] of euler angle"
+        },
+        "lepi.execProc": {
+            "message": "exec process"
+        },
+        "lepi.faceCount": {
+            "message": "face count"
+        },
+        "lepi.faceData": {
+            "message": "face [I] data [DATA] "
+        },
+        "lepi.faceDetected": {
+            "message": "face detected?"
+        },
+        "lepi.faceParams": {
+            "message": "face [ID]"
+        },
+        "lepi.face_detect": {
+            "message": "face detect"
+        },
+        "lepi.face_recognize": {
+            "message": "face recognize"
+        },
+        "lepi.fast_backward": {
+            "message": "fast backward 10s"
+        },
+        "lepi.fast_forward": {
+            "message": "fast forward 10s"
+        },
+        "lepi.fast_pose_estimate": {
+            "message": "fast pose estimate"
+        },
+        "lepi.female": {
+            "message": "female"
+        },
+        "lepi.flip_x": {
+            "message": "flip_x"
+        },
+        "lepi.flip_xy": {
+            "message": "flip_xy"
+        },
+        "lepi.flip_y": {
+            "message": "flip_y"
+        },
+        "lepi.foot_position": {
+            "message": "foot position"
+        },
+        "lepi.freezeSnapshot": {
+            "message": "freeze snapshot"
+        },
+        "lepi.g": {
+            "message": "green"
+        },
+        "lepi.getAudioClassProbability": {
+            "message": "audio class [CLASS] confidence"
+        },
+        "lepi.getColorData": {
+            "message": "detected color [ID]"
+        },
+        "lepi.getColorList": {
+            "message": "update color list"
+        },
+        "lepi.getColorThreshold": {
+            "message": "get [COLOR] range"
+        },
+        "lepi.getEstimatePose": {
+            "message": "update euler angle"
+        },
+        "lepi.getHexapodFootLocation": {
+            "message": "hexapod [NUMBER] foot axis [AXIS]"
+        },
+        "lepi.getHexapodRobotState": {
+            "message": "update hexapod state"
+        },
+        "lepi.getHexapodServoAngle": {
+            "message": "hexapod [NUMBER] servo angle"
+        },
+        "lepi.getImageClassProbability": {
+            "message": "image class [CLASS] confidence"
+        },
+        "lepi.getJoyAxisValue": {
+            "message": "joystick axis [ID] value"
+        },
+        "lepi.getJoyButtonState": {
+            "message": "joystick button [ID] pressed?"
+        },
+        "lepi.getJoyState": {
+            "message": "joystick state"
+        },
+        "lepi.getLaunchedNodes": {
+            "message": "update ros node information"
+        },
+        "lepi.getOffset": {
+            "message": "get [SENSOR] offset"
+        },
+        "lepi.getPoseClassProbability": {
+            "message": "pose class [CLASS] confidence"
+        },
+        "lepi.getPupperFootLocation": {
+            "message": "pupper [NUMBER] foot axis [AXIS]"
+        },
+        "lepi.getPupperRobotState": {
+            "message": "update pupper state"
+        },
+        "lepi.getPupperServoAngle": {
+            "message": "pupper [NUMBER] servo angle"
+        },
+        "lepi.getResponse": {
+            "message": "response"
+        },
+        "lepi.getStreamList": {
+            "message": "update stream list"
+        },
+        "lepi.getVariable": {
+            "message": "shared variable [NAME] value"
+        },
+        "lepi.green": {
+            "message": "green"
+        },
+        "lepi.gyro": {
+            "message": "Gyroscope"
+        },
+        "lepi.gyroSensorData": {
+            "message": "[AXIS] Gyroscope"
+        },
+        "lepi.handCount": {
+            "message": "hand count"
+        },
+        "lepi.handData": {
+            "message": "hand [I] data [DATA]"
+        },
+        "lepi.handKeypoints": {
+            "message": "hand [I] keypoint [N] data [POINT]"
+        },
+        "lepi.hand_detect": {
+            "message": "hand detect"
+        },
+        "lepi.hasFaceLabel": {
+            "message": "is label [LABEL] added?"
+        },
+        "lepi.hasVariable": {
+            "message": "shared variable [NAME] exists?"
+        },
+        "lepi.height": {
+            "message": "height"
+        },
+        "lepi.hello": {
+            "message": "hello"
+        },
+        "lepi.hide": {
+            "message": "hide"
+        },
+        "lepi.horizontal_velocity_x": {
+            "message": "horizontal velocity x"
+        },
+        "lepi.horizontal_velocity_y": {
+            "message": "horizontal velocity y"
+        },
+        "lepi.host": {
+            "message": "Lepi Host"
+        },
+        "lepi.houghCircles": {
+            "message": "detect hough circle, radius min[MIN], max[MAX]"
+        },
+        "lepi.houghCirclesNumber": {
+            "message": "hough circle count"
+        },
+        "lepi.houghCirclesParam": {
+            "message": "hough circle [ID] data [PARAM]"
+        },
+        "lepi.id": {
+            "message": "ID"
+        },
+        "lepi.imageDetectConfidence": {
+            "message": "image detection confidence"
+        },
+        "lepi.imageDetectResult": {
+            "message": "image detection result"
+        },
+        "lepi.image_classify": {
+            "message": "image classify"
+        },
+        "lepi.image_process": {
+            "message": "image process"
+        },
+        "lepi.indigo": {
+            "message": "indigo"
+        },
+        "lepi.initPayload": {
+            "message": "init payload"
+        },
+        "lepi.inputString": {
+            "message": "input [INPUT] [Enter] Enter"
+        },
+        "lepi.isHotwordDetect": {
+            "message": "hotword detected?"
+        },
+        "lepi.isRecording": {
+            "message": "is recording?"
+        },
+        "lepi.keyPointsData": {
+            "message": "keypoint [KEYPOINT] data [DATA]"
+        },
+        "lepi.keyPointsScore": {
+            "message": "keypoint confidence"
+        },
+        "lepi.launchNode": {
+            "message": "launch ros node [NAME]"
+        },
+        "lepi.left_ankle": {
+            "message": "left ankle"
+        },
+        "lepi.left_ear": {
+            "message": "left ear"
+        },
+        "lepi.left_elbow": {
+            "message": "left elbow"
+        },
+        "lepi.left_eye": {
+            "message": "left eye"
+        },
+        "lepi.left_hip": {
+            "message": "left hip"
+        },
+        "lepi.left_knee": {
+            "message": "left knee"
+        },
+        "lepi.left_right": {
+            "message": "left right"
+        },
+        "lepi.left_right_mirror": {
+            "message": "left right mirror"
+        },
+        "lepi.left_shoulder": {
+            "message": "left shoulder"
+        },
+        "lepi.left_wrist": {
+            "message": "left wrist"
+        },
+        "lepi.lepiActuator": {
+            "message": "Actuator"
+        },
+        "lepi.lepiApriltagDetect": {
+            "message": "Apriltag Detect"
+        },
+        "lepi.lepiAudio": {
+            "message": "Audio"
+        },
+        "lepi.lepiBalanceCar": {
+            "message": "Balance Car"
+        },
+        "lepi.lepiBarcodeScan": {
+            "message": "Barcode Scan"
+        },
+        "lepi.lepiCamera": {
+            "message": "Camera"
+        },
+        "lepi.lepiColorDetect": {
+            "message": "Color Detect"
+        },
+        "lepi.lepiFaceRecognize": {
+            "message": "Face Recognize"
+        },
+        "lepi.lepiHandDetect": {
+            "message": "Guesture Detect"
+        },
+        "lepi.lepiHexapod": {
+            "message": "Hexapod"
+        },
+        "lepi.lepiHttp": {
+            "message": "HTTP/HTTPS"
+        },
+        "lepi.lepiImageClassify": {
+            "message": "Image Classify"
+        },
+        "lepi.lepiImageProcess": {
+            "message": "Image Process"
+        },
+        "lepi.lepiJoystick": {
+            "message": "Joystick"
+        },
+        "lepi.lepiLearningMachineAudio": {
+            "message": "ML-Audio"
+        },
+        "lepi.lepiLearningMachineImage": {
+            "message": "ML-Image"
+        },
+        "lepi.lepiLearningMachinePose": {
+            "message": "ML-Pose"
+        },
+        "lepi.lepiMoveNetPose": {
+            "message": "MoveNet Pose"
+        },
+        "lepi.lepiObjectDetection": {
+            "message": "Object Detect"
+        },
+        "lepi.lepiPoseEstimate": {
+            "message": "Pose Estimate"
+        },
+        "lepi.lepiPupper": {
+            "message": "Pupper"
+        },
+        "lepi.lepiSensor": {
+            "message": "Sensor"
+        },
+        "lepi.lepiSerial": {
+            "message": "Serial"
+        },
+        "lepi.lepiSmartAudio": {
+            "message": "AI Audio"
+        },
+        "lepi.lepiTextRecognize": {
+            "message": "Text Recognize"
+        },
+        "lepi.lepiVariable": {
+            "message": "Shared Variable"
+        },
+        "lepi.lepiWebPlottor": {
+            "message": "Plottor"
+        },
+        "lepi.line_chart": {
+            "message": "line chart"
+        },
+        "lepi.listCaliFiles": {
+            "message": "update calibration files"
+        },
+        "lepi.loadAudioModelFromFile": {
+            "message": "load audio model from file"
+        },
+        "lepi.loadAudioModelFromList": {
+            "message": "load audio model [MODEL]"
+        },
+        "lepi.loadCaliFile": {
+            "message": "load calibration file [FILE]"
+        },
+        "lepi.loadImageModelFromFile": {
+            "message": "load image model from file"
+        },
+        "lepi.loadImageModelFromList": {
+            "message": "load image model [MODEL]"
+        },
+        "lepi.loadPoseModel": {
+            "message": "load pose model"
+        },
+        "lepi.loadPoseModelFromFile": {
+            "message": "load pose model from file"
+        },
+        "lepi.loadPoseModelFromList": {
+            "message": "load pose model [MODEL]"
+        },
+        "lepi.lock": {
+            "message": "lock"
+        },
+        "lepi.magn": {
+            "message": "magnetometer"
+        },
+        "lepi.magnSensorData": {
+            "message": "[AXIS] magnetic field"
+        },
+        "lepi.male": {
+            "message": "male"
+        },
+        "lepi.max_angle": {
+            "message": "max angle"
+        },
+        "lepi.max_position": {
+            "message": "max position"
+        },
+        "lepi.measured_temperature": {
+            "message": "measured temperature"
+        },
+        "lepi.medianBlur": {
+            "message": "apply median blur, ksize [SIZE]"
+        },
+        "lepi.min_angle": {
+            "message": "min angle"
+        },
+        "lepi.min_position": {
+            "message": "min position"
+        },
+        "lepi.mm": {
+            "message": "mm"
+        },
+        "lepi.motor": {
+            "message": "motor"
+        },
+        "lepi.motorGetPosition": {
+            "message": "motor [PORT] encoder"
+        },
+        "lepi.motorPositionUpdated": {
+            "message": "motor [PORT] encoder updated?"
+        },
+        "lepi.motorReadPosition": {
+            "message": "read motor [PORT] encoder"
+        },
+        "lepi.motorSetAngle": {
+            "message": "set servo [PORT] angle [ANGLE]"
+        },
+        "lepi.motorSetCurrentPosition": {
+            "message": "set motor [PORT] current encoder [VALUE]"
+        },
+        "lepi.motorSetHold": {
+            "message": "set motor [PORT] brake"
+        },
+        "lepi.motorSetPosition": {
+            "message": "set motor [PORT] target encoder [POSITION]"
+        },
+        "lepi.motorSetRotate": {
+            "message": "set motor [PORT] rotate [VALUE] degree"
+        },
+        "lepi.motorSetSpeed": {
+            "message": "set motor [PORT] speed [SPEED]"
+        },
+        "lepi.motorSetType": {
+            "message": "set port [PORT] as [TYPE] mode"
+        },
+        "lepi.muse": {
+            "message": "muse"
+        },
+        "lepi.music": {
+            "message": "audio [MUSIC]"
+        },
+        "lepi.musicNumber": {
+            "message": "audio number [NUM] "
+        },
+        "lepi.musicPlaying": {
+            "message": "is audio playing?"
+        },
+        "lepi.nineAxisDataUpdated": {
+            "message": "nine-axis [PORT] data updated?"
+        },
+        "lepi.no_color": {
+            "message": "no color"
+        },
+        "lepi.no_enter": {
+            "message": "no"
+        },
+        "lepi.no_offset": {
+            "message": "ignore offset"
+        },
+        "lepi.no_rotate": {
+            "message": "no rotation"
+        },
+        "lepi.no_save": {
+            "message": "without save"
+        },
+        "lepi.no_wait": {
+            "message": "don't wait"
+        },
+        "lepi.nose": {
+            "message": "nose"
+        },
+        "lepi.not_update": {
+            "message": "not updating"
+        },
+        "lepi.objectData": {
+            "message": "object data [DATA]"
+        },
+        "lepi.object_detect": {
+            "message": "object detect"
+        },
+        "lepi.off": {
+            "message": "off"
+        },
+        "lepi.open": {
+            "message": "open"
+        },
+        "lepi.openCamera": {
+            "message": "open camera [ID] "
+        },
+        "lepi.openLearningMachineAudio": {
+            "message": "open ML-Audio Training tool"
+        },
+        "lepi.openLearningMachineImage": {
+            "message": "open ML-Image Training tool (color)"
+        },
+        "lepi.openLearningMachinePose": {
+            "message": "open ML-Pose Training tool"
+        },
+        "lepi.openLearningMachineTinyImage": {
+            "message": "open ML-Image Training tool (gray)"
+        },
+        "lepi.openNineAxis": {
+            "message": "open nine-axis sensor"
+        },
+        "lepi.openVideoPage": {
+            "message": "open video page in new window"
+        },
+        "lepi.parseJSON": {
+            "message": "parse JSON [STR] key [PARAM]"
+        },
+        "lepi.pitch": {
+            "message": "pitch"
+        },
+        "lepi.playControl": {
+            "message": "play control [ACTION]"
+        },
+        "lepi.playMusic": {
+            "message": "play [MUSIC] [WAITING]"
+        },
+        "lepi.play_resume": {
+            "message": "pause/resume"
+        },
+        "lepi.poseDetectResult": {
+            "message": "pose detection result"
+        },
+        "lepi.poseDetectScore": {
+            "message": "pose detection confidence"
+        },
+        "lepi.poseKeypoints": {
+            "message": "keypoint [N] data [POINT]"
+        },
+        "lepi.pose_estimate": {
+            "message": "pose estimate"
+        },
+        "lepi.position": {
+            "message": "position"
+        },
+        "lepi.predictImage": {
+            "message": "predict image"
+        },
+        "lepi.predictPose": {
+            "message": "predict pose"
+        },
+        "lepi.previewRecording": {
+            "message": "preview recording"
+        },
+        "lepi.purple": {
+            "message": "purple"
+        },
+        "lepi.r": {
+            "message": "red"
+        },
+        "lepi.radius": {
+            "message": "radius"
+        },
+        "lepi.readSensorData": {
+            "message": "read [SENSOR] data, [OFFSET]"
+        },
+        "lepi.receiveData": {
+            "message": "receive [PORT] data, length [COUNT]"
+        },
+        "lepi.red": {
+            "message": "red"
+        },
+        "lepi.removeFaceLabel": {
+            "message": "remove label [LABEL] "
+        },
+        "lepi.removeFaceLabel2": {
+            "message": "remove label [LABEL] "
+        },
+        "lepi.requestSuccess": {
+            "message": "request succeeded?"
+        },
+        "lepi.resetPlottor": {
+            "message": "clear plottor"
+        },
+        "lepi.rest": {
+            "message": "rest"
+        },
+        "lepi.right_ankle": {
+            "message": "right_ankle"
+        },
+        "lepi.right_ear": {
+            "message": "right_ear"
+        },
+        "lepi.right_elbow": {
+            "message": "right_elbow"
+        },
+        "lepi.right_eye": {
+            "message": "right_eye"
+        },
+        "lepi.right_hip": {
+            "message": "right_hip"
+        },
+        "lepi.right_knee": {
+            "message": "right_knee"
+        },
+        "lepi.right_shoulder": {
+            "message": "right_shoulder"
+        },
+        "lepi.right_wrist": {
+            "message": "right_wrist"
+        },
+        "lepi.roll": {
+            "message": "roll"
+        },
+        "lepi.sampleData": {
+            "message": "sample data"
+        },
+        "lepi.savePic": {
+            "message": "save picture as [FILE_NAME].png"
+        },
+        "lepi.save_as": {
+            "message": "save as"
+        },
+        "lepi.scatter": {
+            "message": "scatter chart"
+        },
+        "lepi.sendData": {
+            "message": "send data [DATA] to port [PORT] "
+        },
+        "lepi.sendPayload": {
+            "message": "save sample data"
+        },
+        "lepi.sendRequest": {
+            "message": "request [URL] with method [METHOD]"
+        },
+        "lepi.sensorDataUpdated": {
+            "message": "sensor [PORT] data updated?"
+        },
+        "lepi.sensorGetColor": {
+            "message": "[PORT] color sensor detected [COLOR]?"
+        },
+        "lepi.sensorGetColorRGB": {
+            "message": "[PORT] color sensor RGBC [RGBC]"
+        },
+        "lepi.sensorGetDistance": {
+            "message": "[PORT] ultrasonic sensor measured distance [UNIT]"
+        },
+        "lepi.sensorGetID": {
+            "message": "[PORT] sensor ID"
+        },
+        "lepi.sensorGetMode": {
+            "message": "[PORT] sensor mode"
+        },
+        "lepi.sensorGetPyroInfrared": {
+            "message": "[PORT] pyroInfrared sensor data [CHANNEL]"
+        },
+        "lepi.sensorGetPyroInfraredMotion": {
+            "message": "[PORT] pyroInfrared sensor motion detected?"
+        },
+        "lepi.sensorGetValue": {
+            "message": "[PORT] sensor data"
+        },
+        "lepi.sensorReadValue": {
+            "message": "read sensor data from port [PORT]"
+        },
+        "lepi.sensorSetColor": {
+            "message": "[PORT] color sensor set color [COLOR]"
+        },
+        "lepi.sensorSetColorRGB": {
+            "message": "[PORT] color sensor set RGB (R:[R] G:[G] B:[B])"
+        },
+        "lepi.sensorSetMode": {
+            "message": "set [PORT] sensor mode [VALUE]"
+        },
+        "lepi.servo": {
+            "message": "servo"
+        },
+        "lepi.servoGetParam": {
+            "message": "bus servo [ID] get param [PARAM]"
+        },
+        "lepi.servoReset": {
+            "message": "reset servo by id [ID]"
+        },
+        "lepi.servoSetParam": {
+            "message": "bus servo [ID] set [PARAM] to [VALUE]"
+        },
+        "lepi.servoSetPosition": {
+            "message": "bus servo [ID] turn to [POSANGLE] [POSITION]  by [SPEEDTIME] [VALUE]"
+        },
+        "lepi.servo_angle": {
+            "message": "servo angle"
+        },
+        "lepi.setAudioDetectThreshold": {
+            "message": "set audio detection threshold [VALUE]"
+        },
+        "lepi.setBufferSize": {
+            "message": "set sample size [SIZE]"
+        },
+        "lepi.setClassifyThreshold": {
+            "message": "set classify threshold [VALUE]"
+        },
+        "lepi.setColorHsv": {
+            "message": "set [COLOR] detection range min(h[LOW_H],s[LOW_S],v[LOW_V], max(h[HIGH_H],s[HIGH_S],v[HIGH_V])"
+        },
+        "lepi.setColorThreshold": {
+            "message": "set [COLOR] detection range min [LOW],max [HIGH]"
+        },
+        "lepi.setDetectArea": {
+            "message": "set detection area (x1:[X1],y1:[Y1]) (x2:[X2],y2:[Y2])"
+        },
+        "lepi.setDetectThreshold": {
+            "message": "set detection threshold [VALUE]"
+        },
+        "lepi.setFanTemp": {
+            "message": "set fan temp,[TEMP1]on [TEMP2]off"
+        },
+        "lepi.setHexapodCommandParam": {
+            "message": "set hexapod [PARAM] to [VALUE]"
+        },
+        "lepi.setHexapodFootLocation": {
+            "message": "set hexapod [NUMBER] foot coordinate (x:[X],y:[Y],z:[Z])"
+        },
+        "lepi.setHexapodRobotState": {
+            "message": "update hexapod [CHANNEL]"
+        },
+        "lepi.setHexapodServoAngle": {
+            "message": "set hexapod [NUMBER] servo angle [VALUE]"
+        },
+        "lepi.setHexpodBehaviorState": {
+            "message": "switch hexapod mode to [MODE]"
+        },
+        "lepi.setImageClassifyThreshold": {
+            "message": "set image classify threshold [VALUE]"
+        },
+        "lepi.setImageSize": {
+            "message": "set image size w:[W] h:[H]"
+        },
+        "lepi.setLed": {
+            "message": "set indicator LED1[COLOR1] LED2[COLOR2]"
+        },
+        "lepi.setNineAxisUpdateFrequence": {
+            "message": "set nine-axis sensor auto update frequence [FREQUENCE]"
+        },
+        "lepi.setOffset": {
+            "message": "set [SENSOR] offset x:[X],y:[Y],z:[Z]"
+        },
+        "lepi.setPlotType": {
+            "message": "set plot type [TYPE]"
+        },
+        "lepi.setPoseEstimateThreshold": {
+            "message": "set pose estimation threshold [VALUE]"
+        },
+        "lepi.setPupperBehaviorState": {
+            "message": "switch pupper mode [MODE]"
+        },
+        "lepi.setPupperCommandParam": {
+            "message": "set pupper [PARAM] to [VALUE]"
+        },
+        "lepi.setPupperFootLocation": {
+            "message": "set pupper [NUMBER] foot coordinate(x:[X],y:[Y],z:[Z])"
+        },
+        "lepi.setPupperRobotState": {
+            "message": "update pupper [CHANNEL]"
+        },
+        "lepi.setPupperServoAngle": {
+            "message": "set pupper [NUMBER] servo angle [VALUE]"
+        },
+        "lepi.setResize": {
+            "message": "set resize w:[W] h:[H]"
+        },
+        "lepi.setSensorUpdateFrequence": {
+            "message": "set sensor auto update frequence [FREQUENCE]"
+        },
+        "lepi.setSize": {
+            "message": "set image size w:[W] h:[H]"
+        },
+        "lepi.setThreshold": {
+            "message": "set threshold [VALUE]"
+        },
+        "lepi.setTitle": {
+            "message": "set title [TITLE], size [SIZE]"
+        },
+        "lepi.setUpdateFrequence": {
+            "message": "set image update frequence [FREQUENCE]"
+        },
+        "lepi.setVariable": {
+            "message": "set shared variable [NAME] to [VALUE]"
+        },
+        "lepi.setVideoTransparency": {
+            "message": "set transparency [TRANSPARENCY]"
+        },
+        "lepi.show": {
+            "message": "show"
+        },
+        "lepi.showSnapshot": {
+            "message": "show [TOPIC] snapshot"
+        },
+        "lepi.shutdownNode": {
+            "message": "shutdown [NAME] node"
+        },
+        "lepi.speed": {
+            "message": "speed"
+        },
+        "lepi.startAudioPredict": {
+            "message": "start audio prediction, gap [GAP]s, duration [DURATION]s"
+        },
+        "lepi.startRecording": {
+            "message": "start recording"
+        },
+        "lepi.stopAudioPredict": {
+            "message": "stop audio prediction"
+        },
+        "lepi.stopRecordingAndSave": {
+            "message": "stop recording,[SAVE] [FILE_NAME].wav"
+        },
+        "lepi.stop_playing": {
+            "message": "stop playing"
+        },
+        "lepi.switchHotwordModel": {
+            "message": "switch hotword model [HOTWORD]"
+        },
+        "lepi.switchMicrophone": {
+            "message": "switch microphone [DEVICE]"
+        },
+        "lepi.text_content": {
+            "message": "text content"
+        },
+        "lepi.text_recognize": {
+            "message": "text recognize"
+        },
+        "lepi.thresh_binary": {
+            "message": "thresh binary"
+        },
+        "lepi.thresh_binary_inv": {
+            "message": "thresh binary inv"
+        },
+        "lepi.threshold": {
+            "message": "apply threshold, threshold[THRESH], type[CODE]"
+        },
+        "lepi.time": {
+            "message": "time(ms)"
+        },
+        "lepi.toggleCamera": {
+            "message": "[ACTION] computer camera [CAMERA], mirror [ONOFF]"
+        },
+        "lepi.toggleDisplay": {
+            "message": "[TOGGLE] chart"
+        },
+        "lepi.toggleHotwordDetect": {
+            "message": "[ACTION] hotword detection"
+        },
+        "lepi.toggleListening": {
+            "message": "[TOGGLE] bluetooth listening mode"
+        },
+        "lepi.toggleTerminal": {
+            "message": "[TOGGLE] terminal window"
+        },
+        "lepi.transfer_learning": {
+            "message": "transfer learning"
+        },
+        "lepi.trot": {
+            "message": "trot"
+        },
+        "lepi.updateAudioModelList": {
+            "message": "update audio model list"
+        },
+        "lepi.updateDeviceList": {
+            "message": "update device list"
+        },
+        "lepi.updateImageModelList": {
+            "message": "update image model list"
+        },
+        "lepi.updateMusicList": {
+            "message": "update audio list"
+        },
+        "lepi.updatePoseModelList": {
+            "message": "update pose model list"
+        },
+        "lepi.updateSerialList": {
+            "message": "update serial port list"
+        },
+        "lepi.updateVariables": {
+            "message": "update shared variable list"
+        },
+        "lepi.visibility": {
+            "message": "visibility"
+        },
+        "lepi.volume_down": {
+            "message": "volume down"
+        },
+        "lepi.volume_up": {
+            "message": "volume up"
+        },
+        "lepi.wait": {
+            "message": "wait"
+        },
+        "lepi.white": {
+            "message": "white"
+        },
+        "lepi.width": {
+            "message": "width"
+        },
+        "lepi.with_enter": {
+            "message": "with"
+        },
+        "lepi.with_offset": {
+            "message": "fix offset"
+        },
+        "lepi.x": {
+            "message": "x"
+        },
+        "lepi.x_axis": {
+            "message": "x-axis"
+        },
+        "lepi.xiao_ming": {
+            "message": "xiao ming"
+        },
+        "lepi.y": {
+            "message": "y"
+        },
+        "lepi.y_axis": {
+            "message": "y-axis"
+        },
+        "lepi.yaw": {
+            "message": "yaw"
+        },
+        "lepi.yaw_rate": {
+            "message": "yaw rate"
+        },
+        "lepi.yellow": {
+            "message": "yellow"
+        },
+        "lepi.z": {
+            "message": "z"
+        },
+        "lepi.z_axis": {
+            "message": "z-axis"
+        }
+    }
+}

@@ -48,6 +48,12 @@ const concatenateByteArrays = arrays => {
     return newArray;
 };
 
+const autoAppendExtName = (name) => {
+    console.log('autoAppendExtName', name)
+    name = name.replaceAll('.sb3','')
+    return `${name}.sb3.sb3`
+}
+
 /**
  * Project saver component passes a downloadProject function to its child.
  * It expects this child to be a function with the signature
@@ -89,7 +95,7 @@ class SB3Downloader extends React.Component {
         this.startedSaving();
         this.props.saveProjectSb3().then(content => {
             this.finishedSaving();
-            downloadBlob(this.props.projectFilename, content);
+            downloadBlob(autoAppendExtName(this.props.projectFilename), content);
         });
     }
     async saveAsNew () {

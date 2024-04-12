@@ -26,6 +26,9 @@ const htmlWebpackPluginCommon = {
 };
 
 const base = {
+    node: {
+        fs: 'empty'
+    },
     mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
     devtool: process.env.SOURCEMAP || (process.env.NODE_ENV === 'production' ? false : 'cheap-module-source-map'),
     devServer: {

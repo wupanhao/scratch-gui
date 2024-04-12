@@ -74,6 +74,9 @@ import {
     settingsMenuOpen,
     openSettingsMenu,
     closeSettingsMenu,
+    openDownloadMenu,
+    closeDownloadMenu,
+    downloadMenuOpen,
     errorsMenuOpen,
     openErrorsMenu,
     closeErrorsMenu
@@ -106,6 +109,9 @@ import sharedMessages from '../../lib/shared-messages';
 import SeeInsideButton from './tw-see-inside.jsx';
 import {notScratchDesktop} from '../../lib/isScratchDesktop.js';
 import {APP_NAME} from '../../lib/brand.js';
+
+import ScratchDownloader from '../lepi/sb3-downloader.jsx'
+import DebugDownloader from '../lepi/debug-downloader.jsx';
 
 const ariaMessages = defineMessages({
     tutorials: {
@@ -806,7 +812,7 @@ class MenuBar extends React.Component {
                                         </MenuItem>
                                     )}</CloudVariablesToggler>
                                 </MenuSection>
-                                <MenuSection>
+                                {/* <MenuSection>
                                     <MenuItem onClick={this.props.onClickSettingsModal}>
                                         <FormattedMessage
                                             defaultMessage="Advanced Settings"
@@ -814,7 +820,7 @@ class MenuBar extends React.Component {
                                             id="tw.menuBar.moreSettings"
                                         />
                                     </MenuItem>
-                                </MenuSection>
+                                </MenuSection> */}
                             </MenuBarMenu>
                         </MenuLabel>
                         {this.props.isTotallyNormal && (
@@ -881,7 +887,7 @@ class MenuBar extends React.Component {
                                 </span>
                             </div>
                         )}
-                        {this.props.onClickSettingsModal && (
+                        {/* {this.props.onClickSettingsModal && (
                             <div
                                 className={classNames(styles.menuBarItem, styles.hoverable)}
                                 onClick={this.props.onClickSettingsModal}
@@ -900,7 +906,7 @@ class MenuBar extends React.Component {
                                     />
                                 </span>
                             </div>
-                        )}
+                        )} */}
                     </div>
 
                     <Divider className={styles.divider} />
@@ -958,7 +964,7 @@ class MenuBar extends React.Component {
                             {remixButton}
                         </div>
                     )}
-                    <div className={classNames(styles.menuBarItem, styles.communityButtonWrapper)}>
+                    {/* <div className={classNames(styles.menuBarItem, styles.communityButtonWrapper)}>
                         {this.props.enableCommunity ? (
                             (this.props.isShowingProject || this.props.isUpdating) && (
                                 <ProjectWatcher onDoneUpdating={this.props.onSeeCommunity}>
@@ -966,11 +972,9 @@ class MenuBar extends React.Component {
                                         waitForUpdate => (
                                             <CommunityButton
                                                 className={styles.menuBarButton}
-                                                /* eslint-disable react/jsx-no-bind */
                                                 onClick={() => {
                                                     this.handleClickSeeCommunity(waitForUpdate);
                                                 }}
-                                                /* eslint-enable react/jsx-no-bind */
                                             />
                                         )
                                     }
@@ -986,16 +990,15 @@ class MenuBar extends React.Component {
                                 onClick={this.handleClickSeeInside}
                             />
                         ) : []))}
-                    </div>
+                    </div> */}
                     {/* tw: add a feedback button */}
-                    <div className={styles.menuBarItem}>
+                    {/* <div className={styles.menuBarItem}>
                         <a
                             className={styles.feedbackLink}
                             href="https://scratch.mit.edu/users/GarboMuffin/#comments"
                             rel="noopener noreferrer"
                             target="_blank"
                         >
-                            {/* todo: icon */}
                             <Button className={styles.feedbackButton}>
                                 <FormattedMessage
                                     defaultMessage="{APP_NAME} Feedback"
@@ -1007,9 +1010,63 @@ class MenuBar extends React.Component {
                                 />
                             </Button>
                         </a>
-                    </div>
-                </div>
+                    </div> */}
+                    <MenuLabel
+                        className={classNames(styles.menuBarItem, styles.hoverable, {
+                            [styles.active]: this.props.downloadMenuOpen
+                        })}
+                        // onMouseUp={this.props.onClickDownload}
+                        open={this.props.downloadMenuOpen}
+                        onOpen={this.props.onClickDownload}
+                        onClose={this.props.onRequestCloseDownload}
+                    >
+                        <FormattedMessage
+                            defaultMessage="Download to Host"
+                            id="lepi.menuBar.download_to_host"
+                        />
+                        <MenuBarMenu
+                            className={classNames(styles.menuBarMenu)}
+                            open={this.props.downloadMenuOpen}
+                            place={this.props.isRtl ? 'left' : 'right'}
+                            onRequestClose={this.props.onRequestCloseDownload}
+                        >
+                            <MenuSection>
 
+                                <ScratchDownloader>{(className, downloadProjectCallback) => (
+                                    <MenuItem
+                                        className={className}
+                                        onClick={downloadProjectCallback}
+                                    >
+                                        <FormattedMessage
+                                            defaultMessage="Download as Scratch Works"
+                                            id="lepi.menuBar.download_as_scratch"
+                                        />
+                                    </MenuItem>
+                                )}</ScratchDownloader>
+                                <DebugDownloader>{(className, downloadProjectCallback) => (
+                                    <MenuItem
+                                        className={className}
+                                        onClick={downloadProjectCallback}
+                                    ><FormattedMessage
+                                            defaultMessage="Debug Run on Host"
+                                            id="lepi.menuBar.debug_on_host"
+                                        />
+                                        
+                                    </MenuItem>
+                                )}</DebugDownloader>
+
+                                {/* <PythonDownloader>{(className, downloadProjectCallback) => (
+                                    <MenuItem
+                                        className={className}
+                                        onClick={downloadProjectCallback}
+                                    >
+                                        下载为Python文件
+                                    </MenuItem>
+                                )}</PythonDownloader> */}
+                            </MenuSection>
+                        </MenuBarMenu>
+                    </MenuLabel>
+                </div>
                 <div className={styles.accountInfoGroup}>
                     <TWSaveStatus />
                 </div>
@@ -1044,6 +1101,7 @@ MenuBar.propTypes = {
         error: PropTypes.string,
         id: PropTypes.number
     })),
+    downloadMenuOpen: PropTypes.bool,
     errorsMenuOpen: PropTypes.bool,
     onClickErrors: PropTypes.func,
     onRequestCloseErrors: PropTypes.func,
@@ -1092,6 +1150,7 @@ MenuBar.propTypes = {
     onClickSaveAsCopy: PropTypes.func,
     onClickSettings: PropTypes.func,
     onClickSettingsModal: PropTypes.func,
+    onClickDownload: PropTypes.func,
     onLogOut: PropTypes.func,
     onOpenRegistration: PropTypes.func,
     onOpenTipLibrary: PropTypes.func,
@@ -1138,6 +1197,7 @@ const mapStateToProps = (state, ownProps) => {
         fileMenuOpen: fileMenuOpen(state),
         editMenuOpen: editMenuOpen(state),
         errors: state.scratchGui.tw.compileErrors,
+        downloadMenuOpen: downloadMenuOpen(state),
         errorsMenuOpen: errorsMenuOpen(state),
         isPlayerOnly: state.scratchGui.mode.isPlayerOnly,
         isRtl: state.locales.isRtl,
@@ -1193,6 +1253,8 @@ const mapDispatchToProps = dispatch => ({
     onClickRemix: () => dispatch(remixProject()),
     onClickSave: () => dispatch(manualUpdateProject()),
     onClickSaveAsCopy: () => dispatch(saveProjectAsCopy()),
+    onClickDownload: () => dispatch(openDownloadMenu()),
+    onRequestCloseDownload: () => dispatch(closeDownloadMenu()),
     onSeeCommunity: () => dispatch(setPlayer(true)),
     onSetTimeTravelMode: mode => dispatch(setTimeTravel(mode))
 });

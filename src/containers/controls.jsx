@@ -6,13 +6,26 @@ import {connect} from 'react-redux';
 
 import ControlsComponent from '../components/controls/controls.jsx';
 
+import { closeExtensionLibrary, openConnectionModal } from '../reducers/modals';
+import { setConnectionModalExtensionId } from '../reducers/connection-modal';
+
 class Controls extends React.Component {
     constructor (props) {
         super(props);
         bindAll(this, [
+            'handleConnectionClick',
             'handleGreenFlagClick',
             'handleStopAllClick'
         ]);
+        this.setState({connected:props.vm.getPeripheralIsConnected('lepi')})
+        props.vm.runtime.on('LEPI_CONNECTED', () => {
+            console.log('connected')
+            this.setState({test:'test'})
+        })
+        props.vm.runtime.on('PERIPHERAL_DISCONNECTED', () => {
+            console.log('disconnected')
+            this.setState({test:'test'})
+        })
     }
     handleGreenFlagClick (e) {
         e.preventDefault();
@@ -38,6 +51,23 @@ class Controls extends React.Component {
     handleStopAllClick (e) {
         e.preventDefault();
         this.props.vm.stopAll();
+        if (this.props.vm.ros && this.props.vm.ros.isConnected()){
+            try {
+                this.props.vm.ros.motorSetPulse(0, 0)
+            } catch (error) {
+                console.log(error)
+            }
+        }
+    }
+    handleConnectionClick(e){
+        e.preventDefault();
+        if(this.props.vm.extensionManager.isExtensionLoaded('lepi')){
+            this.props.onOpenConnectionModal('lepi')
+        }else{
+            this.props.vm.extensionManager.loadExtensionURL('lepi').then( () => {
+                this.props.onOpenConnectionModal('lepi')
+            })
+        }
     }
     render () {
         const {
@@ -50,10 +80,12 @@ class Controls extends React.Component {
         return (
             <ControlsComponent
                 {...props}
+                connected= {vm.getPeripheralIsConnected('lepi')}
                 active={projectRunning && isStarted}
                 turbo={turbo}
                 onGreenFlagClick={this.handleGreenFlagClick}
                 onStopAllClick={this.handleStopAllClick}
+                onConnectionClick={this.handleConnectionClick}
             />
         );
     }
@@ -77,6 +109,12 @@ const mapStateToProps = state => ({
     turbo: state.scratchGui.vmStatus.turbo
 });
 // no-op function to prevent dispatch prop being passed to component
-const mapDispatchToProps = () => ({});
+const mapDispatchToProps = (dispatch) => ({
+    onOpenConnectionModal: id => {
+        console.log(id)
+        dispatch(setConnectionModalExtensionId(id));
+        dispatch(openConnectionModal());
+    },
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(Controls);

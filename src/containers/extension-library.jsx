@@ -84,6 +84,125 @@ const fetchLibrary = async () => {
     }));
 };
 
+// eslint-disable-next-line no-unused-vars
+import unknownIcon from '../lib/libraries/extensions/gallery/unknown.svg';
+import galleryIcon from '../lib/libraries/extensions/gallery/gallery.svg';
+import animatedTextIcon from '../lib/libraries/extensions/gallery/animated-text.svg';
+import stretchIcon from '../lib/libraries/extensions/gallery/stretch.svg';
+import gamepadIcon from '../lib/libraries/extensions/gallery/gamepad.svg';
+import cursorIcon from '../lib/libraries/extensions/gallery/cursor.svg';
+import filesIcon from '../lib/libraries/extensions/gallery/files.svg';
+import pointerlockIcon from '../lib/libraries/extensions/gallery/pointerlock.svg';
+import runtimeOptionsIcon from '../lib/libraries/extensions/gallery/runtime-options.svg';
+import utilitiesIcon from '../lib/libraries/extensions/gallery/utilities.svg';
+import sensingPlusIcon from '../lib/libraries/extensions/gallery/sensingplus.svg';
+import clonesPlusIcon from '../lib/libraries/extensions/gallery/clonesplus.svg';
+import looksPlusIcon from '../lib/libraries/extensions/gallery/looksplus.svg';
+import clippingBlendingIcon from '../lib/libraries/extensions/gallery/clippingblending.svg';
+import regexIcon from '../lib/libraries/extensions/gallery/regex.svg';
+import bitwiseIcon from '../lib/libraries/extensions/gallery/bitwise.svg';
+import textIcon from '../lib/libraries/extensions/gallery/text.svg';
+import fetchIcon from '../lib/libraries/extensions/gallery/fetch.svg';
+import box2dIcon from '../lib/libraries/extensions/gallery/box2d.svg';
+import localStorageIcon from '../lib/libraries/extensions/gallery/local-storage.svg';
+import baseIcon from '../lib/libraries/extensions/gallery/base.svg';
+import bigIntIcon from '../lib/libraries/extensions/gallery/bigint.svg';
+import jsonIcon from '../lib/libraries/extensions/gallery/json.svg';
+import iframeIcon from '../lib/libraries/extensions/gallery/iframe.svg';
+import encodingIcon from '../lib/libraries/extensions/gallery/encoding.svg';
+import mathIcon from '../lib/libraries/extensions/gallery/math.svg';
+import dictionariesIcon from '../lib/libraries/extensions/gallery/dictionaries.svg';
+import httpIcon from '../lib/libraries/extensions/gallery/http.svg';
+import wsIcon from '../lib/libraries/extensions/gallery/ws.png';
+import returnIcon from '../lib/libraries/extensions/custom/return.svg';
+import consoleIcon from '../lib/libraries/extensions/gallery/consoles.svg';
+import xmlIcon from '../lib/libraries/extensions/gallery/xml.svg'
+
+import extensionData from '../lib/libraries/extensions/extension.json'
+// sync with scratch-vm/src/extension-support/tw-security-manager.js
+const extensionTagsMap = {
+    'files': ['tw'],
+    'strings': ['tw'],
+    'Bitwise': ['tw'],
+    'skyhigh173JSON': ['tw'],
+    'truefantomregexp': ['tw'],
+    'localstorage': ['tw'],
+    'truefantombase': ['tw'],
+    'utilities': ['tw'],
+    'iframe': ['tw', 'internet'],
+    'Encoding': ['tw'],
+    'truefantommath': ['tw'],
+    'verctedictionaries': ['tw'],
+    'gsaHTTPRequests': ['tw', 'internet'],
+    'gsaWebsocket': ['tw', 'internet'],
+    'mbwxml': ['tw'],
+    'sipcconsole': ['tw'],
+}
+const extensionIconsMap = {
+    'files': filesIcon,
+    'strings': textIcon,
+    'Bitwise': bitwiseIcon,
+    'skyhigh173JSON': jsonIcon,
+    'truefantomregexp': regexIcon,
+    'localstorage': localStorageIcon,
+    'truefantombase': baseIcon,
+    'utilities': utilitiesIcon,
+    'iframe': iframeIcon,
+    'Encoding': encodingIcon,
+    'truefantommath': mathIcon,
+    'verctedictionaries': dictionariesIcon,
+    'gsaHTTPRequests': httpIcon,
+    'gsaWebsocket': wsIcon,
+    'mbwxml': xmlIcon,
+    'sipcconsole': consoleIcon,
+}
+const fetchLocal = async () => {
+    // const res = await fetch('https://extensions.turbowarp.org/generated-metadata/extensions-v0.json');
+    // if (!res.ok) {
+    //     throw new Error(`HTTP status ${res.status}`);
+    // }
+
+    const data = extensionData;
+    return data.extensions.map(extension => ({
+        name: extension.name,
+        nameTranslations: extension.nameTranslations || {},
+        description: extension.description,
+        descriptionTranslations: extension.descriptionTranslations || {},
+        extensionId: extension.id,
+        extensionURL: `https://extensions.turbowarp.org/${extension.slug}.js`,
+        // iconURL: `https://extensions.turbowarp.org/${extension.image || 'images/unknown.svg'}`,
+        iconURL: extensionIconsMap[extension.id] || unknownIcon,
+        tags: extensionTagsMap[extension.id] || ['tw'],
+        credits: [
+            ...(extension.by || []),
+            ...(extension.original || [])
+        ].map(credit => {
+            // if (credit.link) {
+            //     return (
+            //         <a
+            //             href={credit.link}
+            //             target="_blank"
+            //             rel="noreferrer"
+            //             key={credit.name}
+            //         >
+            //             {credit.name}
+            //         </a>
+            //     );
+            // }
+            return credit.name;
+        }),
+        docsURI: extension.docs ? `https://extensions.turbowarp.org/${extension.slug}` : null,
+        samples: extension.samples ? extension.samples.map(sample => ({
+            href: `${process.env.ROOT}editor.html?project_url=https://extensions.turbowarp.org/samples/${encodeURIComponent(sample)}.sb3`,
+            text: sample
+        })) : null,
+        // incompatibleWithScratch: true,
+        featured: true
+    })).filter(extension => {
+        return extensionTagsMap[extension.extensionId]
+    });
+};
+
 class ExtensionLibrary extends React.PureComponent {
     constructor (props) {
         super(props);
@@ -93,7 +212,7 @@ class ExtensionLibrary extends React.PureComponent {
         this.state = {
             gallery: cachedGallery,
             galleryError: null,
-            galleryTimedOut: false
+            galleryTimedOut: true
         };
     }
     componentDidMount () {
@@ -104,7 +223,7 @@ class ExtensionLibrary extends React.PureComponent {
                 });
             }, 750);
 
-            fetchLibrary()
+            fetchLocal()
                 .then(gallery => {
                     cachedGallery = gallery;
                     this.setState({
@@ -162,7 +281,7 @@ class ExtensionLibrary extends React.PureComponent {
             library = extensionLibraryContent.map(toLibraryItem);
             library.push('---');
             if (this.state.gallery) {
-                library.push(toLibraryItem(galleryMore));
+                // library.push(toLibraryItem(galleryMore));
                 const locale = this.props.intl.locale;
                 library.push(
                     ...this.state.gallery

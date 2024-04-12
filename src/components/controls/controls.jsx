@@ -9,8 +9,14 @@ import TurboMode from '../turbo-mode/turbo-mode.jsx';
 import FramerateIndicator from '../tw-framerate-indicator/framerate-indicator.jsx';
 
 import styles from './controls.css';
+import ConnectionStatusComponent from '../lepi/connection-status.jsx';
 
 const messages = defineMessages({
+    connectionTitle: {
+        id: 'gui.controls.connection',
+        defaultMessage: 'Connection',
+        description: 'Connection button title'
+    },
     goTitle: {
         id: 'gui.controls.go',
         defaultMessage: 'Go',
@@ -25,11 +31,13 @@ const messages = defineMessages({
 
 const Controls = function (props) {
     const {
+        connected,
         active,
         className,
         intl,
         onGreenFlagClick,
         onStopAllClick,
+        onConnectionClick,
         turbo,
         framerate,
         interpolation,
@@ -50,6 +58,12 @@ const Controls = function (props) {
                 active={active}
                 title={intl.formatMessage(messages.stopTitle)}
                 onClick={onStopAllClick}
+            />
+            <ConnectionStatusComponent
+                connected={connected}
+                active={active}
+                title={intl.formatMessage(messages.connectionTitle)}
+                onClick={onConnectionClick}
             />
             {turbo ? (
                 <TurboMode isSmall={isSmall} />
