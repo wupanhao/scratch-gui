@@ -19,7 +19,6 @@ import SettingsStore from './settings-store-singleton';
 import dataURLToBlob from '../lib/data-uri-to-blob';
 import EventTargetShim from './event-target';
 import AddonHooks from './hooks';
-import LazyScratchBlocks from '../lib/tw-lazy-scratch-blocks.js';
 import addons from './generated/addon-manifests';
 import addonMessages from './addons-l10n/en.json';
 import l10nEntries from './generated/l10n-entries';
@@ -116,9 +115,20 @@ const getEditorMode = () => {
     return 'editor';
 };
 
-const language = reduxInstance.state.locales.locale.split('-')[0];
+/**
+ * @returns {string} Locale code
+ */
+const getLocale = () => {
+    const locale = reduxInstance.state.locales.locale;
+    if (Object.prototype.hasOwnProperty.call(l10nEntries, locale)) {
+        return locale;
+    }
+    return locale.split('-')[0];
+};
+const language = getLocale();
+
 const getTranslations = async () => {
-    if (l10nEntries[language]) {
+    if (Object.prototype.hasOwnProperty.call(l10nEntries, language)) {
         const localeMessages = await l10nEntries[language]();
         Object.assign(addonMessages, localeMessages);
     }
@@ -191,7 +201,14 @@ class Tab extends EventTargetShim {
             get vm () {
                 return reduxInstance.state.scratchGui.vm;
             },
-            getBlockly: () => new Promise(resolve => LazyScratchBlocks.onLoaded(resolve)),
+            getBlockly: () => {
+                if (AddonHooks.blockly) {
+                    return Promise.resolve(AddonHooks.blockly);
+                }
+                return new Promise(resolve => {
+                    AddonHooks.blocklyCallbacks.push(() => resolve(AddonHooks.blockly));
+                });
+            },
             getWorkspace: () => AddonHooks.blocklyWorkspace,
             getPaper: async () => {
                 const modeSelector = await this.waitForElement("[class*='paint-editor_mode-selector']", {

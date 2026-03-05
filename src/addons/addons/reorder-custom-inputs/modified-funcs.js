@@ -27,13 +27,13 @@ export function modifiedCreateAllInputs(connectionMap) {
       this.populateArgument_(argumentType, argumentCount, connectionMap, id, input);
       argumentCount++;
     } else {
-      labelText = component.trim().replace("%l ", "");
+      labelText = component == "%l" ? " " : component.replace("%l", "").trim();
     }
     this.addProcedureLabel_(labelText.replace(/\\%/, "%"));
   }
 
   // remove all traces of %l at the earliest possible time
-  this.procCode_ = this.procCode_.replaceAll("%l ", "");
+  this.procCode_ = this.procCode_.replace(/%l /g, "");
 }
 
 //https://github.com/scratchfoundation/scratch-blocks/blob/f210e042988b91bcdc2abeca7a2d85e178edadb2/blocks_vertical/procedures.js#L565
