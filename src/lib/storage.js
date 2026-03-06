@@ -55,9 +55,13 @@ class Storage extends ScratchStorage {
         this.assetHost = assetHost;
     }
     getAssetGetConfig (asset) {
-        // return `${this.assetHost}/internalapi/asset/${asset.assetId}.${asset.dataFormat}/get/`;
-        return `${window.location.origin}/build/library-files/${asset.assetId}.${asset.dataFormat}`;
-        // return `${window.location.origin}/assets/build/library-files/${asset.assetId}.${asset.dataFormat}`; // For Android
+        if(location.origin == 'tw-editor://.'){
+            return `${this.assetHost}/internalapi/asset/${asset.assetId}.${asset.dataFormat}/get/`; // For Standalone Lepi Desktop App
+        }
+        if(location.host == 'appassets.androidplatform.net'){
+            return `${window.location.origin}/assets/build/library-files/${asset.assetId}.${asset.dataFormat}`; // For Android
+        }
+        return `${location.href.split("/editor.html")[0]}/library-files/${asset.assetId}.${asset.dataFormat}`; // For Web
     }
     getAssetCreateConfig (asset) {
         return {

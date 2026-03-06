@@ -2,8 +2,9 @@
 // ID: gsaHTTPRequests
 // Description: Comprehensive extension for interacting with external websites.
 // By: RedMan13 <https://scratch.mit.edu/users/RedMan13/>
+// License: MIT
 
-(function (Scratch) {
+/* generated l10n code */Scratch.translate.setup({"fi":{"_Hide Extra":"Piilota lisälohkot","_Request":"Pyyntö","_Response":"Vastaus","_Show Extra":"Näytä lisälohkot","_[name] from header":"[name] otsakkeesta","_[name] in multipart form":"[name] moniosaisessa lomakkeessa","_[path] in request options":"pyyntöasetusten [path]","_clear current data":"tyhjennä nykyiset tiedot","_error":"virhe","_headers as json":"otsakkeet JSON-muodossa","_in header set [name] to [value]":"aseta otsakkeen [name] arvoon [value]","_request failed?":"epäonnistuiko pyyntö?","_request succeeded?":"onnistuiko pyyntö?","_response":"vastaus","_send request to [url]":"lähetä pyyntö osoitteeseen [url]","_set [name] to [value] in multipart form":"aseta moniosaisen lomakkeen [name] arvoon [value]","_set [path] to [value] in request options":"aseta pyyntöasetusten [path] arvoon [value]","_set [path] to type [type] in request options":"aseta pyyntöasetusten kohteen [path] tyypiksi [type]","_set content type to [type]":"aseta sisällön tyypiksi [type]","_set headers to json [json]":"aseta otsakkeet JSON-koodiksi [json]","_set request body to [text]":"aseta pyynnön rungoksi [text]","_set request body to multipart form":"aseta pyynnön runko moniosaiseksi lomakkeeksi","_set request method to [method]":"aseta pyyntömenetelmäksi [method]","_site responded?":"vastasiko sivusto?","_status":"tila","_status text":"tilateksti","_type of [path] in request options":"pyyntöasetusten kohteen [path] tyyppi","_when a request fails":"kun pyyntö epäonnistuu","_when a site responds":"kun sivusto vastaa"},"it":{"_[name] in multipart form":"[name] nel multipart form","_delete [name] from multipart form":"rimuovi [name] dal multipart form","_set [name] to [value] in multipart form":"porta [name] a [value] nel multipart form","_set request body to multipart form":"porta request body a multipart form","_status":"stato"},"ja":{"_Request":"リクエスト","_Response":"返答","_clear current data":"現在のデータをクリアする","_error":"エラー","_headers as json":"ヘッダーをJSONにして","_request failed?":"リクエストに失敗した","_request succeeded?":"リクエストに成功した","_response":"返答","_send request to [url]":"[url]にリクエストを送る","_set content type to [type]":"コンテンツタイプを[type]にする","_set request method to [method]":"リクエスト方法を[method]にする","_site responded?":"サイトが反応した","_status":"ステータス","_status text":"ステータステキスト","_when a request fails":"リクエストに失敗したとき","_when a site responds":"サイトが反応するとき"},"ko":{"_Hide Extra":"나머지 숨기기","_Request":"요청","_Response":"응답","_Show Extra":"나머지 보이기","_[name] from header":"헤더의 [name]","_[path] in request options":"요청 options의 [path]","_clear current data":"현재 데이터 지우기","_error":"오류","_headers as json":"헤더 json","_in header set [name] to [value]":"헤더의 [name]을(를) [value](으)로 정하기","_request failed?":"요청이 실패했는가?","_request succeeded?":"요청이 성공했는가?","_response":"응답","_send request to [url]":"[url](으)로 요청 보내기  ","_set [path] to [value] in request options":"요청 options의 [path]을(를) [value](으)로 정하기","_set [path] to type [type] in request options":"요청 options의 [path]을(를) [type]타입으로 정하기","_set content type to [type]":"content type을 [type](으)로 정하기","_set headers to json [json]":"헤더를 [json]인 json으로 정하기","_set request body to [text]":"요청 body를 [text](으)로 정하기","_set request method to [method]":"요청 메서드를 [method](으)로 정하기","_site responded?":"사이트가 응답했는가?","_status":"상태","_status text":"상태 메시지","_type of [path] in request options":"요청 options의 [path]의 타입","_when a request fails":"요청이 실패했을 때","_when a site responds":"사이트가 응답했을 때"},"ru":{"_Hide Extra":"Скрыть Дополнительное","_Request":"Запрос","_Response":"Ответ","_Show Extra":"Показать Дополнительное","_[name] from header":"[name] из заголовка","_[name] in multipart form":"[name] в многочастной форме","_[path] in request options":"[path] в настройках запроса","_clear current data":"отчистить текущие данные","_delete [name] from multipart form":"удалить [name] из многочастной формы","_error":"ошибка","_headers as json":"заголовки как json","_in header set [name] to [value]":"в заголовке задать [name] на [value]","_request failed?":"запрос провалился?","_request succeeded?":"запрос успешен?","_response":"ответ","_send request to [url]":"отправить запрос на [url]","_set [name] to [value] in multipart form":"задать [name] значение [value] в многочастной форме","_set [path] to [value] in request options":"задать [path] на [value] в настройках запроса","_set [path] to type [type] in request options":"задать [path] на тип [type] в настройках запроса","_set content type to [type]":"задать тип контента на [type]","_set headers to json [json]":"задать заголовки на json [json]","_set request body to [text]":"задать тело запроса на [text]","_set request body to multipart form":"задать тело запроса на многочастную форму","_set request method to [method]":"задать метод запроса на [method]","_site responded?":"сайт ответил?","_status":"статус","_status text":"текст статуса","_type of [path] in request options":"тип [path] в настройках запроса","_when a request fails":"когда запрос завалился","_when a site responds":"когда сайт отвечает"},"zh-cn":{"_Hide Extra":"隐藏更多","_Request":"请求","_Response":"响应","_Show Extra":"显示更多","_[name] from header":"请求头的[name]","_[path] in request options":"请求选项的[path]","_clear current data":"清空当前数据","_error":"错误","_headers as json":"请求头json","_in header set [name] to [value]":"在请求头中设置[name]为[value]","_request failed?":"请求失败？","_request succeeded?":"请求成功？","_response":"响应","_send request to [url]":"发送请求给[url]","_set [path] to [value] in request options":"将请求选项中的[path]设为[value]","_set [path] to type [type] in request options":"将请求选项的[path]设为类型[type]","_set content type to [type]":"设置内容类型为[type]","_set headers to json [json]":"设置请求头为json[json]","_set request body to [text]":"设置请求体为[text]","_set request method to [method]":"设置请求方法为[method]","_site responded?":"网站响应？","_status":"封禁状态","_status text":"状态文本","_type of [path] in request options":"请求选项中[path]的类型","_when a request fails":"当有请求失败","_when a site responds":"当有网站响应"}});/* end generated l10n code */(function (Scratch) {
   "use strict";
   if (!Scratch.extensions.unsandboxed)
     throw new Error("can not load out side unsandboxed mode");
@@ -238,6 +239,7 @@
     getInfo() {
       return {
         id: extensionId,
+        // eslint-disable-next-line extension/should-translate
         name: "HTTP",
         color1: "#307eff",
         color2: "#2c5eb0",
@@ -245,38 +247,38 @@
           {
             opcode: "clearAll",
             blockType: BlockType.COMMAND,
-            text: "clear current data",
+            text: Scratch.translate("clear current data"),
           },
           {
             blockType: Scratch.BlockType.LABEL,
-            text: "Response",
+            text: Scratch.translate("Response"),
           },
           {
             opcode: "resData",
             blockType: BlockType.REPORTER,
-            text: "response",
+            text: Scratch.translate("response"),
           },
           {
             opcode: "error",
             blockType: BlockType.REPORTER,
-            text: "error",
+            text: Scratch.translate("error"),
           },
           {
             opcode: "status",
             blockType: BlockType.REPORTER,
-            text: "status",
+            text: Scratch.translate("status"),
           },
           {
             opcode: "statusText",
             blockType: BlockType.REPORTER,
-            text: "status text",
+            text: Scratch.translate("status text"),
           },
           "---",
           {
             opcode: "getHeaderJSON",
             blockType: BlockType.REPORTER,
             disableMonitor: true,
-            text: "get headers as json",
+            text: Scratch.translate("headers as json"),
           },
           {
             opcode: "getHeaderValue",
@@ -284,42 +286,43 @@
             arguments: {
               name: {
                 type: ArgumentType.STRING,
+                defaultValue: "name",
               },
             },
-            text: "get [name] from header",
+            text: Scratch.translate("[name] from header"),
           },
           "---",
           {
             opcode: "requestComplete",
             blockType: BlockType.BOOLEAN,
-            text: "site responded?",
+            text: Scratch.translate("site responded?"),
           },
           {
             opcode: "requestFail",
             blockType: BlockType.BOOLEAN,
-            text: "request failed?",
+            text: Scratch.translate("request failed?"),
           },
           {
             opcode: "requestSuccess",
             blockType: BlockType.BOOLEAN,
-            text: "request succeeded?",
+            text: Scratch.translate("request succeeded?"),
           },
           "---",
           {
             opcode: "onResponse",
             blockType: BlockType.EVENT,
             isEdgeActivated: false,
-            text: "when a site responds",
+            text: Scratch.translate("when a site responds"),
           },
           {
             opcode: "onFail",
             blockType: BlockType.EVENT,
             isEdgeActivated: false,
-            text: "when a request fails",
+            text: Scratch.translate("when a request fails"),
           },
           {
             blockType: Scratch.BlockType.LABEL,
-            text: "Request",
+            text: Scratch.translate("Request"),
           },
           {
             opcode: "setMimeType",
@@ -331,7 +334,7 @@
                 defaultValue: this.request.mimeType,
               },
             },
-            text: "set content type to [type]",
+            text: Scratch.translate("set content type to [type]"),
           },
           {
             opcode: "setRequestmethod",
@@ -343,7 +346,7 @@
                 defaultValue: this.request.method,
               },
             },
-            text: "set request method to [method]",
+            text: Scratch.translate("set request method to [method]"),
           },
           {
             opcode: "setHeaderData",
@@ -358,7 +361,7 @@
                 defaultValue: this.request.mimeType,
               },
             },
-            text: "in header set [name] to [value]",
+            text: Scratch.translate("in header set [name] to [value]"),
           },
           {
             opcode: "setHeaderJSON",
@@ -369,7 +372,7 @@
                 defaultValue: `{"Content-Type": "${this.request.mimeType}"}`,
               },
             },
-            text: "set headers to json [json]",
+            text: Scratch.translate("set headers to json [json]"),
           },
           {
             opcode: "setBody",
@@ -380,13 +383,13 @@
                 default: "Apple!",
               },
             },
-            text: "set request body to [text]",
+            text: Scratch.translate("set request body to [text]"),
           },
           "---",
           {
             opcode: "setBodyToForm",
             blockType: BlockType.COMMAND,
-            text: "set request body to a form",
+            text: Scratch.translate("set request body to multipart form"),
           },
           {
             opcode: "getFormProperty",
@@ -397,7 +400,7 @@
                 defaultValue: "name",
               },
             },
-            text: "get [name] in request form",
+            text: Scratch.translate("[name] in multipart form"),
           },
           {
             opcode: "setFormProperty",
@@ -412,7 +415,7 @@
                 defaultValue: "value",
               },
             },
-            text: "set [name] to [value] in request form",
+            text: Scratch.translate("set [name] to [value] in multipart form"),
           },
           {
             opcode: "deleteFormProperty",
@@ -423,7 +426,7 @@
                 defaultValue: "name",
               },
             },
-            text: "delete [name] from request form",
+            text: Scratch.translate("delete [name] from multipart form"),
           },
           "---",
           {
@@ -435,18 +438,18 @@
                 defaultValue: "https://extensions.turbowarp.org/hello.txt",
               },
             },
-            text: "send request to [url]",
+            text: Scratch.translate("send request to [url]"),
           },
           {
             func: "showExtra",
             blockType: BlockType.BUTTON,
-            text: "Show Extra",
+            text: Scratch.translate("Show Extra"),
             hideFromPalette: this.showingExtra,
           },
           {
             func: "hideExtra",
             blockType: BlockType.BUTTON,
-            text: "Hide Extra",
+            text: Scratch.translate("Hide Extra"),
             hideFromPalette: !this.showingExtra,
           },
           {
@@ -462,7 +465,7 @@
                 defaultValue: "data",
               },
             },
-            text: "set [path] to [value] in request options",
+            text: Scratch.translate("set [path] to [value] in request options"),
             hideFromPalette: !this.showingExtra,
           },
           {
@@ -478,7 +481,9 @@
                 menu: "jsTypes",
               },
             },
-            text: "set [path] to type [type] in request options",
+            text: Scratch.translate(
+              "set [path] to type [type] in request options"
+            ),
             hideFromPalette: !this.showingExtra,
           },
           {
@@ -490,7 +495,7 @@
                 defaultValue: "path.to.item",
               },
             },
-            text: "get [path] in request options",
+            text: Scratch.translate("[path] in request options"),
             hideFromPalette: !this.showingExtra,
           },
           {
@@ -502,7 +507,7 @@
                 defaultValue: "path.to.item",
               },
             },
-            text: "get type of [path] in request options",
+            text: Scratch.translate("type of [path] in request options"),
             hideFromPalette: !this.showingExtra,
           },
         ],
@@ -516,10 +521,11 @@
           },
           mimeType: {
             items: [
+              "application/json",
+              "application/x-www-form-urlencoded",
               "application/javascript",
               "application/ogg",
               "application/pdf",
-              "application/json",
               "application/ld+json",
               "application/xml",
               "application/zip",
@@ -657,7 +663,6 @@
       this.request.body.delete(name);
     }
 
-    // eslint-disable-next-line require-await
     async sendRequest(args) {
       const url = Cast.toString(args.url);
       const options = this.request.options;

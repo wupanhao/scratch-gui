@@ -2,8 +2,9 @@
 // ID: Encoding
 // Description: Encode and decode strings into their unicode numbers, base 64, or URLs.
 // By: -SIPC-
+// License: MIT
 
-Scratch.translate.setup({"it":{"_Encoding":"Codifica"},"zh-cn":{"_Encoding":"编码"}});(function (Scratch) {
+/* generated l10n code */Scratch.translate.setup({"de":{"_Encoding":"Kodieren"},"fi":{"_Encoding":"Salaus","_[string] corresponding to the [CodeList] character":"[CodeList]-merkkiä [string] vastaava merkki","_convert the character [string] to [CodeList]":"muunna merkki [string] [CodeList]-muotoon","_decode [string] with [code]":"pura [string] [code]-salauksella","_encode [string] in [code]":"salaa [string] [code]-salauksella","_hash [string] with [hash]":"hajauta [string] [hash]-algoritmilla","_randomly generated [position] character string":"satunnainen [position] merkin merkkijono","_use [wordbank] to generate a random [position] character string":"satunnainen merkeistä [wordbank] koostuva [position] merkin merkkijono"},"it":{"_Encoding":"Codifica","_[string] corresponding to the [CodeList] character":"carattere [CodeList] corrispondente al valore [string]"},"ja":{"_Encoding":"エンコーディング","_[string] corresponding to the [CodeList] character":"[string]を[CodeList]で対応させる","_convert the character [string] to [CodeList]":"文字[string]を[CodeList]に対応させる","_decode [string] with [code]":"[string]を[code]を使ってデコード","_encode [string] in [code]":"[string]を[code]でエンコード","_hash [string] with [hash]":"[string]の[hash]でのハッシュ","_randomly generated [position] character string":"ランダムに選ばれた[position]個の文字列","_use [wordbank] to generate a random [position] character string":"[wordbank]を使ってランダムに選ばれた[position]個の文字列"},"ko":{"_Encoding":"인코딩","_[string] corresponding to the [CodeList] character":"[string]에 대응되는 [CodeList] 문자로","_convert the character [string] to [CodeList]":"문자 [string]을(를) [CodeList](으)로 변환","_decode [string] with [code]":"[string]을(를) [code]에서 디코딩","_encode [string] in [code]":"[string]을(를) [code](으)로 인코딩","_hash [string] with [hash]":"[string]을(를) [hash](으)로 해싱","_randomly generated [position] character string":"길이 [position]의 무작위 문자열","_use [wordbank] to generate a random [position] character string":"[wordbank]에서의 길이 [position]의 무작위 문자열"},"nb":{"_Encoding":"Koding","_[string] corresponding to the [CodeList] character":"[string] som tilsvarer [CodeList] tegnet"},"nl":{"_Encoding":"Codering","_[string] corresponding to the [CodeList] character":"teken nr. [string] in [CodeList]"},"ru":{"_Encoding":"Кодировка","_[string] corresponding to the [CodeList] character":"символ соответствующий [string] в [CodeList]","_convert the character [string] to [CodeList]":"конвертировать символ [string] в [CodeList]","_decode [string] with [code]":"раскодировать [string] с [code]","_encode [string] in [code]":"закодировать [string] в [code]","_hash [string] with [hash]":"хэш [string] с [hash]","_randomly generated [position] character string":"случайно сгенерировано строчный символ [position]","_use [wordbank] to generate a random [position] character string":"использовать [wordbank] для генерации случайного строчного символа [position]"},"uk":{"_Encoding":"Кодування"},"zh-cn":{"_Encoding":"编码","_[string] corresponding to the [CodeList] character":"ID[string]在[CodeList]对应的字符","_convert the character [string] to [CodeList]":"将字符[string]转为[CodeList]","_decode [string] with [code]":"以[code]解密[string]","_encode [string] in [code]":"以[code]加密[string]","_hash [string] with [hash]":"以[hash]生成[string]的哈希字符串","_randomly generated [position] character string":"生成随机[position]位字符串","_use [wordbank] to generate a random [position] character string":"使用[wordbank]生成随机[position]位字符串"}});/* end generated l10n code */(function (Scratch) {
   "use strict";
   const icon =
     "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxMzcuNzk1MDYiIGhlaWdodD0iMTM0LjIzNzA3IiB2aWV3Qm94PSIwLDAsMTM3Ljc5NTA2LDEzNC4yMzcwNyI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE1Mi44OTU4NiwtMTMwLjM3OTg5KSI+PGcgZGF0YS1wYXBlci1kYXRhPSJ7JnF1b3Q7aXNQYWludGluZ0xheWVyJnF1b3Q7OnRydWV9IiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyMCIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0xOTkuMzA5MDgsMjE5LjYyMDExdi03OS4yNDAyMmg4MS4zODE4NHY3OS4yNDAyMnoiLz48cGF0aCBkPSJNMTYyLjg5NTg2LDI1NC42MTY5NnYtNzkuMjQwMjJoODEuMzgxODR2NzkuMjQwMjJ6Ii8+PC9nPjwvZz48L3N2Zz48IS0tcm90YXRpb25DZW50ZXI6ODcuMTA0MTQwMTg0NTE2NDQ6NDkuNjIwMTA4MzQwNzA3OTYtLT4=";
@@ -35,7 +36,6 @@ Scratch.translate.setup({"it":{"_Encoding":"Codifica"},"zh-cn":{"_Encoding":"编
   IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
   CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   */
-  /* eslint-disable */
   const md5 = (function () {
     /**
      * Add integers, wrapping at 2^32.
@@ -408,7 +408,6 @@ Scratch.translate.setup({"it":{"_Encoding":"Codifica"},"zh-cn":{"_Encoding":"编
 
     return md5;
   })();
-  /* eslint-enable */
 
   class Encoding {
     getInfo() {
@@ -424,7 +423,7 @@ Scratch.translate.setup({"it":{"_Encoding":"Codifica"},"zh-cn":{"_Encoding":"编
           {
             opcode: "encode",
             blockType: Scratch.BlockType.REPORTER,
-            text: Scratch.translate("Encode [string] in [code]"),
+            text: Scratch.translate("encode [string] in [code]"),
             arguments: {
               string: {
                 type: Scratch.ArgumentType.STRING,
@@ -440,11 +439,11 @@ Scratch.translate.setup({"it":{"_Encoding":"Codifica"},"zh-cn":{"_Encoding":"编
           {
             opcode: "decode",
             blockType: Scratch.BlockType.REPORTER,
-            text: Scratch.translate("Decode [string] with [code]"),
+            text: Scratch.translate("decode [string] with [code]"),
             arguments: {
               string: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: btoa(Scratch.translate("apple")),
+                defaultValue: this._btoa("apple"),
               },
               code: {
                 type: Scratch.ArgumentType.STRING,
@@ -456,11 +455,11 @@ Scratch.translate.setup({"it":{"_Encoding":"Codifica"},"zh-cn":{"_Encoding":"编
           {
             opcode: "hash",
             blockType: Scratch.BlockType.REPORTER,
-            text: Scratch.translate("Hash [string] with [hash]"),
+            text: Scratch.translate("hash [string] with [hash]"),
             arguments: {
               string: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: Scratch.translate("apple"),
+                defaultValue: "apple",
               },
               hash: {
                 type: Scratch.ArgumentType.STRING,
@@ -476,7 +475,7 @@ Scratch.translate.setup({"it":{"_Encoding":"Codifica"},"zh-cn":{"_Encoding":"编
             opcode: "Conversioncodes",
             blockType: Scratch.BlockType.REPORTER,
             text: Scratch.translate(
-              "Convert the character [string] to [CodeList]"
+              "convert the character [string] to [CodeList]"
             ),
             arguments: {
               string: {
@@ -515,7 +514,7 @@ Scratch.translate.setup({"it":{"_Encoding":"Codifica"},"zh-cn":{"_Encoding":"编
             opcode: "Randomstrings",
             blockType: Scratch.BlockType.REPORTER,
             text: Scratch.translate(
-              "Randomly generated [position] character string"
+              "randomly generated [position] character string"
             ),
             arguments: {
               position: {
@@ -528,7 +527,7 @@ Scratch.translate.setup({"it":{"_Encoding":"Codifica"},"zh-cn":{"_Encoding":"编
             opcode: "Fontgenerationstring",
             blockType: Scratch.BlockType.REPORTER,
             text: Scratch.translate(
-              "Use [wordbank] to generate a random [position] character string"
+              "use [wordbank] to generate a random [position] character string"
             ),
             arguments: {
               wordbank: {
@@ -573,7 +572,7 @@ Scratch.translate.setup({"it":{"_Encoding":"Codifica"},"zh-cn":{"_Encoding":"编
       string = Scratch.Cast.toString(string);
       switch (code) {
         case "Base64":
-          return btoa(string);
+          return this._btoa(string);
         case "URL":
           return encodeURIComponent(string);
       }
@@ -584,7 +583,7 @@ Scratch.translate.setup({"it":{"_Encoding":"Codifica"},"zh-cn":{"_Encoding":"编
       switch (code) {
         case "Base64":
           try {
-            return atob(string);
+            return this._atob(string);
           } catch (error) {
             console.error("invalid base 64", error);
             return "";
@@ -636,6 +635,18 @@ Scratch.translate.setup({"it":{"_Encoding":"Codifica"},"zh-cn":{"_Encoding":"编
         string += t.charAt(Math.floor(Math.random() * a));
       }
       return string;
+    }
+    _btoa(unicode) {
+      let bytes = new TextEncoder().encode(unicode);
+      let binString = Array.from(bytes, (byte) =>
+        String.fromCodePoint(byte)
+      ).join("");
+      return btoa(binString);
+    }
+    _atob(base64) {
+      let binString = atob(base64);
+      let bytes = Uint8Array.from(binString, (m) => m.codePointAt(0));
+      return new TextDecoder().decode(bytes);
     }
   }
   Scratch.extensions.register(new Encoding());

@@ -2,8 +2,9 @@
 // ID: Bitwise
 // Description: Blocks that operate on the binary representation of numbers in computers.
 // By: TrueFantom <https://scratch.mit.edu/users/TrueFantom/>
+// License: MIT AND MPL-2.0
 
-((Scratch) => {
+/* generated l10n code */Scratch.translate.setup({"de":{"_Bitwise":"Bitweise"},"fi":{"_Bitwise":"Bittimenetelmät","_[CENTRAL] to binary":"[CENTRAL] binäärinä","_[CENTRAL] to number":"[CENTRAL] numerona","_[LEFT] and [RIGHT]":"[LEFT] ja [RIGHT]","_[LEFT] or [RIGHT]":"[LEFT] tai [RIGHT]","_[LEFT] xor [RIGHT]":"[LEFT] ehdoton tai [RIGHT]","_is [CENTRAL] binary?":"onko [CENTRAL] binäärinen?","_not [CENTRAL]":"ei [CENTRAL]"},"it":{"_Bitwise":"Operazioni su Bit"},"ja":{"_Bitwise":"ビット操作","_[CENTRAL] to binary":"[CENTRAL]をバイナリに変換","_[CENTRAL] to number":"[CENTRAL]を数字に変換","_[LEFT] and [RIGHT]":"[LEFT]かつ[RIGHT]","_[LEFT] or [RIGHT]":"[LEFT]または[RIGHT]","_is [CENTRAL] binary?":"[CENTRAL]がバイナリ"},"ko":{"_Bitwise":"비트 연산","_[CENTRAL] to binary":"[CENTRAL]을(를) 이진수로","_[CENTRAL] to number":"[CENTRAL]을(를) 숫자로","_is [CENTRAL] binary?":"[CENTRAL]이(가) 이진수인가?"},"nb":{"_Bitwise":"Bitvis"},"nl":{"_Bitwise":"Bitsgewijs","_[CENTRAL] to binary":"[CENTRAL] naar binair","_[CENTRAL] to number":"[CENTRAL] naar decimaal","_[LEFT] and [RIGHT]":"[LEFT] en [RIGHT]","_[LEFT] or [RIGHT]":"[LEFT] of [RIGHT]","_[LEFT] xor [RIGHT]":"[LEFT] exof [RIGHT]","_is [CENTRAL] binary?":"is [CENTRAL] binair?","_not [CENTRAL]":"niet [CENTRAL]"},"ru":{"_Bitwise":"Пробитие","_[CENTRAL] to binary":"[CENTRAL] в двоичный","_[CENTRAL] to number":"[CENTRAL] в цифру","_[LEFT] and [RIGHT]":"[LEFT] и [RIGHT]","_[LEFT] or [RIGHT]":"[LEFT] или [RIGHT]","_[LEFT] xor [RIGHT]":"[LEFT] исключающее или [RIGHT]","_is [CENTRAL] binary?":"[CENTRAL] двоичный?","_not [CENTRAL]":"не [CENTRAL]"},"zh-cn":{"_Bitwise":"位运算","_[CENTRAL] to binary":"转换数字[CENTRAL]为二进制","_[CENTRAL] to number":"转换二进制[CENTRAL]为数字","_is [CENTRAL] binary?":"[CENTRAL]是二进制？"}});/* end generated l10n code */((Scratch) => {
   "use strict";
 
   const icon =
@@ -30,7 +31,7 @@
     getInfo() {
       return {
         id: "Bitwise",
-        name: "Bitwise",
+        name: Scratch.translate("Bitwise"),
 
         color1: "#17cde6",
 
@@ -41,7 +42,7 @@
           {
             opcode: "isNumberBits",
             blockType: Scratch.BlockType.BOOLEAN,
-            text: "is [CENTRAL] binary?",
+            text: Scratch.translate("is [CENTRAL] binary?"),
             arguments: {
               CENTRAL: {
                 type: Scratch.ArgumentType.NUMBER,
@@ -53,7 +54,10 @@
           {
             opcode: "toNumberBits",
             blockType: Scratch.BlockType.REPORTER,
-            text: "[CENTRAL] to binary",
+            text: Scratch.translate({
+              default: "[CENTRAL] to binary",
+              description: "Blocks that converts number to binary",
+            }),
             arguments: {
               CENTRAL: {
                 type: Scratch.ArgumentType.NUMBER,
@@ -64,7 +68,10 @@
           {
             opcode: "ofNumberBits",
             blockType: Scratch.BlockType.REPORTER,
-            text: "[CENTRAL] to number",
+            text: Scratch.translate({
+              default: "[CENTRAL] to number",
+              description: "Block that converts binary to number",
+            }),
             arguments: {
               CENTRAL: {
                 type: Scratch.ArgumentType.NUMBER,
@@ -73,6 +80,7 @@
             },
           },
           "---",
+          /* eslint-disable extension/should-translate */
           {
             opcode: "bitwiseRightShift",
             blockType: Scratch.BlockType.REPORTER,
@@ -148,11 +156,16 @@
               },
             },
           },
+          /* eslint-enable extension/should-translate */
           "---",
           {
             opcode: "bitwiseAnd",
             blockType: Scratch.BlockType.REPORTER,
-            text: "[LEFT] and [RIGHT]",
+            text: Scratch.translate({
+              default: "[LEFT] and [RIGHT]",
+              description:
+                "Block that does bitwise and (reports number with bits set only where both numbers had that bit)",
+            }),
             arguments: {
               LEFT: {
                 type: Scratch.ArgumentType.NUMBER,
@@ -167,7 +180,11 @@
           {
             opcode: "bitwiseOr",
             blockType: Scratch.BlockType.REPORTER,
-            text: "[LEFT] or [RIGHT]",
+            text: Scratch.translate({
+              default: "[LEFT] or [RIGHT]",
+              description:
+                "Block that does bitwise or (reports number with bits set where either number had that bit)",
+            }),
             arguments: {
               LEFT: {
                 type: Scratch.ArgumentType.NUMBER,
@@ -182,7 +199,11 @@
           {
             opcode: "bitwiseXor",
             blockType: Scratch.BlockType.REPORTER,
-            text: "[LEFT] xor [RIGHT]",
+            text: Scratch.translate({
+              default: "[LEFT] xor [RIGHT]",
+              description:
+                "Block that does bitwise eXclusive OR. (reports number with bits set only where exactly one of the numbers had that bit)",
+            }),
             arguments: {
               LEFT: {
                 type: Scratch.ArgumentType.NUMBER,
@@ -197,7 +218,11 @@
           {
             opcode: "bitwiseNot",
             blockType: Scratch.BlockType.REPORTER,
-            text: "not [CENTRAL]",
+            text: Scratch.translate({
+              default: "not [CENTRAL]",
+              description:
+                "Block that does a bitwise not. (flips all the bits in a number)",
+            }),
             arguments: {
               CENTRAL: {
                 type: Scratch.ArgumentType.NUMBER,

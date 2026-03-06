@@ -79,7 +79,8 @@ const fetchLibrary = async () => {
             href: `${process.env.ROOT}editor?project_url=https://extensions.turbowarp.org/samples/${encodeURIComponent(sample)}.sb3`,
             text: sample
         })) : null,
-        incompatibleWithScratch: !extension.scratchCompatible,
+        // incompatibleWithScratch: !extension.scratchCompatible,
+        incompatibleWithScratch: true,
         featured: true
     }));
 };
@@ -117,6 +118,7 @@ import wsIcon from '../lib/libraries/extensions/gallery/ws.png';
 import returnIcon from '../lib/libraries/extensions/custom/return.svg';
 import consoleIcon from '../lib/libraries/extensions/gallery/consoles.svg';
 import xmlIcon from '../lib/libraries/extensions/gallery/xml.svg'
+import VideoIcon from '../lib/libraries/extensions/gallery/Video.svg'
 
 import extensionData from '../lib/libraries/extensions/extension.json'
 // sync with scratch-vm/src/extension-support/tw-security-manager.js
@@ -137,6 +139,7 @@ const extensionTagsMap = {
     'gsaWebsocket': ['tw', 'internet'],
     'mbwxml': ['tw'],
     'sipcconsole': ['tw'],
+    'lmsVideo': ['tw'],
 }
 const extensionIconsMap = {
     'files': filesIcon,
@@ -155,6 +158,7 @@ const extensionIconsMap = {
     'gsaWebsocket': wsIcon,
     'mbwxml': xmlIcon,
     'sipcconsole': consoleIcon,
+    'lmsVideo': VideoIcon,
 }
 const fetchLocal = async () => {
     // const res = await fetch('https://extensions.turbowarp.org/generated-metadata/extensions-v0.json');

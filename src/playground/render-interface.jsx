@@ -203,9 +203,9 @@ class Interface extends React.Component {
         }
     }
     render () {
-        if (isInvalidEmbed) {
-            return <InvalidEmbed />;
-        }
+        // if (isInvalidEmbed) {
+        //     return <InvalidEmbed />;
+        // }
 
         const {
             /* eslint-disable no-unused-vars */

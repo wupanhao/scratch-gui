@@ -37,6 +37,7 @@ const onVmInit = _vm => {
 };
 
 const onProjectLoaded = () => {
+    document.getElementById("splash-need-js").hidden = true;
     if (urlParams.has('autoplay')) {
         vm.start();
         vm.greenFlag();
@@ -61,3 +62,63 @@ render(<WrappedGUI
 if (urlParams.has('addons')) {
     runAddons();
 }
+
+// 变量初始化
+let timeoutId, countdownInterval;
+let countdown = 10;
+let isEnabled = true;
+
+// 隐藏鼠标指针
+function hideCursor() {
+    console.log('hide cursor')
+    document.querySelector('#app > :first-child').classList.add('hide-cursor');
+}
+
+// 显示鼠标指针
+function showCursor() {
+    document.querySelector('#app > :first-child').classList.remove('hide-cursor');
+    countdown = 10;
+}
+
+// 开始计时器
+function startTimer() {
+    // 设置10秒后隐藏指针
+    timeoutId = setTimeout(hideCursor, 10000);
+
+    // 更新倒计时显示
+    countdownInterval = setInterval(() => {
+        countdown--;
+
+        if (countdown <= 0) {
+            clearInterval(countdownInterval);
+        }
+    }, 1000);
+}
+
+// 重置计时器
+function resetTimer() {
+    // 清除现有计时器
+    clearTimeout(timeoutId);
+    clearInterval(countdownInterval);
+
+    // 显示指针
+    showCursor();
+
+    // 如果功能启用，则开始新的计时器
+    if (isEnabled) {
+        startTimer();
+    }
+}
+
+// 初始化
+function init() {
+    hideCursor()
+    // 监听鼠标移动事件
+    document.addEventListener('mousemove', resetTimer);
+
+    // 开始计时器
+    startTimer();
+}
+
+// 页面加载完成后初始化
+// window.addEventListener('load', init);

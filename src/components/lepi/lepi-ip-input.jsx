@@ -31,7 +31,7 @@ const LepiIpInput = ({
         placeholder={intl.formatMessage(messages.ipInputPlaceholder)}
         tabIndex="0"
         type="text"
-        value={localStorage.lepi_ip ? localStorage.lepi_ip : "lepi.local"}
+        value={localStorage.lepi_ip ? localStorage.lepi_ip : "169.254.50.50"}
         onChange={onChange}
     />
 );

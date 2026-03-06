@@ -56,6 +56,7 @@ class DebugDownloader extends React.Component {
                     }
                     console.log(data)
                     this.props.publishMsg(msg)
+                    fetch(`http://${ip}:8000/bigscreen-run?project_url=http://${ip}:8000/explore/Scratch/debug.sb3`)
                 }).catch(error => {
                     Swal.fire('下载失败,请检查设备与主机网络是否正常')
                     console.log('error', error)
@@ -101,7 +102,7 @@ DebugDownloader.defaultProps = {
 const mapStateToProps = state => ({
     saveProjectSb3: state.scratchGui.vm.saveProjectSb3.bind(state.scratchGui.vm),
     publishMsg: state.scratchGui.vm.publishMsg.bind(state.scratchGui.vm),
-    saveFileData:state.scratchGui.vm.ros.saveFileData.bind(state.scratchGui.vm.ros),
+    saveFileData: state.scratchGui.vm.ros.saveFileData.bind(state.scratchGui.vm.ros),
     projectFilename: getProjectFilename(state.scratchGui.projectTitle, projectTitleInitialState)
 });
 

@@ -17,14 +17,19 @@ class Controls extends React.Component {
             'handleGreenFlagClick',
             'handleStopAllClick'
         ]);
-        this.setState({connected:props.vm.getPeripheralIsConnected('lepi')})
+        this.state = {connected:props.vm.getPeripheralIsConnected('lepi')}
+        if(this.state.connected){
+            localStorage.setItem('lepi_ip', window.LEPI_IP)
+        }
         props.vm.runtime.on('LEPI_CONNECTED', () => {
-            console.log('connected')
-            this.setState({test:'test'})
+            console.log('LEPI_CONNECTED connected')
+            localStorage.setItem('lepi_ip', window.LEPI_IP)
+            this.setState({connected:true})
         })
         props.vm.runtime.on('PERIPHERAL_DISCONNECTED', () => {
             console.log('disconnected')
-            this.setState({test:'test'})
+            localStorage.setItem('lepi_ip', '')
+            this.setState({connected:false})
         })
     }
     handleGreenFlagClick (e) {
@@ -80,7 +85,7 @@ class Controls extends React.Component {
         return (
             <ControlsComponent
                 {...props}
-                connected= {vm.getPeripheralIsConnected('lepi')}
+                connected={this.state.connected}
                 active={projectRunning && isStarted}
                 turbo={turbo}
                 onGreenFlagClick={this.handleGreenFlagClick}

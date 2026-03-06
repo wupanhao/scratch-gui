@@ -230,13 +230,19 @@ class Blocks extends React.Component {
             this.props.vm.extensionManager.loadExtensionURL('lepi').then(() => {
                 // this.props.vm.extensionManager.loadExtensionURL('procedures_enable_return').then(() => {
                 this.props.vm.extensionManager.loadExtensionURL('lepiActuator').then(() => {
-                    this.handleCategorySelected('lepi');
+                    this.props.vm.extensionManager.loadExtensionURL('lepiCamera').then(() => {
+                        if (location.protocol == "https:") {
+
+                        } else {
+                            this.handleCategorySelected('lepi');
+                        }
+                    });
                 });
                 // });
             });
-            this.props.vm.runtime.on('LEPI_CONNECTED', () => {
-                this.handleCategorySelected('lepi');
-            })
+            // this.props.vm.runtime.on('LEPI_CONNECTED', () => {
+            //     this.handleCategorySelected('lepi');
+            // })
         }
 
         // tw: Handle when extensions are added when Blocks isn't mounted

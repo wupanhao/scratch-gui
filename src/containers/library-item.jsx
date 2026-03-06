@@ -138,10 +138,14 @@ class LibraryItem extends React.PureComponent {
     }
     render () {
         const iconMd5 = this.curIconMd5();
-        const iconURL = iconMd5 ?
+        let iconURL = iconMd5 ?
             // `https://cdn.assets.scratch.mit.edu/internalapi/asset/${iconMd5}/get/` :
             `./library-files/${iconMd5}` :
             this.props.iconRawURL;
+        if(location.origin == 'tw-editor://.'){
+            iconURL = iconMd5 ? `https://cdn.assets.scratch.mit.edu/internalapi/asset/${iconMd5}/get/` :
+            this.props.iconRawURL;
+        }
         return (
             <LibraryItemComponent
                 intl={this.props.intl}

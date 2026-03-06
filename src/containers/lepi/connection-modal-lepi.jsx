@@ -25,6 +25,14 @@ class ConnectionModal extends React.Component {
             phase: props.vm.getPeripheralIsConnected(props.extensionId) ?
                 PHASES.connected : PHASES.scanning
         };
+        setTimeout(() => {
+            if (this.props.vm.getPeripheralIsConnected(this.props.extensionId)) {
+                console.log('this.setState', this.setState)
+                this.setState({
+                    phase: PHASES.connected
+                });
+            }
+        }, 500)
     }
     componentDidMount () {
         this.props.vm.on('PERIPHERAL_CONNECTED', this.handleConnected);
@@ -35,9 +43,15 @@ class ConnectionModal extends React.Component {
         this.props.vm.removeListener('PERIPHERAL_REQUEST_ERROR', this.handleError);
     }
     handleScanning () {
-        this.setState({
-            phase: PHASES.scanning
-        });
+        if (this.props.vm.getPeripheralIsConnected(this.props.extensionId)) {
+            this.setState({
+                phase: PHASES.connected
+            });
+        } else {
+            this.setState({
+                phase: PHASES.scanning
+            });
+        }
     }
     handleConnecting (peripheralId) {
         this.props.vm.connectPeripheral(this.props.extensionId, peripheralId);

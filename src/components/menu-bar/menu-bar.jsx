@@ -113,6 +113,7 @@ import {APP_NAME} from '../../lib/brand.js';
 
 import ScratchDownloader from '../lepi/sb3-downloader.jsx'
 import DebugDownloader from '../lepi/debug-downloader.jsx';
+import CloudDownloader from '../lepi/cloud-downloader.jsx';
 
 const ariaMessages = defineMessages({
     tutorials: {
@@ -446,6 +447,8 @@ class MenuBar extends React.Component {
         };
     }
     render () {
+        const searchParams = new URLSearchParams(location.search);
+        const showCloudSave = searchParams.has('flowNo')
         const saveNowMessage = (
             <FormattedMessage
                 defaultMessage="Save now"
@@ -697,7 +700,7 @@ class MenuBar extends React.Component {
                                             )}
                                         </SB3Downloader>
                                     </MenuSection>
-                                    {this.props.onClickPackager && (
+                                    {/* {this.props.onClickPackager && (
                                         <MenuSection>
                                             <MenuItem
                                                 onClick={this.handleClickPackager}
@@ -710,7 +713,7 @@ class MenuBar extends React.Component {
                                                 />
                                             </MenuItem>
                                         </MenuSection>
-                                    )}
+                                    )} */}
                                     <MenuSection>
                                         <MenuItem onClick={this.handleClickRestorePoints}>
                                             <FormattedMessage
@@ -911,7 +914,7 @@ class MenuBar extends React.Component {
                                 </span>
                             </div>
                         )}
-                        {/* {this.props.onClickSettingsModal && (
+                        {this.props.onClickSettingsModal && (
                             <div
                                 className={classNames(styles.menuBarItem, styles.hoverable)}
                                 onClick={this.props.onClickSettingsModal}
@@ -930,7 +933,7 @@ class MenuBar extends React.Component {
                                     />
                                 </span>
                             </div>
-                        )} */}
+                        )}
                     </div>
 
                     <Divider className={styles.divider} />
@@ -1090,6 +1093,20 @@ class MenuBar extends React.Component {
                             </MenuSection>
                         </MenuBarMenu>
                     </MenuLabel>
+                    {showCloudSave && (<CloudDownloader>{(className, downloadProjectCallback) => (
+                                    <MenuItem
+                                        className={classNames(
+                                            styles.menuItemStandalone)}
+                                        onClick={downloadProjectCallback}
+
+                                    ><FormattedMessage
+                                            defaultMessage="Save To Cloud"
+                                            id="lepi.menuBar.save_to_cloud"
+                                        />
+                                        
+                                    </MenuItem>
+                                )}</CloudDownloader>)
+                    }
                 </div>
                 <div className={styles.accountInfoGroup}>
                     <TWSaveStatus
@@ -1097,7 +1114,7 @@ class MenuBar extends React.Component {
                     />
                 </div>
 
-                {aboutButton}
+                {/* {aboutButton} */}
             </Box>
         );
 

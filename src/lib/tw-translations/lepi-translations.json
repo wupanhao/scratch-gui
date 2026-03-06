@@ -121,11 +121,11 @@
         "gui.extension.lepiCamera.name": "摄像头",
         "gui.extension.lepiCamera.description": "看到世界",
         "gui.extension.lepiHandDetect.name": "手势识别",
-        "gui.extension.lepiHandDetect.description": "识别手部22个关键点.",
+        "gui.extension.lepiHandDetect.description": "识别手部22个特征点.",
         "gui.extension.lepiPoseEstimate.name": "姿态估计",
-        "gui.extension.lepiPoseEstimate.description": "识别身体33个关键点.",
+        "gui.extension.lepiPoseEstimate.description": "识别身体33个特征点.",
         "gui.extension.lepiMoveNetPose.name": "姿态估计(快速)",
-        "gui.extension.lepiMoveNetPose.description": "识别身体17个关键点. 速度更快.",
+        "gui.extension.lepiMoveNetPose.description": "识别身体17个特征点. 速度更快.",
         "gui.extension.lepiApriltagDetect.name": "标签检测",
         "gui.extension.lepiApriltagDetect.description": "结合视觉标签进行准确的空间定位.",
         "gui.extension.lepiLearningMachineImage.name": "机器学习-图像",
@@ -142,6 +142,9 @@
         "gui.extension.lepiAudio.description": "聆听、歌唱.",
         "gui.extension.lepiWebPlottor.name": "绘图器.",
         "gui.extension.lepiWebPlottor.description": "把传感数据绘制成图表.",
+        "gui.extension.lepiWebSerial.name": "网页串口",
+        "gui.extension.lepiWebSerial.description": "基于浏览器本地的串口通信",
+        "gui.extension.lepiEcharts.description": "通过echarts把传感数据绘制成图表.",
         "gui.extension.lepiFaceRecognize.name": "人脸识别",
         "gui.extension.lepiFaceRecognize.description": "检测人脸，还能进行标记哦.",
         "gui.extension.lepiColorDetect.name": "颜色检测",
@@ -166,6 +169,8 @@
         "gui.extension.lepiCollaborationSheet.description": "可以协同编辑的表格.",
         "gui.extension.lepiHttp.name": "HTTP网络通信.",
         "gui.extension.lepiHttp.description": "使用HTTP/HTTPS进行网络通信.",
+        "gui.extension.lepiChat.name": "大模型对话.",
+        "gui.extension.lepiChat.description": "与大模型进行在线交互.",
         "gui.extension.lepiRFID.name": "RFID读卡器",
         "gui.extension.lepiRFID.description": "读写RFID卡片",
         "gui.extension.lepiComm.name": "主机通信",
@@ -175,10 +180,26 @@
         "gui.extension.lepi_image_classify.description": "分类上千种对象",
         "gui.extension.lepiSmartClassroom.name": "智慧教室",
         "gui.extension.lepiSmartClassroom.description": "控制教室里的智能设备",
+        "gui.extension.lepiGoogleAI.name": "谷歌AI",
+        "gui.extension.lepiGoogleAI.description": "谷歌AI模型, 支持PC本地离线运行",
         "gui.extension.lepiMQTT.name": "MQTT通信",
         "gui.extension.lepiMQTT.description": "使用MQTT协议进行通信(基于Websocket)",
+        "gui.extension.lepiSerial.name": "串口通信",
+        "gui.extension.lepiSerial.description": "使用串口协议连接外部设备收发数据",
+        "gui.extension.lepiBLE.name": "蓝牙通信",
+        "gui.extension.lepiBLE.description": "基于低功耗蓝牙进行无线通信",
+        "gui.extension.onegpioArduino.name": "Arduino",
+        "gui.extension.onegpioArduino.description": "基于Firmata协议控制Arduino输入输出",
+        "gui.extension.onegpioRpi.name": "树莓派",
+        "gui.extension.onegpioRpi.description": "基于Firmata协议控制树莓派输入输出",
+        "gui.extension.onegpioRpiPico.name": "树莓派Pico",
+        "gui.extension.onegpioRpiPico.description": "基于Firmata协议控制树莓派Pico输入输出",
+        "gui.extension.onegpioEsp.name": "Esp系列",
+        "gui.extension.onegpioEsp.description": "基于Firmata协议控制Esp系列开发板输入输出",
         "gui.extension.lepi.connectingMessage": "连接中",
+        "tw.settingsModal.storeProjectOptionsHelp": "在作品文件中储存已选择的设置，它们会在 Lepi Desktop 加载作品文件时自动被应用。循环计时器和不使用编译不会被保存。",
         "lepi.menuBar.download_to_host": "下载到主机",
+        "lepi.menuBar.save_to_cloud": "保存到云端",
         "lepi.menuBar.download_as_scratch": "下载为Scratch作品",
         "lepi.menuBar.debug_on_host": "在主机上调试",
         "lepi.msg.lepi not connected": "乐派主机未连接",
@@ -199,7 +220,7 @@
             "message": "朗读结束?"
         },
         "lepi.SpeakOffline": {
-            "message": "离线语音朗读[TEXT], 发音人[SPEAKER], 音量[VOLUME] 速度[RATE] 音调[PITCH]"
+            "message": "电脑离线语音朗读[TEXT], 发音人[SPEAKER], 音量[VOLUME] 速度[RATE] 音调[PITCH]"
         },
         "lepi.SpeechRecognitionEnd": {
             "message": "识别到语音?"
@@ -346,7 +367,7 @@
             "message": "置信度"
         },
         "lepi.connectDevice": {
-            "message": "连接串口 [PORT]"
+            "message": "连接串口 [PORT], 波特率[BAUDRATE]"
         },
         "lepi.customize": {
             "message": "自定义"
@@ -376,7 +397,7 @@
             "message": "检测手势"
         },
         "lepi.detectKeyPoints": {
-            "message": "进行关键点识别"
+            "message": "进行特征点识别"
         },
         "lepi.detectObject": {
             "message": "检测目标"
@@ -415,7 +436,7 @@
             "message": "识别到图像 [CLASS] ?"
         },
         "lepi.detectedKeyPoints": {
-            "message": "识别到关键点 ?"
+            "message": "识别到特征点 ?"
         },
         "lepi.detectedObject": {
             "message": "检测到 [CLASS] ?"
@@ -454,7 +475,7 @@
             "message": "第 [I] 个人脸的 [DATA] "
         },
         "lepi.faceDetected": {
-            "message": "识别到人脸?"
+            "message": "检测到有人?"
         },
         "lepi.faceParams": {
             "message": "人脸的 [ID]"
@@ -532,7 +553,7 @@
             "message": "手柄状态"
         },
         "lepi.getLaunchedNodes": {
-            "message": "更新扩展模块信息"
+            "message": "已启动扩展模块"
         },
         "lepi.getOffset": {
             "message": "查询 [SENSOR] 偏移量"
@@ -574,7 +595,7 @@
             "message": "第[I]只手的 [DATA]"
         },
         "lepi.handKeypoints": {
-            "message": "第[I]只手[N]号关键点 [POINT]"
+            "message": "第[I]只手[N]号特征点 [POINT]"
         },
         "lepi.hand_detect": {
             "message": "手势识别"
@@ -643,10 +664,10 @@
             "message": "录音中?"
         },
         "lepi.keyPointsData": {
-            "message": "[KEYPOINT] 关键点 [DATA]"
+            "message": "[KEYPOINT] 特征点 [DATA]"
         },
         "lepi.keyPointsScore": {
-            "message": "关键点识别信度"
+            "message": "特征点识别信度"
         },
         "lepi.launchNode": {
             "message": "启动 [NAME] 扩展"
@@ -713,6 +734,9 @@
         },
         "lepi.lepiHttp": {
             "message": "HTTP通信"
+        },
+        "lepi.lepiChat": {
+            "message": "大模型交互"
         },
         "lepi.lepiImageClassify": {
             "message": "图像分类"
@@ -784,7 +808,7 @@
             "message": "加载图像模型 [MODEL]"
         },
         "lepi.loadPoseModel": {
-            "message": "加载人体关键点模型"
+            "message": "加载人体特征点模型"
         },
         "lepi.loadPoseModelFromFile": {
             "message": "从文件导入姿态模型"
@@ -952,7 +976,7 @@
             "message": "姿态识别置信度"
         },
         "lepi.poseKeypoints": {
-            "message": "人体[N]号关键点 [POINT]"
+            "message": "人体[N]号特征点 [POINT]"
         },
         "lepi.pose_estimate": {
             "message": "姿态估计"
@@ -982,7 +1006,7 @@
             "message": "读取 [SENSOR] 数据, [OFFSET] 偏移量"
         },
         "lepi.receiveData": {
-            "message": "接收串口 [PORT] 数据, 长度 [COUNT]"
+            "message": "接收串口 [PORT] 字符数据, 长度 [COUNT]"
         },
         "lepi.red": {
             "message": "红色"
@@ -1042,7 +1066,7 @@
             "message": "散点图"
         },
         "lepi.sendData": {
-            "message": "向串口 [PORT] 发送数据 [DATA]"
+            "message": "向串口 [PORT] 发送字符数据 [DATA]"
         },
         "lepi.sendPayload": {
             "message": "保存样本数据"
@@ -1084,7 +1108,7 @@
             "message": "[PORT] 颜色传感器 设置彩灯颜色[COLOR]"
         },
         "lepi.sensorSetColorRGB": {
-            "message": "[PORT] 颜色传感器 设置彩灯颜色(R:[R] G:[G] B:[B])"
+            "message": "[PORT] 颜色传感器 设置彩灯颜色(R:[R] G:[G] B:[B] W:[W])"
         },
         "lepi.sensorSetMode": {
             "message": "设置 [PORT] 传感器工作模式 [VALUE]"
@@ -1518,7 +1542,7 @@
             "message": "confidence"
         },
         "lepi.connectDevice": {
-            "message": "connect port [PORT]"
+            "message": "connect port [PORT], baudrate [BAUDRATE]"
         },
         "lepi.customize": {
             "message": "customize"
@@ -1886,6 +1910,9 @@
         "lepi.lepiHttp": {
             "message": "HTTP/HTTPS"
         },
+        "lepi.lepiChat": {
+            "message": "chat big model"
+        },
         "lepi.lepiImageClassify": {
             "message": "Image Classify"
         },
@@ -2154,7 +2181,7 @@
             "message": "read [SENSOR] data, [OFFSET]"
         },
         "lepi.receiveData": {
-            "message": "receive [PORT] data, length [COUNT]"
+            "message": "receive [PORT] char data, length [COUNT]"
         },
         "lepi.red": {
             "message": "red"
@@ -2256,7 +2283,7 @@
             "message": "[PORT] color sensor set color [COLOR]"
         },
         "lepi.sensorSetColorRGB": {
-            "message": "[PORT] color sensor set RGB (R:[R] G:[G] B:[B])"
+            "message": "[PORT] color sensor set RGB (R:[R] G:[G] B:[B] W:[W])"
         },
         "lepi.sensorSetMode": {
             "message": "set [PORT] sensor mode [VALUE]"

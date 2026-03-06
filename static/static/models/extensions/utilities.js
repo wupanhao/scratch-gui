@@ -2,6 +2,7 @@
 // ID: utilities
 // Description: A bunch of interesting blocks.
 // Original: Sheep_maker <https://scratch.mit.edu/users/Sheep_maker/>
+// License: MIT AND MPL-2.0
 
 /*!
  * This is based on:
@@ -31,7 +32,7 @@
  * SOFTWARE.
  */
 
-(function (Scratch) {
+/* generated l10n code */Scratch.translate.setup({"de":{"_Utilities":"Verschiedene Blöcke"},"fi":{"_Utilities":"Työkalut","_[PATH] of [JSON_STRING]":"[PATH] JSON-koodissa [JSON_STRING]","_clamp [INPUT] between [MIN] and [MAX]":"rajoita [INPUT] välille [MIN] – [MAX]","_content from [URL]":"sisältö URL-osoitteesta [URL]","_current millisecond":"nykyinen millisekunti","_false":"epätosi","_if [A] then [B] else [C]":"jos [A], niin [B] tai muuten [C]","_is [A] exactly [B]?":"onko [A] tarkalleen [B]?","_letters [START] to [END] of [STRING]":"merkkijonon [STRING] merkit [START] – [END]","_newline character":"uusi rivi","_pi":"pii","_replace [STRING] using the rule [REGEX] with [NEWSTRING]":"korvaa [REGEX] merkkijonolla [NEWSTRING] merkkijonossa [STRING]","_true":"tosi"},"it":{"_Utilities":"Utilità","_newline character":"carattere accapo","_pi":"pi greco"},"ja":{"_Utilities":"ユーティリティ","_[PATH] of [JSON_STRING]":"[JSON_STRING]の[PATH]","_clamp [INPUT] between [MIN] and [MAX]":"[INPUT]を[MIN]から[MAX]までで表す","_content from [URL]":"[URL]からのコンテンツ","_current millisecond":"現在のミリ秒","_false":"偽","_if [A] then [B] else [C]":"もし[A]なら[B]でなければ[C]","_is [A] exactly [B]?":"[A]が[B]と同一","_letters [START] to [END] of [STRING]":"[STRING]の[START]から[END]番目","_newline character":"改行文字","_pi":"π","_replace [STRING] using the rule [REGEX] with [NEWSTRING]":"[STRING]の[REGEX]を[NEWSTRING]に置き換える","_true":"真"},"ko":{"_Utilities":"유틸리티","_[PATH] of [JSON_STRING]":"[JSON_STRING]에서 [PATH]","_clamp [INPUT] between [MIN] and [MAX]":"[INPUT] 값을 [MIN]부터 [MAX]까지 범위로 제한","_content from [URL]":"[URL]의 내용","_current millisecond":"현재 밀리초","_false":"거짓","_if [A] then [B] else [C]":"[A] (이)라면 [B] 아니면 [C]","_is [A] exactly [B]?":"[A]이(가) [B]와(과) 일치하는가?","_letters [START] to [END] of [STRING]":"[STRING]의 [START]부터 [END]까지의 글자","_newline character":"줄바꿈 문자","_true":"참"},"nb":{"_Utilities":"Verktøy","_true":"sann"},"nl":{"_Utilities":"Utiliteiten","_[PATH] of [JSON_STRING]":"[PATH] van [JSON_STRING]","_clamp [INPUT] between [MIN] and [MAX]":"klem [INPUT] tussen [MIN] en [MAX]","_current millisecond":"huidige milliseconde","_false":"onwaar","_if [A] then [B] else [C]":"als [A] dan [B] anders [C]","_is [A] exactly [B]?":"is [A] precies [B]?","_letters [START] to [END] of [STRING]":"letters [START] t/m [END] van [STRING]","_newline character":"nieuwregelteken","_replace [STRING] using the rule [REGEX] with [NEWSTRING]":"vervang [STRING] met regel [REGEX] door [NEWSTRING]","_true":"waar"},"pl":{"_false":"fałsz"},"ru":{"_Utilities":"Утилиты","_[PATH] of [JSON_STRING]":"[PATH] из [JSON_STRING]","_clamp [INPUT] between [MIN] and [MAX]":"зажим [INPUT] между [MIN] и [MAX]","_content from [URL]":"контент из [URL]","_current millisecond":"текущие миллисекунды","_false":"нет","_if [A] then [B] else [C]":"если [A] тогда [B] иначе [C]","_is [A] exactly [B]?":"[A] точно ли [B]?","_letters [START] to [END] of [STRING]":"буквы с [START] до [END] в строке [STRING]","_newline character":"символ новой строки","_pi":"пи","_replace [STRING] using the rule [REGEX] with [NEWSTRING]":"заменить [STRING] используя правило [REGEX] с [NEWSTRING]","_true":"да"},"uk":{"_newline character":"символ переносу строки"},"zh-cn":{"_Utilities":"工具","_[PATH] of [JSON_STRING]":"[JSON_STRING]中的[PATH]","_clamp [INPUT] between [MIN] and [MAX]":"[MIN]到[MAX]之间的[INPUT]","_content from [URL]":"来自[URL]的内容","_current millisecond":"当前毫秒","_false":"假","_if [A] then [B] else [C]":"[A]？[B]：[C]","_is [A] exactly [B]?":"[A]===[B]","_letters [START] to [END] of [STRING]":"[STRING]的第[START]到第[END]位","_newline character":"换行符","_pi":"π","_replace [STRING] using the rule [REGEX] with [NEWSTRING]":"以规则[REGEX]替换[STRING]为[NEWSTRING]","_true":"真"}});/* end generated l10n code */(function (Scratch) {
   "use strict";
 
   const icon =
@@ -41,7 +42,7 @@
     getInfo() {
       return {
         id: "utilities",
-        name: "Utilities",
+        name: Scratch.translate("Utilities"),
 
         color1: "#8BC34A",
         color2: "#7CB342",
@@ -55,7 +56,7 @@
 
             blockType: Scratch.BlockType.BOOLEAN,
 
-            text: "is [A] exactly [B]?",
+            text: Scratch.translate("is [A] exactly [B]?"),
             arguments: {
               A: {
                 type: Scratch.ArgumentType.STRING,
@@ -72,6 +73,7 @@
 
             blockType: Scratch.BlockType.BOOLEAN,
 
+            // eslint-disable-next-line extension/should-translate
             text: "[A] <= [B]",
             arguments: {
               A: {
@@ -88,6 +90,7 @@
 
             blockType: Scratch.BlockType.BOOLEAN,
 
+            // eslint-disable-next-line extension/should-translate
             text: "[A] >= [B]",
             arguments: {
               A: {
@@ -102,13 +105,19 @@
           {
             opcode: "trueBlock",
             blockType: Scratch.BlockType.BOOLEAN,
-            text: "true",
+            text: Scratch.translate({
+              default: "true",
+              description: "Block that returns true",
+            }),
             disableMonitor: true,
           },
           {
             opcode: "falseBlock",
             blockType: Scratch.BlockType.BOOLEAN,
-            text: "false",
+            text: Scratch.translate({
+              default: "false",
+              description: "Block that returns false",
+            }),
             disableMonitor: true,
           },
           {
@@ -116,6 +125,7 @@
 
             blockType: Scratch.BlockType.REPORTER,
 
+            // eslint-disable-next-line extension/should-translate
             text: "[A] ^ [B]",
             arguments: {
               A: {
@@ -129,14 +139,17 @@
           {
             opcode: "pi",
             blockType: Scratch.BlockType.REPORTER,
-            text: "pi",
+            text: Scratch.translate({
+              default: "pi",
+              description: "Block that returns 3.1415...",
+            }),
           },
           {
             opcode: "ternaryOperator",
 
             blockType: Scratch.BlockType.REPORTER,
 
-            text: "if [A] then [B] else [C]",
+            text: Scratch.translate("if [A] then [B] else [C]"),
             arguments: {
               A: {
                 type: Scratch.ArgumentType.BOOLEAN,
@@ -150,13 +163,14 @@
                 defaultValue: "apple",
               },
             },
+            allowDropAnywhere: true,
           },
           {
             opcode: "letters",
 
             blockType: Scratch.BlockType.REPORTER,
 
-            text: "letters [START] to [END] of [STRING]",
+            text: Scratch.translate("letters [START] to [END] of [STRING]"),
             arguments: {
               START: {
                 type: Scratch.ArgumentType.NUMBER,
@@ -177,7 +191,7 @@
 
             blockType: Scratch.BlockType.REPORTER,
 
-            text: "clamp [INPUT] between [MIN] and [MAX]",
+            text: Scratch.translate("clamp [INPUT] between [MIN] and [MAX]"),
             arguments: {
               INPUT: {
                 type: Scratch.ArgumentType.NUMBER,
@@ -196,14 +210,14 @@
           {
             opcode: "currentMillisecond",
             blockType: Scratch.BlockType.REPORTER,
-            text: "current millisecond",
+            text: Scratch.translate("current millisecond"),
           },
           {
             opcode: "fetchFrom",
 
             blockType: Scratch.BlockType.REPORTER,
 
-            text: "get content from [URL]",
+            text: Scratch.translate("content from [URL]"),
             arguments: {
               URL: {
                 type: Scratch.ArgumentType.STRING,
@@ -216,7 +230,11 @@
 
             blockType: Scratch.BlockType.REPORTER,
 
-            text: "[PATH] of [JSON_STRING]",
+            text: Scratch.translate({
+              default: "[PATH] of [JSON_STRING]",
+              description:
+                'PATH is a string like "fruit/apples" and JSON_STRING is an object like {"fruit":{"apples":3}}. 3 would be reported in this example.',
+            }),
             arguments: {
               PATH: {
                 type: Scratch.ArgumentType.STRING,
@@ -232,7 +250,7 @@
           {
             opcode: "newline",
             blockType: Scratch.BlockType.REPORTER,
-            text: "newline character",
+            text: Scratch.translate("newline character"),
             disableMonitor: true,
             arguments: {},
           },
@@ -241,6 +259,7 @@
 
             blockType: Scratch.BlockType.BOOLEAN,
 
+            // eslint-disable-next-line extension/should-translate
             text: "[STRING]",
             arguments: {
               STRING: {
@@ -254,7 +273,9 @@
 
             blockType: Scratch.BlockType.REPORTER,
 
-            text: "replace [STRING] using the rule [REGEX] with [NEWSTRING]",
+            text: Scratch.translate(
+              "replace [STRING] using the rule [REGEX] with [NEWSTRING]"
+            ),
             arguments: {
               STRING: {
                 type: Scratch.ArgumentType.STRING,

@@ -108,6 +108,13 @@ import hexapodInsetIconURL from './lepi-banbao-v1/small/六足.png';
 import webPlottorIconURL from './lepi-banbao-v1/big/绘图.png';
 import webPlottorInsetIconURL from './lepi-banbao-v1/small/绘图.png';
 
+import lepiWebSerialIconURL from './lepi-banbao-v1/big/WebSerial.png';
+import lepiWebSerialInsetIconURL from './lepi-banbao-v1/small/WebSerial.png';
+
+import echartsIconURL from './lepi-banbao-v1/big/echarts.png';
+import echartsInsetIconURL from './lepi-banbao-v1/small/echarts.png';
+
+
 import imageProcessIconURL from './lepi-banbao-v1/big/图像处理.png';
 import imageProcessInsetIconURL from './lepi-banbao-v1/small/图像处理.png';
 
@@ -123,6 +130,9 @@ import transferLearningInsetIconURL from './lepi-banbao-v1/small/迁移.png';
 import serialIconURL from './lepi-banbao-v1/big/串口通信.png';
 import serialInsetIconURL from './lepi-banbao-v1/small/串口通信.png';
 
+import bleIconURL from './lepi-banbao-v1/big/bluetooth.png';
+import bleInsetIconURL from './lepi-banbao-v1/small/bluetooth_icon.png';
+
 import imageClassifyIconURL from './lepi-banbao-v1/big/图像分类.png';
 import imageClassifyInsetIconURL from './lepi-banbao-v1/small/图像分类.png';
 
@@ -135,6 +145,9 @@ import variableInsetIconURL from './lepi-banbao-v1/small/变量.png';
 
 import collaborationSheetIconURL from './lepi-banbao-v1/big/协作表格.png';
 import collaborationSheetInsetIconURL from './lepi-banbao-v1/small/协作表格.png';
+
+import googleIconURL from './lepi-banbao-v1/big/谷歌AI.png';
+import googleInsetIconURL from './lepi-banbao-v1/small/谷歌AI.png';
 
 import learningMachineImageIconURL from './lepi-banbao-v1/big/机器学习-图像.png';
 import learningMachineImageInsetIconURL from './lepi-banbao-v1/small/机器学习-图像.png';
@@ -156,6 +169,15 @@ import textRecognizeInsetIconURL from './lepi-banbao-v1/small/文本识别.png';
 
 import httpIconURL from './lepi-banbao-v1/big/http.png';
 import httpInsetIconURL from './lepi-banbao-v1/small/http.png';
+
+import chatIconURL from './lepi-banbao-v1/big/chat.png';
+import chatInsetIconURL from './lepi-banbao-v1/small/chat.png';
+
+import llmImageIconURL from './lepi-banbao-v1/big/AI绘画.jpg';
+import llmImageInsetIconURL from './lepi-banbao-v1/small/chat.png';
+
+import llmVideoIconURL from './lepi-banbao-v1/big/文生视频.gif';
+import llmVideoInsetIconURL from './lepi-banbao-v1/small/chat.png';
 
 import hostCommunicationIconURL from './lepi-banbao-v1/big/主机通信.png';
 import hostCommunicationInsetIconURL from './lepi-banbao-v1/small/主机通信.png';
@@ -189,6 +211,15 @@ import onegpioRoboHATInsetIconURL from './onegpio/onegpioRoboHAT-small.png';
 
 import onegpioRpiPicoImage from './onegpio/rpi-pico-big.png';
 import onegpioRpiPicoInsetIconURL from './onegpio/rpi-pico-small.png';
+
+import ledSimulatorIconURL from './lepi-banbao-v1/big/led_simulator2.png'
+import ledSimulatorInsetIconURL from './lepi-banbao-v1/small/led_simulator.svg'
+
+import difyIconURL from './lepi-banbao-v1/big/dify.png'
+import difyInsetIconURL from './lepi-banbao-v1/small/dify.png'
+
+import live2dIconURL from './lepi-banbao-v1/big/live2d.png'
+import live2dInsetIconURL from './lepi-banbao-v1/small/live2d.png'
 
 const collaborator = <FormattedMessage
     defaultMessage="LEPI"
@@ -320,23 +351,24 @@ export default [
         tags: ['lepi', 'ai'],
         featured: true,
     },
-    // {
-    //     name: (<FormattedMessage
-    //         defaultMessage="Face Mesh"
-    //         id="gui.extension.lepiFaceMesh.name"
-    //     />),
-    //     extensionId: 'lepiFaceMesh',
-    //     collaborator: collaborator,
-    //     iconURL: faceRecognizeIconURL,
-    //     insetIconURL: faceRecognizeInsetIconURL,
-    //     description: (
-    //         <FormattedMessage
-    //             defaultMessage="Identify 478 key points of the face."
-    //             id="gui.extension.lepiFaceMesh.description"
-    //         />
-    //     ),
-    //     featured: true,
-    // },
+    {
+        name: (<FormattedMessage
+            defaultMessage="虚拟形象"
+            id="gui.extension.lepiLive2D.name"
+        />),
+        extensionId: 'lepiLive2D',
+        collaborator: collaborator,
+        iconURL: live2dIconURL,
+        insetIconURL: live2dInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="使用live2d虚拟形象."
+                id="gui.extension.lepiLive2D.description"
+            />
+        ),
+        tags: ['lepi'],
+        featured: true,
+    },
     {
         name: (<FormattedMessage
             defaultMessage="Pose Estimation"
@@ -408,6 +440,24 @@ export default [
         featured: true,
     },
     */
+    {
+        name: (<FormattedMessage
+            defaultMessage="Google AI"
+            id="gui.extension.lepiGoogleAI.name"
+        />),
+        extensionId: 'lepiGoogleAI',
+        collaborator: collaborator,
+        iconURL: googleIconURL,
+        insetIconURL: googleInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Google AI models, can run on local computer."
+                id="gui.extension.lepiGoogleAI.description"
+            />
+        ),
+        tags: ['lepi', 'ai'],
+        featured: true,
+    },
     {
         name: (<FormattedMessage
             defaultMessage="ML-Iamge"
@@ -517,7 +567,43 @@ export default [
         tags: ['lepi'],
         featured: true,
     },
-
+    {
+        name: (<FormattedMessage
+            defaultMessage="MQTT Communication"
+            id="gui.extension.lepiMQTT.name"
+        />),
+        extensionId: 'lepiMQTT',
+        collaborator: collaborator,
+        iconURL: mqttIconURL,
+        insetIconURL: mqttInsetIconURL,
+        internetConnectionRequired: true,
+        description: (
+            <FormattedMessage
+                defaultMessage="Network communication using MQTT."
+                id="gui.extension.lepiMQTT.description"
+            />
+        ),
+        tags: ['lepi', 'iot'],
+        featured: true,
+    },
+    {
+        name: (<FormattedMessage
+            defaultMessage="WebSerial"
+            id="gui.extension.lepiWebSerial.name"
+        />),
+        extensionId: 'lepiWebSerial',
+        collaborator: collaborator,
+        iconURL: lepiWebSerialIconURL,
+        insetIconURL: lepiWebSerialInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Serial Communication via WebSerial."
+                id="gui.extension.lepiWebSerial.description"
+            />
+        ),
+        tags: ['lepi', 'iot'],
+        featured: true,
+    },
 
     {
         name: (<FormattedMessage
@@ -535,6 +621,24 @@ export default [
             />
         ),
         tags: ['lepi', 'iot'],
+        featured: true,
+    },
+    {
+        name: (<FormattedMessage
+            defaultMessage="Echarts"
+            id="gui.extension.lepiEcharts.name"
+        />),
+        extensionId: 'lepiEcharts',
+        collaborator: collaborator,
+        iconURL: echartsIconURL,
+        insetIconURL: echartsInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="use echarts to plot sensor data into graphs."
+                id="gui.extension.lepiEcharts.description"
+            />
+        ),
+        tags: ['lepi'],
         featured: true,
     },
     {
@@ -644,7 +748,6 @@ export default [
         featured: true,
     },
 
-    /*
     {
         name: '迁移学习',
         extensionId: 'lepiTransferLearning',
@@ -658,9 +761,9 @@ export default [
                 id="gui.extension.lepi_transfer_learning.description"
             />
         ),
+        tags: ['lepi', 'ai'],
         featured: true,
     },
-    */
     {
         name: (<FormattedMessage
             defaultMessage="RFID"
@@ -674,6 +777,24 @@ export default [
             <FormattedMessage
                 defaultMessage="Read and write RFID card."
                 id="gui.extension.lepiRFID.description"
+            />
+        ),
+        tags: ['lepi', 'iot'],
+        featured: true,
+    },
+    {
+        name: (<FormattedMessage
+            defaultMessage="模拟点阵屏"
+            id="gui.extension.lepiLedSimulator.name"
+        />),
+        extensionId: 'lepiLedSimulator',
+        collaborator: collaborator,
+        iconURL: ledSimulatorIconURL,
+        insetIconURL: ledSimulatorInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="控制模拟点阵屏"
+                id="gui.extension.lepiLedSimulator.description"
             />
         ),
         tags: ['lepi', 'iot'],
@@ -809,43 +930,24 @@ export default [
         tags: ['lepi', 'internet'],
         featured: true,
     },
-    {
-        name: (<FormattedMessage
-            defaultMessage="Collaboration Sheet"
-            id="gui.extension.lepiCollaborationSheet.name"
-        />),
-        extensionId: 'lepiCollaborationSheet',
-        collaborator: collaborator,
-        iconURL: collaborationSheetIconURL,
-        insetIconURL: collaborationSheetInsetIconURL,
-        description: (
-            <FormattedMessage
-                defaultMessage="Collaboration Sheet supports multiple editors."
-                id="gui.extension.lepiCollaborationSheet.description"
-            />
-        ),
-        tags: ['lepi', 'internet'],
-        featured: true,
-    },
-    {
-        name: (<FormattedMessage
-            defaultMessage="MQTT Communication"
-            id="gui.extension.lepiMQTT.name"
-        />),
-        extensionId: 'lepiMQTT',
-        collaborator: collaborator,
-        iconURL: mqttIconURL,
-        insetIconURL: mqttInsetIconURL,
-        internetConnectionRequired: true,
-        description: (
-            <FormattedMessage
-                defaultMessage="Network communication using MQTT."
-                id="gui.extension.lepiMQTT.description"
-            />
-        ),
-        tags: ['lepi', 'iot'],
-        featured: true,
-    },
+    // {
+    //     name: (<FormattedMessage
+    //         defaultMessage="Collaboration Sheet"
+    //         id="gui.extension.lepiCollaborationSheet.name"
+    //     />),
+    //     extensionId: 'lepiCollaborationSheet',
+    //     collaborator: collaborator,
+    //     iconURL: collaborationSheetIconURL,
+    //     insetIconURL: collaborationSheetInsetIconURL,
+    //     description: (
+    //         <FormattedMessage
+    //             defaultMessage="Collaboration Sheet supports multiple editors."
+    //             id="gui.extension.lepiCollaborationSheet.description"
+    //         />
+    //     ),
+    //     tags: ['lepi', 'internet'],
+    //     featured: true,
+    // },
     {
         name: (<FormattedMessage
             defaultMessage="HTTP Communication"
@@ -865,9 +967,90 @@ export default [
         tags: ['lepi', 'internet'],
         featured: true,
     },
-    /*
     {
-        name: 'Serial',
+        name: (<FormattedMessage
+            defaultMessage="AI communication"
+            id="gui.extension.lepiChat.name"
+        />),
+        extensionId: 'lepiChat',
+        collaborator: collaborator,
+        iconURL: chatIconURL,
+        insetIconURL: chatInsetIconURL,
+        internetConnectionRequired: true,
+        description: (
+            <FormattedMessage
+                defaultMessage="communication with big models."
+                id="gui.extension.lepiChat.description"
+            />
+        ),
+        tags: ['lepi', 'internet', 'ai'],
+        featured: true,
+    },
+    {
+        name: (<FormattedMessage
+            defaultMessage="AI绘画"
+            id="gui.extension.lepiLLMImage.name"
+        />),
+        extensionId: 'lepiLLMImage',
+        collaborator: collaborator,
+        iconURL: llmImageIconURL,
+        insetIconURL: llmImageInsetIconURL,
+        internetConnectionRequired: true,
+        description: (
+            <FormattedMessage
+                defaultMessage="AI生成图像."
+                id="gui.extension.lepiLLMImage.description"
+            />
+        ),
+        tags: ['lepi', 'internet', 'ai'],
+        featured: true,
+    },
+    // {
+    //     name: (<FormattedMessage
+    //         defaultMessage="文生视频"
+    //         id="gui.extension.lepiLLMVideo.name"
+    //     />),
+    //     extensionId: 'lepiLLMVideo',
+    //     collaborator: collaborator,
+    //     iconURL: llmVideoIconURL,
+    //     insetIconURL: llmVideoInsetIconURL,
+    //     internetConnectionRequired: true,
+    //     description: (
+    //         <FormattedMessage
+    //             defaultMessage="只需一句话，AI生成短视频."
+    //             id="gui.extension.lepiLLMVideo.description"
+    //         />
+    //     ),
+    //     tags: ['lepi', 'internet', 'ai'],
+    //     featured: true,
+    // },
+    {
+        name: (<FormattedMessage
+            defaultMessage="Dify智能体"
+            id="gui.extension.lepiDifyLLM.name"
+        />),
+        extensionId: 'lepiDifyLLM',
+        collaborator: collaborator,
+        iconURL: difyIconURL,
+        insetIconURL: difyInsetIconURL,
+        internetConnectionRequired: true,
+        description: (
+            <FormattedMessage
+                defaultMessage="和Dify智能体协作."
+                id="gui.extension.lepiDifyLLM.description"
+            />
+        ),
+        tags: ['lepi', 'internet', 'ai'],
+        featured: true,
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Serial Communication"
+                description="Description for the 'lepiSerial' extension"
+                id="gui.extension.lepiSerial.name"
+            />
+        ),
         extensionId: 'lepiSerial',
         collaborator: collaborator,
         iconURL: serialIconURL,
@@ -875,13 +1058,35 @@ export default [
         description: (
             <FormattedMessage
                 defaultMessage="Use Serial Port to comunicate."
-                description="Description for the 'lepi_serial' extension"
-                id="gui.extension.lepi_serial.description"
+                description="Description for the 'lepiSerial' extension"
+                id="gui.extension.lepiSerial.description"
             />
         ),
+        tags: ['lepi', 'iot'],
         featured: true,
     },
-    */
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Bluetooth Communication"
+                description="Description for the 'lepiBLE' extension"
+                id="gui.extension.lepiBLE.name"
+            />
+        ),
+        extensionId: 'lepiBLE',
+        collaborator: collaborator,
+        iconURL: bleIconURL,
+        insetIconURL: bleInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Use Bluetooth to comunicate."
+                description="Description for the 'lepiBLE' extension"
+                id="gui.extension.lepiBLE.description"
+            />
+        ),
+        tags: ['lepi', 'iot'],
+        featured: true,
+    },
     {
         name: (
             <FormattedMessage
@@ -905,66 +1110,98 @@ export default [
         featured: true
     },
     {
-        name: 'Arduino',
+        name: <FormattedMessage
+            defaultMessage="Arduino"
+            description="Name for the 'Arduino' extension"
+            id="gui.extension.onegpioArduino.name"
+        />,
         extensionId: 'onegpioArduino',
-        collaborator: "Mr. Y's Lab",
+        collaborator: collaborator,
         iconURL: onegpioArduinoImage,
         insetIconURL: onegpioArduinoInsetIconURL,
-        description: 'Control Arduino IO Based on Firmata Protocol',
+        description: <FormattedMessage
+            defaultMessage="Control Arduino IO Based on Firmata Protocol"
+            description="Name for the 'Arduino' extension"
+            id="gui.extension.onegpioArduino.description"
+        />,
         featured: true,
         disabled: false,
         // internetConnectionRequired: true,
         bluetoothRequired: false,
-        tags: ['onegpio', 'iot'],
+        tags: ['lepi', 'iot'],
         // helpLink: 'https://mryslab.github.io/s3-extend/'
     },
     {
-        name: 'Raspberry Pi',
+        name: <FormattedMessage
+            defaultMessage="Raspberry Pi"
+            description="Name for the 'Raspberry Pi' extension"
+            id="gui.extension.onegpioRpi.name"
+        />,
         extensionId: 'onegpioRpi',
-        collaborator: "Mr. Y's Lab",
+        collaborator: collaborator,
         iconURL: onegpioRpiImage,
         insetIconURL: onegpioRpiInsetIconURL,
-        description: 'Control Raspberry Pi IO Based on Firmata Protocol',
+        description: <FormattedMessage
+            defaultMessage="Control Raspberry Pi IO Based on Firmata Protocol"
+            description="Name for the 'Raspberry Pi' extension"
+            id="gui.extension.onegpioRpi.description"
+        />,
         featured: true,
         disabled: false,
         internetConnectionRequired: true,
         bluetoothRequired: false,
-        tags: ['onegpio', 'iot'],
+        tags: ['lepi', 'iot'],
         // helpLink: 'https://mryslab.github.io/s3-extend/'
     },
     {
-        name: 'Raspberry Pi Pico',
+        name: <FormattedMessage
+            defaultMessage="Raspberry Pi Pico"
+            description="Name for the 'Raspberry Pi Pico' extension"
+            id="gui.extension.onegpioRpiPico.name"
+        />,
         extensionId: 'onegpioRpiPico',
-        collaborator: "Mr. Y's Lab",
+        collaborator: collaborator,
         iconURL: onegpioRpiPicoImage,
         insetIconURL: onegpioRpiPicoInsetIconURL,
-        description: 'Control Raspberry Pi Pico IO Based on Firmata Protocol',
+        description: <FormattedMessage
+            defaultMessage="Control Raspberry Pi Pico IO Based on Firmata Protocol"
+            description="Name for the 'Raspberry Pi Pico' extension"
+            id="gui.extension.onegpioRpiPico.description"
+        />,
         featured: true,
         disabled: false,
         // internetConnectionRequired: true,
         bluetoothRequired: false,
-        tags: ['onegpio', 'iot'],
+        tags: ['lepi', 'iot'],
         // helpLink: 'https://mryslab.github.io/s3-extend/'
     },
     {
-        name: 'ESP-8266 Series',
+        name: <FormattedMessage
+            defaultMessage="ESP-8266 Series"
+            description="Name for the 'ESP-8266 Series' extension"
+            id="gui.extension.onegpioEsp.name"
+        />,
         extensionId: 'onegpioEsp',
-        collaborator: "Mr. Y's Lab",
+        collaborator: collaborator,
         iconURL: onegpioEspImage,
         insetIconURL: onegpioEspInsetIconURL,
-        description: 'Control ESP-8266 IO Based on Firmata Protocol',
+        description: <FormattedMessage
+            defaultMessage="Control ESP-8266 IO Based on Firmata Protocol"
+            description="Name for the 'ESP-8266 Series' extension"
+            id="gui.extension.onegpioEsp.description"
+        />,
         featured: true,
         disabled: false,
         internetConnectionRequired: true,
         bluetoothRequired: false,
-        tags: ['onegpio', 'iot'],
+        tags: ['lepi', 'iot'],
         // helpLink: 'https://mryslab.github.io/s3-extend/'
     },
     /*
     {
         name: 'OneGpio Picoboard',
         extensionId: 'onegpioPicoboard',
-        collaborator: "Mr. Y's Lab",
+        collaborator: collaborator,
         iconURL: onegpioPicoboardImage,
         insetIconURL: onegpioPicoboardInsetIconURL,
         description: 'OneGPIOPicoboard',
@@ -977,7 +1214,7 @@ export default [
     {
         name: 'OneGpio Playground Express',
         extensionId: 'onegpioCpx',
-        collaborator: "Mr. Y's Lab",
+        collaborator: collaborator,
         iconURL: onegpioCpxImage,
         insetIconURL: onegpioCpxInsetIconURL,
         description: 'OneGPIOCpx',
@@ -990,7 +1227,7 @@ export default [
     {
         name: 'OneGpio RoboHAT MM1',
         extensionId: 'onegpioRoboHAT',
-        collaborator: "Mr. Y's Lab",
+        collaborator: collaborator,
         iconURL: onegpioRoboHATImage,
         insetIconURL: onegpioRoboHATInsetIconURL,
         description: 'OneGPIORoboHAT',

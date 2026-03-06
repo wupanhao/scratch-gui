@@ -226,8 +226,11 @@ const StageHeaderComponent = function (props) {
             </Box>
         );
     }
-
-    return header;
+    if(isEmbedded){
+        return ([])
+    }else{
+        return header;
+    }
 };
 
 const mapStateToProps = state => ({

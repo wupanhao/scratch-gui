@@ -23,6 +23,11 @@ npm-*
 
 # Downloaded during "npm install"
 /static/microbit
+/static/static/dist
+/static/static/live2d/
+/static/static/sherpa-onnx/
+/static/static/node_modules/
+/static/static/dist/
 
 # for act
 .secrets

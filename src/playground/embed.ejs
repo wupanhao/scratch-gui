@@ -6,6 +6,9 @@
     <meta name="google" value="notranslate">
     <title><%= htmlWebpackPlugin.options.title %></title>
     <style>
+      .hide-cursor {
+        cursor: none !important;
+      }
       .splash-screen {
         position: absolute;
         width: 100%;
@@ -21,7 +24,8 @@
         text-align: center;
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       }
-      .splash-screen[hidden] {
+      .splash-screen[hidden],
+      .tw-loaded .splash-screen {
         display: none;
       }
       .splash-spinner:after {
@@ -31,7 +35,7 @@
         height: 64px;
         border-radius: 50%;
         border: 6px solid;
-        border-color: white transparent white transparent;
+        border-color: #ff4c4c transparent #ff4c4c transparent;
         animation: splash-spinner 1.2s linear infinite;
       }
       @keyframes splash-spinner {
@@ -39,6 +43,16 @@
         100% { transform: rotate(360deg); }
       }
     </style>
+    <script src="static/sherpa-onnx/sherpa-onnx-asr.js"></script>
+    <script src="static/sherpa-onnx/sherpa-onnx-vad.js"></script>
+    <script src="static/sherpa-onnx/app.js"></script>
+    <script src="static/sherpa-onnx/sherpa-onnx-wasm-main-vad-asr.js"></script>
+    <script src="static/dist/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+    <script src="static/dist/@mediapipe/face_detection/face_detection.js" crossorigin="anonymous"></script>
+    <script src="static/dist/@mediapipe/face_mesh/face_mesh.js" crossorigin="anonymous"></script>
+    <script src="static/dist/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+    <script src="static/dist/@mediapipe/pose/pose.js" crossorigin="anonymous"></script>
+    <script src="static/dist/@mediapipe/holistic/holistic.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <noscript>

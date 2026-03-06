@@ -17,7 +17,7 @@ class PeripheralTileInput extends React.Component {
             'handleValueChanged'
         ]);
         this.state = {
-            value: localStorage.lepi_ip ? localStorage.lepi_ip : "lepi.local"
+            value: localStorage.lepi_ip ? localStorage.lepi_ip : "169.254.50.50"
         }
         /*
         if (localStorage.lepi_ip) {

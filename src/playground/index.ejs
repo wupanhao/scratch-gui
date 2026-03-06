@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google" value="notranslate">
     <meta name="description" content="<%= htmlWebpackPlugin.options.APP_NAME %> is a Scratch mod with a compiler to run projects faster, dark mode for your eyes, a bunch of addons to improve the editor, and more." />
+    <link rel="icon" href="../app.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
     <link rel="apple-touch-icon" href="<%= htmlWebpackPlugin.options.root %>images/apple-touch-icon.png">
     <% if (htmlWebpackPlugin.options.root === "/" || htmlWebpackPlugin.options.root === "") { %>
@@ -73,7 +74,76 @@
       .splash-reset:disabled {
         opacity: 0.8;
       }
+
+      .blocklyWidgetDiv .goog-menu {
+          /* position: absolute; */
+          /* display: none; */
+          /* right: 0; */
+          /* visibility: hidden; */
+          /* pointer-events: none; */
+          /* display: inline-block; */
+          box-shadow: 0px 1px 5px #ccc;
+          border-radius: 10px;
+          width: fit-content;
+          z-index: 100;
+          background-color: #fff;
+          color: #3C4043;
+          margin-top: 3px;
+          padding-top: 0px;
+          padding-bottom: 0px;
+          border: none;
+      }
+
+      .blocklyWidgetDiv .goog-menuitem {
+          text-align: left;
+          /* height: 28px; */
+          background: transparent;
+          border: none;
+          outline: 0;
+          /* width: 100%; */
+          z-index: 999;
+          /* width: 98px;
+          height: 18px; */
+          opacity: 0.6;
+          /* font-family: HarmonyHeiTi; */
+          font-size: 14px;
+          color: #000000;
+          letter-spacing: 0;
+          line-height: 18px;
+          font-weight: 400;
+          padding-left: 20px;
+          /* width: fit-content; */
+          -webkit-line-clamp: 1;
+          white-space: nowrap;
+          padding-top: 4px;
+          padding-bottom: 4px;
+      }
+
+      .blocklyWidgetDiv .goog-menuitem-highlight {
+          background: rgba(49, 114, 225, 0.10);
+          color: #3172E1;
+      }
+
     </style>
+    <script src="static/sherpa-onnx/sherpa-onnx-asr.js"></script>
+    <script src="static/sherpa-onnx/sherpa-onnx-vad.js"></script>
+    <script src="static/sherpa-onnx/app.js"></script>
+    <script src="static/sherpa-onnx/sherpa-onnx-wasm-main-vad-asr.js"></script>
+    <script src="static/dist/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+    <script src="static/dist/@mediapipe/face_detection/face_detection.js" crossorigin="anonymous"></script>
+    <script src="static/dist/@mediapipe/face_mesh/face_mesh.js" crossorigin="anonymous"></script>
+    <script src="static/dist/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+    <script src="static/dist/@mediapipe/pose/pose.js" crossorigin="anonymous"></script>
+    <script src="static/dist/@mediapipe/holistic/holistic.js" crossorigin="anonymous"></script>
+    <!--     Live2D SDK  -->
+    <script src="static/js/live2dcubismcore.min.js"></script>
+    <script src="static/js/live2d.min.js"></script>
+    <!--     PixiJS Renderer -->
+    <script src="static/js/pixi.min.js"></script>
+    <!--     PixiJS Live2D Plugin -->
+    <script src="static/js/pixi-live2d-display.index.min.js"></script>
+    <!--     Face Track -->
+    <script src="static/js/kalidokit.umd.js"></script>
   </head>
   <body>
     <noscript>

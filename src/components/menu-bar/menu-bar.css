@@ -78,7 +78,9 @@
     max-width: $menu-bar-item-max-width;
     flex: 1;
 }
-
+.menu-item-standalone {
+    padding: 7px 10px;
+}
 .title-field-growable {
     flex-grow: 1;
     width: 2rem;

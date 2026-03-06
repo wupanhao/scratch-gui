@@ -56,9 +56,9 @@ const getStageDimensions = (stageSize, customStageSize, isFullScreen) => {
     };
 
     if (isFullScreen) {
-        stageDimensions.height = window.innerHeight -
-            STAGE_DIMENSION_DEFAULTS.menuHeightAdjustment -
-            STAGE_DIMENSION_DEFAULTS.fullScreenSpacingBorderAdjustment;
+        stageDimensions.height = window.innerHeight 
+            // STAGE_DIMENSION_DEFAULTS.menuHeightAdjustment -
+            // STAGE_DIMENSION_DEFAULTS.fullScreenSpacingBorderAdjustment;
 
         stageDimensions.width = stageDimensions.height * (customStageSize.width / customStageSize.height);
 
