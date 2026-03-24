@@ -221,6 +221,9 @@ import difyInsetIconURL from './lepi-banbao-v1/small/dify.png'
 import live2dIconURL from './lepi-banbao-v1/big/live2d.png'
 import live2dInsetIconURL from './lepi-banbao-v1/small/live2d.png'
 
+import xiaozhiIconURL from './lepi-banbao-v1/big/小智机器人.png'
+import xiaozhiInsetIconURL from './lepi-banbao-v1/small/小智机器人.png'
+
 const collaborator = <FormattedMessage
     defaultMessage="LEPI"
     id="gui.extension.lepi.collaborator"
@@ -1038,6 +1041,25 @@ export default [
             <FormattedMessage
                 defaultMessage="和Dify智能体协作."
                 id="gui.extension.lepiDifyLLM.description"
+            />
+        ),
+        tags: ['lepi', 'internet', 'ai'],
+        featured: true,
+    },
+    {
+        name: (<FormattedMessage
+            defaultMessage="小智机器人"
+            id="gui.extension.lepiXiaozhiRobot.name"
+        />),
+        extensionId: 'lepiXiaozhiRobot',
+        collaborator: collaborator,
+        iconURL: xiaozhiIconURL,
+        insetIconURL: xiaozhiInsetIconURL,
+        internetConnectionRequired: true,
+        description: (
+            <FormattedMessage
+                defaultMessage="接入小智机器人."
+                id="gui.extension.lepiXiaozhiRobot.description"
             />
         ),
         tags: ['lepi', 'internet', 'ai'],
