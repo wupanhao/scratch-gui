@@ -1046,25 +1046,25 @@ export default [
         tags: ['lepi', 'internet', 'ai'],
         featured: true,
     },
-    {
-        name: (<FormattedMessage
-            defaultMessage="小智机器人"
-            id="gui.extension.lepiXiaozhiRobot.name"
-        />),
-        extensionId: 'lepiXiaozhiRobot',
-        collaborator: collaborator,
-        iconURL: xiaozhiIconURL,
-        insetIconURL: xiaozhiInsetIconURL,
-        internetConnectionRequired: true,
-        description: (
-            <FormattedMessage
-                defaultMessage="接入小智机器人."
-                id="gui.extension.lepiXiaozhiRobot.description"
-            />
-        ),
-        tags: ['lepi', 'internet', 'ai'],
-        featured: true,
-    },
+    // {
+    //     name: (<FormattedMessage
+    //         defaultMessage="小智机器人"
+    //         id="gui.extension.lepiXiaozhiRobot.name"
+    //     />),
+    //     extensionId: 'lepiXiaozhiRobot',
+    //     collaborator: collaborator,
+    //     iconURL: xiaozhiIconURL,
+    //     insetIconURL: xiaozhiInsetIconURL,
+    //     internetConnectionRequired: true,
+    //     description: (
+    //         <FormattedMessage
+    //             defaultMessage="接入小智机器人."
+    //             id="gui.extension.lepiXiaozhiRobot.description"
+    //         />
+    //     ),
+    //     tags: ['lepi', 'internet', 'ai'],
+    //     featured: true,
+    // },
     {
         name: (
             <FormattedMessage
