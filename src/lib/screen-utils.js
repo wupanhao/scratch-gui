@@ -56,9 +56,13 @@ const getStageDimensions = (stageSize, customStageSize, isFullScreen) => {
     };
 
     if (isFullScreen) {
-        stageDimensions.height = window.innerHeight 
-            // STAGE_DIMENSION_DEFAULTS.menuHeightAdjustment -
-            // STAGE_DIMENSION_DEFAULTS.fullScreenSpacingBorderAdjustment;
+        stageDimensions.height = window.innerHeight -
+            STAGE_DIMENSION_DEFAULTS.menuHeightAdjustment -
+            STAGE_DIMENSION_DEFAULTS.fullScreenSpacingBorderAdjustment;
+
+        if (location.pathname.indexOf('embed.html') > 0) {
+            stageDimensions.height = window.innerHeight
+        }
 
         stageDimensions.width = stageDimensions.height * (customStageSize.width / customStageSize.height);
 
@@ -115,7 +119,7 @@ const getMinWidth = stageSize => {
  * @param {number} sizeInfo.heightDefault The default height
  * @returns {object} the CSS transform
  */
-const stageSizeToTransform = ({width, height, widthDefault, heightDefault}) => {
+const stageSizeToTransform = ({ width, height, widthDefault, heightDefault }) => {
     const scaleX = width / widthDefault;
     const scaleY = height / heightDefault;
     if (scaleX === 1 && scaleY === 1) {
@@ -123,7 +127,7 @@ const stageSizeToTransform = ({width, height, widthDefault, heightDefault}) => {
         // it messes up `position: fixed` elements like the context menu.
         return;
     }
-    return {transform: `scale(${scaleX},${scaleY})`};
+    return { transform: `scale(${scaleX},${scaleY})` };
 };
 
 export {
