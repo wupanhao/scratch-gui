@@ -270,6 +270,7 @@ class ExtensionLibrary extends React.PureComponent {
                 this.props.vm.extensionManager.loadExtensionURL(url)
                     .then(() => {
                         this.props.onCategorySelected(extensionId);
+                        this.props.vm.make_sure_extension_launched && this.props.vm.make_sure_extension_launched([extensionId], "使用该模块")
                     })
                     .catch(err => {
                         log.error(err);
