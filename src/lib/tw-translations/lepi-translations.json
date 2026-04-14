@@ -134,6 +134,8 @@
         "gui.extension.lepiLearningMachineAudio.description": "加载通过机器学习训练的音频识别模型.",
         "gui.extension.lepiLearningMachinePose.name": "机器学习-姿态",
         "gui.extension.lepiLearningMachinePose.description": "加载通过机器学习训练的姿态识别模型.",
+        "gui.extension.lepiLearningMachineHand.name": "机器学习-手势",
+        "gui.extension.lepiLearningMachineHand.description": "加载通过机器学习训练的手势分类模型.",
         "gui.extension.lepiImageProcess.name": "图像处理",
         "gui.extension.lepiImageProcess.description": "图像预处理.",
         "gui.extension.lepiSmartAudio.name": "智能语音",

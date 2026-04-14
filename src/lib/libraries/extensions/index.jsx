@@ -158,6 +158,9 @@ import learningMachineAudioInsetIconURL from './lepi-banbao-v1/small/机器学�
 import learningMachinePoseIconURL from './lepi-banbao-v1/big/机器学习-姿态.png';
 import learningMachinePoseInsetIconURL from './lepi-banbao-v1/small/机器学习-姿态.png';
 
+import learningMachineHandIconURL from './lepi-banbao-v1/big/机器学习-手势.png';
+import learningMachineHandInsetIconURL from './lepi-banbao-v1/small/机器学习-手势.png';
+
 import barcodeScannerIconURL from './lepi-banbao-v1/big/二维码扫描.png';
 import barcodeScannerInsetIconURL from './lepi-banbao-v1/small/二维码扫描.png';
 
@@ -510,6 +513,24 @@ export default [
             <FormattedMessage
                 defaultMessage="Load pose recognition model trained with machine learning."
                 id="gui.extension.lepiLearningMachinePose.description"
+            />
+        ),
+        tags: ['lepi', 'ai'],
+        featured: true,
+    },
+    {
+        name: (<FormattedMessage
+            defaultMessage="ML-Hand"
+            id="gui.extension.lepiLearningMachineHand.name"
+        />),
+        extensionId: 'lepiLearningMachineHand',
+        collaborator: collaborator,
+        iconURL: learningMachineHandIconURL,
+        insetIconURL: learningMachineHandInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Load hand guesture classification model trained with machine learning."
+                id="gui.extension.lepiLearningMachineHand.description"
             />
         ),
         tags: ['lepi', 'ai'],
