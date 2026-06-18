@@ -1,5 +1,5 @@
 import React from 'react';
-import {FormattedMessage} from 'react-intl';
+import { FormattedMessage } from 'react-intl';
 
 import musicIconURL from './music/music.png';
 import musicInsetIconURL from './music/music-small.svg';
@@ -53,7 +53,7 @@ import twIcon from './tw/tw.svg';
 import customExtensionIcon from './custom/custom.svg';
 import returnIcon from './custom/return.svg';
 import galleryIcon from './gallery/gallery.svg';
-import {APP_NAME} from '../../brand';
+import { APP_NAME } from '../../brand';
 
 import lepiIconURL from './lepi-banbao-v1/big/主机.png';
 import lepiInsetIconURL from './lepi-banbao-v1/small/主机.png';
@@ -164,8 +164,8 @@ import learningMachineHandInsetIconURL from './lepi-banbao-v1/small/机器学习
 import barcodeScannerIconURL from './lepi-banbao-v1/big/二维码扫描.png';
 import barcodeScannerInsetIconURL from './lepi-banbao-v1/small/二维码扫描.png';
 
-import ultraFaceIconURL from './lepi-banbao-v1/big/人脸检测.png';
-import ultraFaceInsetIconURL from './lepi-banbao-v1/small/人脸检测.png';
+import learningMachineFaceIconURL from './lepi-banbao-v1/big/人脸检测.png';
+import learningMachineFaceInsetIconURL from './lepi-banbao-v1/small/人脸检测.png';
 
 import textRecognizeIconURL from './lepi-banbao-v1/big/文本识别.png';
 import textRecognizeInsetIconURL from './lepi-banbao-v1/small/文本识别.png';
@@ -174,13 +174,13 @@ import httpIconURL from './lepi-banbao-v1/big/http.png';
 import httpInsetIconURL from './lepi-banbao-v1/small/http.png';
 
 import chatIconURL from './lepi-banbao-v1/big/chat.png';
-import chatInsetIconURL from './lepi-banbao-v1/small/chat.png';
+import chatInsetIconURL from './lepi-banbao-v1/small/大语言模型.png';
 
 import llmImageIconURL from './lepi-banbao-v1/big/AI绘画.jpg';
-import llmImageInsetIconURL from './lepi-banbao-v1/small/chat.png';
+import llmImageInsetIconURL from './lepi-banbao-v1/small/大语言模型.png';
 
 import llmVideoIconURL from './lepi-banbao-v1/big/文生视频.gif';
-import llmVideoInsetIconURL from './lepi-banbao-v1/small/chat.png';
+import llmVideoInsetIconURL from './lepi-banbao-v1/small/大语言模型.png';
 
 import hostCommunicationIconURL from './lepi-banbao-v1/big/主机通信.png';
 import hostCommunicationInsetIconURL from './lepi-banbao-v1/small/主机通信.png';
@@ -531,6 +531,24 @@ export default [
             <FormattedMessage
                 defaultMessage="Load hand guesture classification model trained with machine learning."
                 id="gui.extension.lepiLearningMachineHand.description"
+            />
+        ),
+        tags: ['lepi', 'ai'],
+        featured: true,
+    },
+    {
+        name: (<FormattedMessage
+            defaultMessage="ML-Face"
+            id="gui.extension.lepiLearningMachineFace.name"
+        />),
+        extensionId: 'lepiLearningMachineFace',
+        collaborator: collaborator,
+        iconURL: learningMachineFaceIconURL,
+        insetIconURL: learningMachineFaceInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Load face recognize model trained with machine learning."
+                id="gui.extension.lepiLearningMachineFace.description"
             />
         ),
         tags: ['lepi', 'ai'],
@@ -1012,7 +1030,7 @@ export default [
     },
     {
         name: (<FormattedMessage
-            defaultMessage="AI绘画"
+            defaultMessage="大模型绘图"
             id="gui.extension.lepiLLMImage.name"
         />),
         extensionId: 'lepiLLMImage',
