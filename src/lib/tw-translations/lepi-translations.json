@@ -110,7 +110,7 @@
         "gui.connection.scanning.instructions": "选择上面列出的设备，或者手动输入IP地址进行连接",
         "gui.gui.ipInputPlaceholder": "主机IP",
         "gui.extension.lepi.collaborator": "乐派",
-        "gui.extension.lepi.name": "主机",
+        "gui.extension.lepi.name": "乐派主机",
         "gui.extension.lepi.description": "新一代人工智能可编程主机",
         "gui.extension.lepiSensor.name": "乐派传感器",
         "gui.extension.lepiSensor.description": "超声、红外、加速度、陀螺仪、地磁等，感知世界",

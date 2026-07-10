@@ -227,6 +227,9 @@ import live2dInsetIconURL from './lepi-banbao-v1/small/live2d.png'
 import xiaozhiIconURL from './lepi-banbao-v1/big/小智机器人.png'
 import xiaozhiInsetIconURL from './lepi-banbao-v1/small/小智机器人.png'
 
+import mcpIconURL from './lepi-banbao-v1/big/mcp工具.jpg'
+import mcpInsetIconURL from './lepi-banbao-v1/small/mcp工具.png'
+
 const collaborator = <FormattedMessage
     defaultMessage="LEPI"
     id="gui.extension.lepi.collaborator"
@@ -234,10 +237,7 @@ const collaborator = <FormattedMessage
 
 export default [
     {
-        name: (<FormattedMessage
-            defaultMessage="Lepi Host"
-            id="gui.extension.lepi.name"
-        />),
+        name: '乐派主机',
         extensionId: 'lepi',
         collaborator: collaborator,
         iconURL: lepiIconURL,
@@ -1083,6 +1083,25 @@ export default [
             />
         ),
         tags: ['lepi', 'internet', 'ai'],
+        featured: true,
+    },
+    {
+        name: (<FormattedMessage
+            defaultMessage="MCP工具"
+            id="gui.extension.lepiMCP.name"
+        />),
+        extensionId: 'lepiMCP',
+        collaborator: collaborator,
+        iconURL: mcpIconURL,
+        insetIconURL: mcpInsetIconURL,
+        internetConnectionRequired: true,
+        description: (
+            <FormattedMessage
+                defaultMessage="接入MCP工具, 扩展程序功能"
+                id="gui.extension.lepiMCP.description"
+            />
+        ),
+        tags: ['lepi', 'internet', 'ai', 'iot'],
         featured: true,
     },
     // {
