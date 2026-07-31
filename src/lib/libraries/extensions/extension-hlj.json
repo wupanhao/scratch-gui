@@ -1,0 +1,25 @@
+{
+    "extensions": [
+        {
+            "slug": "Skyhigh173/json",
+            "id": "skyhigh173JSON",
+            "name": "JSON",
+            "description": "Handle JSON strings and arrays.",
+            "descriptionTranslations": {
+                "de": "Arbeite mit JSON-Strings und Listen.",
+                "it": "Gestisce stringhe e array JSON.",
+                "nb": "Behandle JSON-strenger og matriser.",
+                "nl": "Werk met JSON-strings en arrays.",
+                "ru": "Обрабатывает JSON строки и массивы.",
+                "zh-cn": "处理JSON字符串和数组。"
+            },
+            "image": "images/Skyhigh173/json.svg",
+            "by": [
+                {
+                    "name": "Skyhigh173",
+                    "link": null
+                }
+            ]
+        }
+    ]
+}

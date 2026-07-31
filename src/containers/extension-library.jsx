@@ -11,6 +11,7 @@ import extensionLibraryContent, {
     galleryMore
 } from '../lib/libraries/extensions/index.jsx';
 import extensionTags from '../lib/libraries/tw-extension-tags';
+import extensionData from '../lib/libraries/extensions/extension.json'
 
 import LibraryComponent from '../components/library/library.jsx';
 import extensionIcon from '../components/action-menu/icon--sprite.svg';
@@ -120,7 +121,6 @@ import consoleIcon from '../lib/libraries/extensions/gallery/consoles.svg';
 import xmlIcon from '../lib/libraries/extensions/gallery/xml.svg'
 import VideoIcon from '../lib/libraries/extensions/gallery/Video.svg'
 
-import extensionData from '../lib/libraries/extensions/extension.json'
 // sync with scratch-vm/src/extension-support/tw-security-manager.js
 const extensionTagsMap = {
     'files': ['tw'],

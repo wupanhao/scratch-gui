@@ -6,6 +6,7 @@
     "@mediapipe/hands": "^0.4.1675469240",
     "@mediapipe/holistic": "^0.5.1675471629",
     "@mediapipe/pose": "^0.5.1675469404",
+    "@mediapipe/tasks-vision": "^1.0.0",
     "@vladmandic/face-api": "^1.7.15"
   }
 }

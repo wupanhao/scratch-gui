@@ -146,7 +146,7 @@ import variableInsetIconURL from './lepi-banbao-v1/small/变量.png';
 import collaborationSheetIconURL from './lepi-banbao-v1/big/协作表格.png';
 import collaborationSheetInsetIconURL from './lepi-banbao-v1/small/协作表格.png';
 
-import googleIconURL from './lepi-banbao-v1/big/谷歌AI.png';
+import googleIconURL from './lepi-banbao-v1/big/General_AI.png';
 import googleInsetIconURL from './lepi-banbao-v1/small/谷歌AI.png';
 
 import learningMachineImageIconURL from './lepi-banbao-v1/big/机器学习-图像.png';
@@ -457,7 +457,7 @@ export default [
         insetIconURL: googleInsetIconURL,
         description: (
             <FormattedMessage
-                defaultMessage="Google AI models, can run on local computer."
+                defaultMessage="General AI models, can run on local computer."
                 id="gui.extension.lepiGoogleAI.description"
             />
         ),
