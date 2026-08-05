@@ -299,7 +299,7 @@ export default [
                 id="gui.extension.lepiScienceSensor.description"
             />
         ),
-        tags: ['lepi', 'robot'],
+        tags: ['iot'],
         featured: true,
     },
     {
@@ -341,6 +341,24 @@ export default [
     },
     {
         name: (<FormattedMessage
+            defaultMessage="Face Recognize"
+            id="gui.extension.lepiFaceRecognize.name"
+        />),
+        extensionId: 'lepiFaceRecognize',
+        collaborator: collaborator,
+        iconURL: faceRecognizeIconURL,
+        insetIconURL: faceRecognizeInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Detect faces and mark them as well."
+                id="gui.extension.lepiFaceRecognize.description"
+            />
+        ),
+        tags: ['lepi', 'ai'],
+        featured: true,
+    },
+    {
+        name: (<FormattedMessage
             defaultMessage="Gesture Detection"
             id="gui.extension.lepiHandDetect.name"
         />),
@@ -359,24 +377,6 @@ export default [
     },
     {
         name: (<FormattedMessage
-            defaultMessage="虚拟形象"
-            id="gui.extension.lepiLive2D.name"
-        />),
-        extensionId: 'lepiLive2D',
-        collaborator: collaborator,
-        iconURL: live2dIconURL,
-        insetIconURL: live2dInsetIconURL,
-        description: (
-            <FormattedMessage
-                defaultMessage="使用live2d虚拟形象."
-                id="gui.extension.lepiLive2D.description"
-            />
-        ),
-        tags: ['lepi'],
-        featured: true,
-    },
-    {
-        name: (<FormattedMessage
             defaultMessage="Pose Estimation"
             id="gui.extension.lepiPoseEstimate.name"
         />),
@@ -388,6 +388,42 @@ export default [
             <FormattedMessage
                 defaultMessage="Identify 33 key points of the body."
                 id="gui.extension.lepiPoseEstimate.description"
+            />
+        ),
+        tags: ['lepi', 'ai'],
+        featured: true,
+    },
+    {
+        name: (<FormattedMessage
+            defaultMessage="Barcode Scanning"
+            id="gui.extension.lepiBarcodeScan.name"
+        />),
+        extensionId: 'lepiBarcodeScan',
+        collaborator: collaborator,
+        iconURL: barcodeScannerIconURL,
+        insetIconURL: barcodeScannerInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Scan the Barcode."
+                id="gui.extension.lepiBarcodeScan.description"
+            />
+        ),
+        tags: ['lepi', 'ai'],
+        featured: true,
+    },
+    {
+        name: (<FormattedMessage
+            defaultMessage="Text Recognition"
+            id="gui.extension.lepiTextRecognize.name"
+        />),
+        extensionId: 'lepiTextRecognize',
+        collaborator: collaborator,
+        iconURL: textRecognizeIconURL,
+        insetIconURL: textRecognizeInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Recognize text information."
+                id="gui.extension.lepiTextRecognize.description"
             />
         ),
         tags: ['lepi', 'ai'],
@@ -411,24 +447,6 @@ export default [
     //     tags: ['lepi'],
     //     featured: true,
     // },
-    {
-        name: (<FormattedMessage
-            defaultMessage="Apriltag Detection"
-            id="gui.extension.lepiApriltagDetect.name"
-        />),
-        extensionId: 'lepiApriltagDetect',
-        collaborator: collaborator,
-        iconURL: apriltagIconURL,
-        insetIconURL: apriltagInsetIconURL,
-        description: (
-            <FormattedMessage
-                defaultMessage="Accurate spatial localization combined with apriltags."
-                id="gui.extension.lepiApriltagDetect.description"
-            />
-        ),
-        tags: ['lepi', 'ai'],
-        featured: true,
-    },
     /*
     {
         name: '人脸检测',
@@ -461,7 +479,7 @@ export default [
                 id="gui.extension.lepiGoogleAI.description"
             />
         ),
-        tags: ['lepi', 'ai'],
+        tags: ['ai'],
         featured: true,
     },
     {
@@ -479,7 +497,7 @@ export default [
                 id="gui.extension.lepiLearningMachineImage.description"
             />
         ),
-        tags: ['lepi', 'ai'],
+        tags: ['ai'],
         featured: true,
     },
     {
@@ -497,7 +515,7 @@ export default [
                 id="gui.extension.lepiLearningMachineAudio.description"
             />
         ),
-        tags: ['lepi', 'ai'],
+        tags: ['ai'],
         featured: true,
     },
     {
@@ -515,7 +533,7 @@ export default [
                 id="gui.extension.lepiLearningMachinePose.description"
             />
         ),
-        tags: ['lepi', 'ai'],
+        tags: ['ai'],
         featured: true,
     },
     {
@@ -533,7 +551,7 @@ export default [
                 id="gui.extension.lepiLearningMachineHand.description"
             />
         ),
-        tags: ['lepi', 'ai'],
+        tags: ['ai'],
         featured: true,
     },
     {
@@ -551,7 +569,7 @@ export default [
                 id="gui.extension.lepiLearningMachineFace.description"
             />
         ),
-        tags: ['lepi', 'ai'],
+        tags: ['ai'],
         featured: true,
     },
     {
@@ -606,7 +624,7 @@ export default [
                 id="gui.extension.lepiAudio.description"
             />
         ),
-        tags: ['lepi'],
+        tags: [],
         featured: true,
     },
     {
@@ -625,7 +643,7 @@ export default [
                 id="gui.extension.lepiMQTT.description"
             />
         ),
-        tags: ['lepi', 'iot'],
+        tags: ['iot'],
         featured: true,
     },
     {
@@ -643,7 +661,7 @@ export default [
                 id="gui.extension.lepiWebSerial.description"
             />
         ),
-        tags: ['lepi', 'iot'],
+        tags: ['iot'],
         featured: true,
     },
 
@@ -662,7 +680,7 @@ export default [
                 id="gui.extension.lepiWebPlottor.description"
             />
         ),
-        tags: ['lepi', 'iot'],
+        tags: ['iot'],
         featured: true,
     },
     {
@@ -680,25 +698,7 @@ export default [
                 id="gui.extension.lepiEcharts.description"
             />
         ),
-        tags: ['lepi'],
-        featured: true,
-    },
-    {
-        name: (<FormattedMessage
-            defaultMessage="Face Recognize"
-            id="gui.extension.lepiFaceRecognize.name"
-        />),
-        extensionId: 'lepiFaceRecognize',
-        collaborator: collaborator,
-        iconURL: faceRecognizeIconURL,
-        insetIconURL: faceRecognizeInsetIconURL,
-        description: (
-            <FormattedMessage
-                defaultMessage="Detect faces and mark them as well."
-                id="gui.extension.lepiFaceRecognize.description"
-            />
-        ),
-        tags: ['lepi', 'ai'],
+        tags: [],
         featured: true,
     },
     {
@@ -714,6 +714,24 @@ export default [
             <FormattedMessage
                 defaultMessage="Detect various colors in the camera picture."
                 id="gui.extension.lepiColorDetect.description"
+            />
+        ),
+        tags: ['lepi', 'ai'],
+        featured: true,
+    },
+    {
+        name: (<FormattedMessage
+            defaultMessage="Apriltag Detection"
+            id="gui.extension.lepiApriltagDetect.name"
+        />),
+        extensionId: 'lepiApriltagDetect',
+        collaborator: collaborator,
+        iconURL: apriltagIconURL,
+        insetIconURL: apriltagInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Accurate spatial localization combined with apriltags."
+                id="gui.extension.lepiApriltagDetect.description"
             />
         ),
         tags: ['lepi', 'ai'],
@@ -738,7 +756,10 @@ export default [
         featured: true,
     },
     {
-        name: '图像分类',
+        name: (<FormattedMessage
+            defaultMessage="Image Classify"
+            id="gui.extension.lepi_image_classify.name"
+        />),
         extensionId: 'lepiImageClassify',
         collaborator: collaborator,
         iconURL: imageClassifyIconURL,
@@ -755,43 +776,9 @@ export default [
     },
     {
         name: (<FormattedMessage
-            defaultMessage="Barcode Scanning"
-            id="gui.extension.lepiBarcodeScan.name"
+            defaultMessage="Transfer Learning"
+            id="gui.extension.lepi_transfer_learning.name"
         />),
-        extensionId: 'lepiBarcodeScan',
-        collaborator: collaborator,
-        iconURL: barcodeScannerIconURL,
-        insetIconURL: barcodeScannerInsetIconURL,
-        description: (
-            <FormattedMessage
-                defaultMessage="Scan the Barcode."
-                id="gui.extension.lepiBarcodeScan.description"
-            />
-        ),
-        tags: ['lepi', 'ai'],
-        featured: true,
-    },
-    {
-        name: (<FormattedMessage
-            defaultMessage="Text Recognition"
-            id="gui.extension.lepiTextRecognize.name"
-        />),
-        extensionId: 'lepiTextRecognize',
-        collaborator: collaborator,
-        iconURL: textRecognizeIconURL,
-        insetIconURL: textRecognizeInsetIconURL,
-        description: (
-            <FormattedMessage
-                defaultMessage="Recognize text information."
-                id="gui.extension.lepiTextRecognize.description"
-            />
-        ),
-        tags: ['lepi', 'ai'],
-        featured: true,
-    },
-
-    {
-        name: '迁移学习',
         extensionId: 'lepiTransferLearning',
         collaborator: collaborator,
         iconURL: transferLearningIconURL,
@@ -819,42 +806,6 @@ export default [
             <FormattedMessage
                 defaultMessage="Read and write RFID card."
                 id="gui.extension.lepiRFID.description"
-            />
-        ),
-        tags: ['lepi', 'iot'],
-        featured: true,
-    },
-    {
-        name: (<FormattedMessage
-            defaultMessage="模拟点阵屏"
-            id="gui.extension.lepiLedSimulator.name"
-        />),
-        extensionId: 'lepiLedSimulator',
-        collaborator: collaborator,
-        iconURL: ledSimulatorIconURL,
-        insetIconURL: ledSimulatorInsetIconURL,
-        description: (
-            <FormattedMessage
-                defaultMessage="控制模拟点阵屏"
-                id="gui.extension.lepiLedSimulator.description"
-            />
-        ),
-        tags: ['lepi', 'iot'],
-        featured: true,
-    },
-    {
-        name: (<FormattedMessage
-            defaultMessage="智慧教室"
-            id="gui.extension.lepiSmartClassroom.name"
-        />),
-        extensionId: 'lepiSmartClassroom',
-        collaborator: collaborator,
-        iconURL: smartClassroomIconURL,
-        insetIconURL: smartClassroomInsetIconURL,
-        description: (
-            <FormattedMessage
-                defaultMessage="控制教室里的智能设备"
-                id="gui.extension.lepiSmartClassroom.description"
             />
         ),
         tags: ['lepi', 'iot'],
@@ -955,175 +906,6 @@ export default [
         featured: true,
     },
     {
-        name: (<FormattedMessage
-            defaultMessage="Shared Variable"
-            id="gui.extension.lepiVariable.name"
-        />),
-        extensionId: 'lepiVariable',
-        collaborator: collaborator,
-        iconURL: variableIconURL,
-        insetIconURL: variableInsetIconURL,
-        description: (
-            <FormattedMessage
-                defaultMessage="Share variables across multiple works."
-                id="gui.extension.lepiVariable.description"
-            />
-        ),
-        tags: ['lepi', 'internet'],
-        featured: true,
-    },
-    // {
-    //     name: (<FormattedMessage
-    //         defaultMessage="Collaboration Sheet"
-    //         id="gui.extension.lepiCollaborationSheet.name"
-    //     />),
-    //     extensionId: 'lepiCollaborationSheet',
-    //     collaborator: collaborator,
-    //     iconURL: collaborationSheetIconURL,
-    //     insetIconURL: collaborationSheetInsetIconURL,
-    //     description: (
-    //         <FormattedMessage
-    //             defaultMessage="Collaboration Sheet supports multiple editors."
-    //             id="gui.extension.lepiCollaborationSheet.description"
-    //         />
-    //     ),
-    //     tags: ['lepi', 'internet'],
-    //     featured: true,
-    // },
-    {
-        name: (<FormattedMessage
-            defaultMessage="HTTP Communication"
-            id="gui.extension.lepiHttp.name"
-        />),
-        extensionId: 'lepiHttp',
-        collaborator: collaborator,
-        iconURL: httpIconURL,
-        insetIconURL: httpInsetIconURL,
-        internetConnectionRequired: true,
-        description: (
-            <FormattedMessage
-                defaultMessage="Network communication using HTTP/HTTPS."
-                id="gui.extension.lepiHttp.description"
-            />
-        ),
-        tags: ['lepi', 'internet'],
-        featured: true,
-    },
-    {
-        name: (<FormattedMessage
-            defaultMessage="AI communication"
-            id="gui.extension.lepiChat.name"
-        />),
-        extensionId: 'lepiChat',
-        collaborator: collaborator,
-        iconURL: chatIconURL,
-        insetIconURL: chatInsetIconURL,
-        internetConnectionRequired: true,
-        description: (
-            <FormattedMessage
-                defaultMessage="communication with big models."
-                id="gui.extension.lepiChat.description"
-            />
-        ),
-        tags: ['lepi', 'internet', 'ai'],
-        featured: true,
-    },
-    {
-        name: (<FormattedMessage
-            defaultMessage="大模型绘图"
-            id="gui.extension.lepiLLMImage.name"
-        />),
-        extensionId: 'lepiLLMImage',
-        collaborator: collaborator,
-        iconURL: llmImageIconURL,
-        insetIconURL: llmImageInsetIconURL,
-        internetConnectionRequired: true,
-        description: (
-            <FormattedMessage
-                defaultMessage="AI生成图像."
-                id="gui.extension.lepiLLMImage.description"
-            />
-        ),
-        tags: ['lepi', 'internet', 'ai'],
-        featured: true,
-    },
-    // {
-    //     name: (<FormattedMessage
-    //         defaultMessage="文生视频"
-    //         id="gui.extension.lepiLLMVideo.name"
-    //     />),
-    //     extensionId: 'lepiLLMVideo',
-    //     collaborator: collaborator,
-    //     iconURL: llmVideoIconURL,
-    //     insetIconURL: llmVideoInsetIconURL,
-    //     internetConnectionRequired: true,
-    //     description: (
-    //         <FormattedMessage
-    //             defaultMessage="只需一句话，AI生成短视频."
-    //             id="gui.extension.lepiLLMVideo.description"
-    //         />
-    //     ),
-    //     tags: ['lepi', 'internet', 'ai'],
-    //     featured: true,
-    // },
-    {
-        name: (<FormattedMessage
-            defaultMessage="Dify智能体"
-            id="gui.extension.lepiDifyLLM.name"
-        />),
-        extensionId: 'lepiDifyLLM',
-        collaborator: collaborator,
-        iconURL: difyIconURL,
-        insetIconURL: difyInsetIconURL,
-        internetConnectionRequired: true,
-        description: (
-            <FormattedMessage
-                defaultMessage="和Dify智能体协作."
-                id="gui.extension.lepiDifyLLM.description"
-            />
-        ),
-        tags: ['lepi', 'internet', 'ai'],
-        featured: true,
-    },
-    {
-        name: (<FormattedMessage
-            defaultMessage="MCP工具"
-            id="gui.extension.lepiMCP.name"
-        />),
-        extensionId: 'lepiMCP',
-        collaborator: collaborator,
-        iconURL: mcpIconURL,
-        insetIconURL: mcpInsetIconURL,
-        internetConnectionRequired: true,
-        description: (
-            <FormattedMessage
-                defaultMessage="接入MCP工具, 扩展程序功能"
-                id="gui.extension.lepiMCP.description"
-            />
-        ),
-        tags: ['lepi', 'internet', 'ai', 'iot'],
-        featured: true,
-    },
-    // {
-    //     name: (<FormattedMessage
-    //         defaultMessage="小智机器人"
-    //         id="gui.extension.lepiXiaozhiRobot.name"
-    //     />),
-    //     extensionId: 'lepiXiaozhiRobot',
-    //     collaborator: collaborator,
-    //     iconURL: xiaozhiIconURL,
-    //     insetIconURL: xiaozhiInsetIconURL,
-    //     internetConnectionRequired: true,
-    //     description: (
-    //         <FormattedMessage
-    //             defaultMessage="接入小智机器人."
-    //             id="gui.extension.lepiXiaozhiRobot.description"
-    //         />
-    //     ),
-    //     tags: ['lepi', 'internet', 'ai'],
-    //     featured: true,
-    // },
-    {
         name: (
             <FormattedMessage
                 defaultMessage="Serial Communication"
@@ -1168,6 +950,212 @@ export default [
         featured: true,
     },
     {
+        name: (<FormattedMessage
+            defaultMessage="Shared Variable"
+            id="gui.extension.lepiVariable.name"
+        />),
+        extensionId: 'lepiVariable',
+        collaborator: collaborator,
+        iconURL: variableIconURL,
+        insetIconURL: variableInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Share variables across multiple works."
+                id="gui.extension.lepiVariable.description"
+            />
+        ),
+        tags: ['lepi'],
+        featured: true,
+    },
+    // {
+    //     name: (<FormattedMessage
+    //         defaultMessage="Collaboration Sheet"
+    //         id="gui.extension.lepiCollaborationSheet.name"
+    //     />),
+    //     extensionId: 'lepiCollaborationSheet',
+    //     collaborator: collaborator,
+    //     iconURL: collaborationSheetIconURL,
+    //     insetIconURL: collaborationSheetInsetIconURL,
+    //     description: (
+    //         <FormattedMessage
+    //             defaultMessage="Collaboration Sheet supports multiple editors."
+    //             id="gui.extension.lepiCollaborationSheet.description"
+    //         />
+    //     ),
+    //     tags: ['lepi', 'internet'],
+    //     featured: true,
+    // },
+    {
+        name: (<FormattedMessage
+            defaultMessage="模拟点阵屏"
+            id="gui.extension.lepiLedSimulator.name"
+        />),
+        extensionId: 'lepiLedSimulator',
+        collaborator: collaborator,
+        iconURL: ledSimulatorIconURL,
+        insetIconURL: ledSimulatorInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="控制模拟点阵屏"
+                id="gui.extension.lepiLedSimulator.description"
+            />
+        ),
+        tags: ['iot'],
+        featured: true,
+    },
+    {
+        name: (<FormattedMessage
+            defaultMessage="智慧教室"
+            id="gui.extension.lepiSmartClassroom.name"
+        />),
+        extensionId: 'lepiSmartClassroom',
+        collaborator: collaborator,
+        iconURL: smartClassroomIconURL,
+        insetIconURL: smartClassroomInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="控制教室里的智能设备"
+                id="gui.extension.lepiSmartClassroom.description"
+            />
+        ),
+        tags: ['iot'],
+        featured: true,
+    },
+    {
+        name: (<FormattedMessage
+            defaultMessage="HTTP Communication"
+            id="gui.extension.lepiHttp.name"
+        />),
+        extensionId: 'lepiHttp',
+        collaborator: collaborator,
+        iconURL: httpIconURL,
+        insetIconURL: httpInsetIconURL,
+        internetConnectionRequired: true,
+        description: (
+            <FormattedMessage
+                defaultMessage="Network communication using HTTP/HTTPS."
+                id="gui.extension.lepiHttp.description"
+            />
+        ),
+        tags: ['internet'],
+        featured: true,
+    },
+    {
+        name: (<FormattedMessage
+            defaultMessage="AI communication"
+            id="gui.extension.lepiChat.name"
+        />),
+        extensionId: 'lepiChat',
+        collaborator: collaborator,
+        iconURL: chatIconURL,
+        insetIconURL: chatInsetIconURL,
+        internetConnectionRequired: true,
+        description: (
+            <FormattedMessage
+                defaultMessage="communication with big models."
+                id="gui.extension.lepiChat.description"
+            />
+        ),
+        tags: ['internet', 'ai'],
+        featured: true,
+    },
+    {
+        name: (<FormattedMessage
+            defaultMessage="大模型绘图"
+            id="gui.extension.lepiLLMImage.name"
+        />),
+        extensionId: 'lepiLLMImage',
+        collaborator: collaborator,
+        iconURL: llmImageIconURL,
+        insetIconURL: llmImageInsetIconURL,
+        internetConnectionRequired: true,
+        description: (
+            <FormattedMessage
+                defaultMessage="AI生成图像."
+                id="gui.extension.lepiLLMImage.description"
+            />
+        ),
+        tags: ['internet', 'ai'],
+        featured: true,
+    },
+    // {
+    //     name: (<FormattedMessage
+    //         defaultMessage="文生视频"
+    //         id="gui.extension.lepiLLMVideo.name"
+    //     />),
+    //     extensionId: 'lepiLLMVideo',
+    //     collaborator: collaborator,
+    //     iconURL: llmVideoIconURL,
+    //     insetIconURL: llmVideoInsetIconURL,
+    //     internetConnectionRequired: true,
+    //     description: (
+    //         <FormattedMessage
+    //             defaultMessage="只需一句话，AI生成短视频."
+    //             id="gui.extension.lepiLLMVideo.description"
+    //         />
+    //     ),
+    //     tags: ['lepi', 'internet', 'ai'],
+    //     featured: true,
+    // },
+    {
+        name: (<FormattedMessage
+            defaultMessage="Dify智能体"
+            id="gui.extension.lepiDifyLLM.name"
+        />),
+        extensionId: 'lepiDifyLLM',
+        collaborator: collaborator,
+        iconURL: difyIconURL,
+        insetIconURL: difyInsetIconURL,
+        internetConnectionRequired: true,
+        description: (
+            <FormattedMessage
+                defaultMessage="和Dify智能体协作."
+                id="gui.extension.lepiDifyLLM.description"
+            />
+        ),
+        tags: ['internet', 'ai'],
+        featured: true,
+    },
+    {
+        name: (<FormattedMessage
+            defaultMessage="MCP工具"
+            id="gui.extension.lepiMCP.name"
+        />),
+        extensionId: 'lepiMCP',
+        collaborator: collaborator,
+        iconURL: mcpIconURL,
+        insetIconURL: mcpInsetIconURL,
+        internetConnectionRequired: true,
+        description: (
+            <FormattedMessage
+                defaultMessage="接入MCP工具, 扩展程序功能"
+                id="gui.extension.lepiMCP.description"
+            />
+        ),
+        tags: ['internet', 'ai', 'iot'],
+        featured: true,
+    },
+    // {
+    //     name: (<FormattedMessage
+    //         defaultMessage="小智机器人"
+    //         id="gui.extension.lepiXiaozhiRobot.name"
+    //     />),
+    //     extensionId: 'lepiXiaozhiRobot',
+    //     collaborator: collaborator,
+    //     iconURL: xiaozhiIconURL,
+    //     insetIconURL: xiaozhiInsetIconURL,
+    //     internetConnectionRequired: true,
+    //     description: (
+    //         <FormattedMessage
+    //             defaultMessage="接入小智机器人."
+    //             id="gui.extension.lepiXiaozhiRobot.description"
+    //         />
+    //     ),
+    //     tags: ['lepi', 'internet', 'ai'],
+    //     featured: true,
+    // },
+
+    {
         name: (
             <FormattedMessage
                 defaultMessage="Home Assistant"
@@ -1186,7 +1174,7 @@ export default [
                 id="gui.extension.homeassistant.description"
             />
         ),
-        tags: ['lepi', 'iot'],
+        tags: ['iot'],
         featured: true
     },
     {
@@ -1208,7 +1196,7 @@ export default [
         disabled: false,
         // internetConnectionRequired: true,
         bluetoothRequired: false,
-        tags: ['lepi', 'iot'],
+        tags: ['iot'],
         // helpLink: 'https://mryslab.github.io/s3-extend/'
     },
     {
@@ -1230,7 +1218,7 @@ export default [
         disabled: false,
         internetConnectionRequired: true,
         bluetoothRequired: false,
-        tags: ['lepi', 'iot'],
+        tags: ['iot'],
         // helpLink: 'https://mryslab.github.io/s3-extend/'
     },
     {
@@ -1252,7 +1240,7 @@ export default [
         disabled: false,
         // internetConnectionRequired: true,
         bluetoothRequired: false,
-        tags: ['lepi', 'iot'],
+        tags: ['iot'],
         // helpLink: 'https://mryslab.github.io/s3-extend/'
     },
     {
@@ -1274,7 +1262,7 @@ export default [
         disabled: false,
         internetConnectionRequired: true,
         bluetoothRequired: false,
-        tags: ['lepi', 'iot'],
+        tags: ['iot'],
         // helpLink: 'https://mryslab.github.io/s3-extend/'
     },
     /*
@@ -1319,6 +1307,24 @@ export default [
     },
 
     */
+    {
+        name: (<FormattedMessage
+            defaultMessage="虚拟形象"
+            id="gui.extension.lepiLive2D.name"
+        />),
+        extensionId: 'lepiLive2D',
+        collaborator: collaborator,
+        iconURL: live2dIconURL,
+        insetIconURL: live2dInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="使用live2d虚拟形象."
+                id="gui.extension.lepiLive2D.description"
+            />
+        ),
+        tags: [],
+        featured: true,
+    },
     {
         name: (
             <FormattedMessage
