@@ -118,10 +118,10 @@
         "gui.extension.lepiScienceSensor.description": "力、光谱、声音、温度、电压等，探究科学",
         "gui.extension.lepiActuator.name": "乐派-执行器",
         "gui.extension.lepiActuator.description": "大电机、中电机、舵机，让你的作品动起来.",
-        "gui.extension.lepiCamera.name": "乐派-摄像头",
+        "gui.extension.lepiCamera.name": "摄像头",
         "gui.extension.lepiCamera.description": "看到世界",
         "gui.extension.lepiHandDetect.name": "乐派-手势检测",
-        "gui.extension.lepiHandDetect.description": "检测手部22个特征点.",
+        "gui.extension.lepiHandDetect.description": "检测手部21个特征点.",
         "gui.extension.lepiPoseEstimate.name": "乐派-姿态估计",
         "gui.extension.lepiPoseEstimate.description": "识别身体33个特征点.",
         "gui.extension.lepiMoveNetPose.name": "姿态估计(快速)",
@@ -140,7 +140,7 @@
         "gui.extension.lepiLearningMachineFace.description": "加载人脸识别模型.",
         "gui.extension.lepiImageProcess.name": "乐派-图像处理",
         "gui.extension.lepiImageProcess.description": "图像预处理.",
-        "gui.extension.lepiSmartAudio.name": "乐派-智能语音",
+        "gui.extension.lepiSmartAudio.name": "智能语音",
         "gui.extension.lepiSmartAudio.description": "语音朗读、语音识别、语音合成",
         "gui.extension.lepiAudio.name": "音频",
         "gui.extension.lepiAudio.description": "聆听、歌唱.",
@@ -235,13 +235,13 @@
             "message": "识别到语音?"
         },
         "lepi.SpeechRecognitionOffline": {
-            "message": "离线语音识别"
+            "message": "乐派离线语音识别"
         },
         "lepi.SpeechRecognitionResult": {
             "message": "语音识别结果"
         },
         "lepi.TTSOffline": {
-            "message": "离线语音合成[TEXT], [WAIT]读完"
+            "message": "乐派离线语音合成[TEXT], [WAIT]读完"
         },
         "lepi._disablePreview": {
             "message": "关闭图像"
@@ -466,7 +466,7 @@
             "message": "断开连接 [PORT]"
         },
         "lepi.drawRect": {
-            "message": "画矩形 (x1:[X1],y1[Y1]) (x2:[X2],y2:[Y2])"
+            "message": "显示矩形 (x1:[X1],y1[Y1]) (x2:[X2],y2:[Y2])"
         },
         "lepi.erode": {
             "message": "添加腐蚀处理,宽[X],高[Y],迭代次数[N]"

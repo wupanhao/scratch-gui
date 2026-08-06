@@ -50,7 +50,7 @@ import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
 import twIcon from './tw/tw.svg';
-import customExtensionIcon from './custom/custom.svg';
+import customExtensionIcon from './gallery/自定义扩展.jpg';
 import returnIcon from './custom/return.svg';
 import galleryIcon from './gallery/gallery.svg';
 import { APP_NAME } from '../../brand';
@@ -78,16 +78,20 @@ import audioIconURL from './lepi-banbao-v1/big/音频.png';
 import audioInsetIconURL from './lepi-banbao-v1/small/音频.png';
 
 import poseEstimateIconURL from './lepi-banbao-v1/big/姿态估计.png';
+import localPoseDetectionIconURL from './lepi-banbao-v1/big/姿态估计2.png';
 import poseEstimateInsetIconURL from './lepi-banbao-v1/small/姿态估计.png';
 
 import handDetectIconURL from './lepi-banbao-v1/big/手势识别.png';
+import localHandDetectionIconURL from './lepi-banbao-v1/big/手势识别2.png';
 import handDetectInsetIconURL from './lepi-banbao-v1/small/手势识别.png';
 
 import colorDetectIconURL from './lepi-banbao-v1/big/颜色识别.png';
 import colorDetectInsetIconURL from './lepi-banbao-v1/small/颜色识别.png';
 
+import generalAIInsetIconURL from './lepi-banbao-v1/small/通用AI.png';
 
 import faceRecognizeIconURL from './lepi-banbao-v1/big/人脸识别.png';
+import localFaceDetectionIconURL from './lepi-banbao-v1/big/人脸识别2.png';
 import faceRecognizeInsetIconURL from './lepi-banbao-v1/small/人脸识别.png';
 
 import rfidIconURL from './lepi-banbao-v1/big/nfc.png';
@@ -327,7 +331,6 @@ export default [
             id="gui.extension.lepiCamera.name"
         />),
         extensionId: 'lepiCamera',
-        collaborator: collaborator,
         iconURL: cameraIconURL,
         insetIconURL: cameraInsetIconURL,
         description: (
@@ -412,32 +415,80 @@ export default [
     //     tags: ['lepi', 'ai'],
     //     featured: true,
     // },
-
     {
         name: (<FormattedMessage
-            defaultMessage="Google AI"
-            id="gui.extension.lepiGoogleAI.name"
+            defaultMessage="手势检测"
+            id="gui.extension.localHandDetection.name"
         />),
-        extensionId: 'lepiGoogleAI',
-        collaborator: collaborator,
-        iconURL: googleIconURL,
-        insetIconURL: googleInsetIconURL,
+        extensionId: 'localHandDetection',
+        iconURL: localHandDetectionIconURL,
+        insetIconURL: handDetectInsetIconURL,
         description: (
             <FormattedMessage
-                defaultMessage="General AI models, can run on local computer."
-                id="gui.extension.lepiGoogleAI.description"
+                defaultMessage="检测手部21个特征点."
+                id="gui.extension.localHandDetection.description"
             />
         ),
-        tags: ['lepi', 'ai'],
+        tags: ['ai'],
         featured: true,
     },
+    {
+        name: (<FormattedMessage
+            defaultMessage="姿态估计"
+            id="gui.extension.localPoseDetection.name"
+        />),
+        extensionId: 'localPoseDetection',
+        iconURL: localPoseDetectionIconURL,
+        insetIconURL: poseEstimateInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="检测身体33个特征点."
+                id="gui.extension.localPoseDetection.description"
+            />
+        ),
+        tags: ['ai'],
+        featured: true,
+    },
+    {
+        name: (<FormattedMessage
+            defaultMessage="人脸检测"
+            id="gui.extension.localFaceDetection.name"
+        />),
+        extensionId: 'localFaceDetection',
+        iconURL: localFaceDetectionIconURL,
+        insetIconURL: faceRecognizeInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="检测人脸位置和关键点"
+                id="gui.extension.localFaceDetection.description"
+            />
+        ),
+        tags: ['ai'],
+        featured: true,
+    },
+    // {
+    //     name: (<FormattedMessage
+    //         defaultMessage="Google AI"
+    //         id="gui.extension.lepiGoogleAI.name"
+    //     />),
+    //     extensionId: 'lepiGoogleAI',
+    //     iconURL: googleIconURL,
+    //     insetIconURL: googleInsetIconURL,
+    //     description: (
+    //         <FormattedMessage
+    //             defaultMessage="General AI models, can run on local computer."
+    //             id="gui.extension.lepiGoogleAI.description"
+    //         />
+    //     ),
+    //     tags: ['lepi', 'ai'],
+    //     featured: true,
+    // },
     {
         name: (<FormattedMessage
             defaultMessage="ML-Iamge"
             id="gui.extension.lepiLearningMachineImage.name"
         />),
         extensionId: 'lepiLearningMachineImage',
-        collaborator: collaborator,
         iconURL: learningMachineImageIconURL,
         insetIconURL: learningMachineImageInsetIconURL,
         description: (
@@ -446,7 +497,7 @@ export default [
                 id="gui.extension.lepiLearningMachineImage.description"
             />
         ),
-        tags: ['lepi', 'ai'],
+        tags: ['ai'],
         featured: true,
     },
     {
@@ -455,7 +506,6 @@ export default [
             id="gui.extension.lepiLearningMachineAudio.name"
         />),
         extensionId: 'lepiLearningMachineAudio',
-        collaborator: collaborator,
         iconURL: learningMachineAudioIconURL,
         insetIconURL: learningMachineAudioInsetIconURL,
         description: (
@@ -464,7 +514,7 @@ export default [
                 id="gui.extension.lepiLearningMachineAudio.description"
             />
         ),
-        tags: ['lepi', 'ai'],
+        tags: ['ai'],
         featured: true,
     },
     {
@@ -473,7 +523,6 @@ export default [
             id="gui.extension.lepiLearningMachinePose.name"
         />),
         extensionId: 'lepiLearningMachinePose',
-        collaborator: collaborator,
         iconURL: learningMachinePoseIconURL,
         insetIconURL: learningMachinePoseInsetIconURL,
         description: (
@@ -482,7 +531,7 @@ export default [
                 id="gui.extension.lepiLearningMachinePose.description"
             />
         ),
-        tags: ['lepi', 'ai'],
+        tags: ['ai'],
         featured: true,
     },
     {
@@ -491,7 +540,6 @@ export default [
             id="gui.extension.lepiLearningMachineHand.name"
         />),
         extensionId: 'lepiLearningMachineHand',
-        collaborator: collaborator,
         iconURL: learningMachineHandIconURL,
         insetIconURL: learningMachineHandInsetIconURL,
         description: (
@@ -500,7 +548,7 @@ export default [
                 id="gui.extension.lepiLearningMachineHand.description"
             />
         ),
-        tags: ['lepi', 'ai'],
+        tags: ['ai'],
         featured: true,
     },
     {
@@ -509,7 +557,6 @@ export default [
             id="gui.extension.lepiLearningMachineFace.name"
         />),
         extensionId: 'lepiLearningMachineFace',
-        collaborator: collaborator,
         iconURL: learningMachineFaceIconURL,
         insetIconURL: learningMachineFaceInsetIconURL,
         description: (
@@ -518,7 +565,7 @@ export default [
                 id="gui.extension.lepiLearningMachineFace.description"
             />
         ),
-        tags: ['lepi', 'ai'],
+        tags: ['ai'],
         featured: true,
     },
     // {
@@ -545,7 +592,6 @@ export default [
             id="gui.extension.lepiSmartAudio.name"
         />),
         extensionId: 'lepiSmartAudio',
-        collaborator: collaborator,
         iconURL: AIAudioIconURL,
         insetIconURL: learningMachineAudioInsetIconURL,
         description: (
@@ -582,7 +628,6 @@ export default [
             id="gui.extension.lepiMQTT.name"
         />),
         extensionId: 'lepiMQTT',
-        collaborator: collaborator,
         iconURL: mqttIconURL,
         insetIconURL: mqttInsetIconURL,
         internetConnectionRequired: true,
@@ -592,7 +637,7 @@ export default [
                 id="gui.extension.lepiMQTT.description"
             />
         ),
-        tags: ['lepi', 'iot'],
+        tags: ['iot'],
         featured: true,
     },
     // {
@@ -963,7 +1008,6 @@ export default [
             id="gui.extension.lepiHttp.name"
         />),
         extensionId: 'lepiHttp',
-        collaborator: collaborator,
         iconURL: httpIconURL,
         insetIconURL: httpInsetIconURL,
         internetConnectionRequired: true,
@@ -973,7 +1017,7 @@ export default [
                 id="gui.extension.lepiHttp.description"
             />
         ),
-        tags: ['lepi', 'internet'],
+        tags: ['internet'],
         featured: true,
     },
     {
@@ -982,7 +1026,6 @@ export default [
             id="gui.extension.lepiChat.name"
         />),
         extensionId: 'lepiChat',
-        collaborator: collaborator,
         iconURL: chatIconURL,
         insetIconURL: chatInsetIconURL,
         internetConnectionRequired: true,
@@ -992,7 +1035,7 @@ export default [
                 id="gui.extension.lepiChat.description"
             />
         ),
-        tags: ['lepi', 'internet', 'ai'],
+        tags: ['internet', 'ai'],
         featured: true,
     },
     {
@@ -1001,7 +1044,6 @@ export default [
             id="gui.extension.lepiLLMImage.name"
         />),
         extensionId: 'lepiLLMImage',
-        collaborator: collaborator,
         iconURL: llmImageIconURL,
         insetIconURL: llmImageInsetIconURL,
         internetConnectionRequired: true,
@@ -1011,7 +1053,7 @@ export default [
                 id="gui.extension.lepiLLMImage.description"
             />
         ),
-        tags: ['lepi', 'internet', 'ai'],
+        tags: ['internet', 'ai'],
         featured: true,
     },
     // {

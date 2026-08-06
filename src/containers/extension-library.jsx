@@ -13,6 +13,14 @@ import extensionLibraryContent, {
 import extensionTags from '../lib/libraries/tw-extension-tags';
 import extensionData from '../lib/libraries/extensions/extension.json'
 
+// import extensionLibraryContent, {
+//     galleryError,
+//     galleryLoading,
+//     galleryMore
+// } from '../lib/libraries/extensions/index-hlj.jsx';
+// import extensionTags from '../lib/libraries/tw-extension-tags-hlj';
+// import extensionData from '../lib/libraries/extensions/extension-hlj.json'
+
 import LibraryComponent from '../components/library/library.jsx';
 import extensionIcon from '../components/action-menu/icon--sprite.svg';
 
@@ -109,7 +117,7 @@ import box2dIcon from '../lib/libraries/extensions/gallery/box2d.svg';
 import localStorageIcon from '../lib/libraries/extensions/gallery/local-storage.svg';
 import baseIcon from '../lib/libraries/extensions/gallery/base.svg';
 import bigIntIcon from '../lib/libraries/extensions/gallery/bigint.svg';
-import jsonIcon from '../lib/libraries/extensions/gallery/json.svg';
+import jsonIcon from '../lib/libraries/extensions/gallery/json.jpg';
 import iframeIcon from '../lib/libraries/extensions/gallery/iframe.svg';
 import encodingIcon from '../lib/libraries/extensions/gallery/encoding.svg';
 import mathIcon from '../lib/libraries/extensions/gallery/math.svg';

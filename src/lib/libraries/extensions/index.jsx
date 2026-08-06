@@ -78,16 +78,20 @@ import audioIconURL from './lepi-banbao-v1/big/音频.png';
 import audioInsetIconURL from './lepi-banbao-v1/small/音频.png';
 
 import poseEstimateIconURL from './lepi-banbao-v1/big/姿态估计.png';
+import localPoseDetectionIconURL from './lepi-banbao-v1/big/姿态估计2.png';
 import poseEstimateInsetIconURL from './lepi-banbao-v1/small/姿态估计.png';
 
 import handDetectIconURL from './lepi-banbao-v1/big/手势识别.png';
+import localHandDetectionIconURL from './lepi-banbao-v1/big/手势识别2.png';
 import handDetectInsetIconURL from './lepi-banbao-v1/small/手势识别.png';
 
 import colorDetectIconURL from './lepi-banbao-v1/big/颜色识别.png';
 import colorDetectInsetIconURL from './lepi-banbao-v1/small/颜色识别.png';
 
+import generalAIInsetIconURL from './lepi-banbao-v1/small/谷歌AI.png';
 
 import faceRecognizeIconURL from './lepi-banbao-v1/big/人脸识别.png';
+import localFaceDetectionIconURL from './lepi-banbao-v1/big/人脸识别2.png';
 import faceRecognizeInsetIconURL from './lepi-banbao-v1/small/人脸识别.png';
 
 import rfidIconURL from './lepi-banbao-v1/big/nfc.png';
@@ -138,6 +142,7 @@ import imageClassifyInsetIconURL from './lepi-banbao-v1/small/图像分类.png';
 
 
 import objectDetectIconURL from './lepi-banbao-v1/big/目标检测.png';
+import localObjectDetectionIconURL from './lepi-banbao-v1/big/目标检测2.png';
 import objectDetectInsetIconURL from './lepi-banbao-v1/small/目标检测.png';
 
 import variableIconURL from './lepi-banbao-v1/big/变量.png';
@@ -162,12 +167,14 @@ import learningMachineHandIconURL from './lepi-banbao-v1/big/机器学习-手势
 import learningMachineHandInsetIconURL from './lepi-banbao-v1/small/机器学习-手势.png';
 
 import barcodeScannerIconURL from './lepi-banbao-v1/big/二维码扫描.png';
+import localQRCodeDetectionIconURL from './lepi-banbao-v1/big/二维码扫描2.png';
 import barcodeScannerInsetIconURL from './lepi-banbao-v1/small/二维码扫描.png';
 
 import learningMachineFaceIconURL from './lepi-banbao-v1/big/人脸检测.png';
 import learningMachineFaceInsetIconURL from './lepi-banbao-v1/small/人脸检测.png';
 
 import textRecognizeIconURL from './lepi-banbao-v1/big/文本识别.png';
+import localTextDetectionIconURL from './lepi-banbao-v1/big/文本识别2.png';
 import textRecognizeInsetIconURL from './lepi-banbao-v1/small/文本识别.png';
 
 import httpIconURL from './lepi-banbao-v1/big/http.png';
@@ -341,6 +348,24 @@ export default [
     },
     {
         name: (<FormattedMessage
+            defaultMessage="人脸检测"
+            id="gui.extension.localFaceDetection.name"
+        />),
+        extensionId: 'localFaceDetection',
+        collaborator: collaborator,
+        iconURL: localFaceDetectionIconURL,
+        insetIconURL: generalAIInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="检测人脸位置和关键点"
+                id="gui.extension.localFaceDetection.description"
+            />
+        ),
+        tags: ['local', 'ai'],
+        featured: true,
+    },
+    {
+        name: (<FormattedMessage
             defaultMessage="Face Recognize"
             id="gui.extension.lepiFaceRecognize.name"
         />),
@@ -359,6 +384,24 @@ export default [
     },
     {
         name: (<FormattedMessage
+            defaultMessage="手势检测"
+            id="gui.extension.localHandDetection.name"
+        />),
+        extensionId: 'localHandDetection',
+        collaborator: collaborator,
+        iconURL: localHandDetectionIconURL,
+        insetIconURL: generalAIInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="检测手部21个特征点."
+                id="gui.extension.localHandDetection.description"
+            />
+        ),
+        tags: ['local', 'ai'],
+        featured: true,
+    },
+    {
+        name: (<FormattedMessage
             defaultMessage="Gesture Detection"
             id="gui.extension.lepiHandDetect.name"
         />),
@@ -368,11 +411,29 @@ export default [
         insetIconURL: handDetectInsetIconURL,
         description: (
             <FormattedMessage
-                defaultMessage="Identify 22 key points of the hand."
+                defaultMessage="Identify 21 key points of the hand."
                 id="gui.extension.lepiHandDetect.description"
             />
         ),
         tags: ['lepi', 'ai'],
+        featured: true,
+    },
+    {
+        name: (<FormattedMessage
+            defaultMessage="姿态估计"
+            id="gui.extension.localPoseDetection.name"
+        />),
+        extensionId: 'localPoseDetection',
+        collaborator: collaborator,
+        iconURL: localPoseDetectionIconURL,
+        insetIconURL: generalAIInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="检测身体33个特征点."
+                id="gui.extension.localPoseDetection.description"
+            />
+        ),
+        tags: ['local', 'ai'],
         featured: true,
     },
     {
@@ -395,6 +456,24 @@ export default [
     },
     {
         name: (<FormattedMessage
+            defaultMessage="二维码扫描"
+            id="gui.extension.localQRCodeDetection.name"
+        />),
+        extensionId: 'localQRCodeDetection',
+        collaborator: collaborator,
+        iconURL: localQRCodeDetectionIconURL,
+        insetIconURL: generalAIInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="扫描图像中的二维码"
+                id="gui.extension.localQRCodeDetection.description"
+            />
+        ),
+        tags: ['local', 'ai'],
+        featured: true,
+    },
+    {
+        name: (<FormattedMessage
             defaultMessage="Barcode Scanning"
             id="gui.extension.lepiBarcodeScan.name"
         />),
@@ -409,6 +488,24 @@ export default [
             />
         ),
         tags: ['lepi', 'ai'],
+        featured: true,
+    },
+    {
+        name: (<FormattedMessage
+            defaultMessage="文本识别"
+            id="gui.extension.localTextDetection.name"
+        />),
+        extensionId: 'localTextDetection',
+        collaborator: collaborator,
+        iconURL: localTextDetectionIconURL,
+        insetIconURL: generalAIInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="识别画面中的文本信息."
+                id="gui.extension.localTextDetection.description"
+            />
+        ),
+        tags: ['local', 'ai'],
         featured: true,
     },
     {
@@ -463,7 +560,6 @@ export default [
         ),
         featured: true,
     },
-    */
     {
         name: (<FormattedMessage
             defaultMessage="Google AI"
@@ -482,6 +578,7 @@ export default [
         tags: ['ai'],
         featured: true,
     },
+    */
     {
         name: (<FormattedMessage
             defaultMessage="ML-Iamge"
@@ -497,7 +594,7 @@ export default [
                 id="gui.extension.lepiLearningMachineImage.description"
             />
         ),
-        tags: ['ai'],
+        tags: ['local', 'ai'],
         featured: true,
     },
     {
@@ -515,7 +612,7 @@ export default [
                 id="gui.extension.lepiLearningMachineAudio.description"
             />
         ),
-        tags: ['ai'],
+        tags: ['local', 'ai'],
         featured: true,
     },
     {
@@ -533,7 +630,7 @@ export default [
                 id="gui.extension.lepiLearningMachinePose.description"
             />
         ),
-        tags: ['ai'],
+        tags: ['local', 'ai'],
         featured: true,
     },
     {
@@ -551,7 +648,7 @@ export default [
                 id="gui.extension.lepiLearningMachineHand.description"
             />
         ),
-        tags: ['ai'],
+        tags: ['local', 'ai'],
         featured: true,
     },
     {
@@ -569,7 +666,7 @@ export default [
                 id="gui.extension.lepiLearningMachineFace.description"
             />
         ),
-        tags: ['ai'],
+        tags: ['local', 'ai'],
         featured: true,
     },
     {
@@ -735,6 +832,24 @@ export default [
             />
         ),
         tags: ['lepi', 'ai'],
+        featured: true,
+    },
+    {
+        name: (<FormattedMessage
+            defaultMessage="目标检测"
+            id="gui.extension.localObjectDetection.name"
+        />),
+        extensionId: 'localObjectDetection',
+        collaborator: collaborator,
+        iconURL: localObjectDetectionIconURL,
+        insetIconURL: generalAIInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="检测近百种预定义的目标."
+                id="gui.extension.localObjectDetection.description"
+            />
+        ),
+        tags: ['local', 'ai'],
         featured: true,
     },
     {
