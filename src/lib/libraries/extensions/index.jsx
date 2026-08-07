@@ -65,6 +65,7 @@ import actuatorIconURL from './lepi-banbao-v1/big/电机.png';
 import actuatorInsetIconURL from './lepi-banbao-v1/small/电机.png';
 
 import apriltagIconURL from './lepi-banbao-v1/big/标签识别.png';
+import localApriltagIconURL from './lepi-banbao-v1/big/标签识别2.png';
 import apriltagInsetIconURL from './lepi-banbao-v1/small/标签识别.png';
 
 
@@ -814,6 +815,24 @@ export default [
             />
         ),
         tags: ['lepi', 'ai'],
+        featured: true,
+    },
+    {
+        name: (<FormattedMessage
+            defaultMessage="标签检测"
+            id="gui.extension.localApriltagDetect.name"
+        />),
+        extensionId: 'localApriltagDetection',
+        collaborator: collaborator,
+        iconURL: localApriltagIconURL,
+        insetIconURL: generalAIInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="结合视觉标签进行准确的空间定位."
+                id="gui.extension.localApriltagDetect.description"
+            />
+        ),
+        tags: ['local', 'ai'],
         featured: true,
     },
     {
