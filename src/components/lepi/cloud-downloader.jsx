@@ -49,20 +49,21 @@ class CloudDownloader extends React.Component {
             server = `${server}/mapi`
         }
         
-        var data = new FormData()
-        // data.append('name', filename)
-        data.append('file', blob, filename)
-        console.log(data)
-        let res = await axios.post(`${server}/oss/upload`, data)
-        console.log(res)
 
         const searchParams = new URLSearchParams(location.search);
         let flowNo = false
+        let res = {}
         if (searchParams.has('flowNo')) {
             flowNo = searchParams.get('flowNo');
+            var data = new FormData()
+            // data.append('name', filename)
+            data.append('file', blob, filename)
+            console.log(data)
+            res = await axios.post(`${server}/oss/upload`, data)
+            console.log(res)
         }
 
-        if (res.status == 200 && res.data.code == 200 && flowNo) {
+        if (flowNo && res.status == 200 && res.data.code == 200) {
             res = await axios.post(`${server}/callback/homework`, {
                 "flowNo": flowNo,
                 ...res.data.data
