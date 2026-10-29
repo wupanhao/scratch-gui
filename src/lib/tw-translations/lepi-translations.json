@@ -131,13 +131,13 @@
         "gui.extension.lepiLearningMachineImage.name": "机器学习-图像",
         "gui.extension.lepiLearningMachineImage.description": "加载通过机器学习训练的图像分类模型.",
         "gui.extension.lepiLearningMachineAudio.name": "机器学习-音频",
-        "gui.extension.lepiLearningMachineAudio.description": "加载通过机器学习训练的音频识别模型.",
+        "gui.extension.lepiLearningMachineAudio.description": "加载通过机器学习训练的音频分类模型.",
         "gui.extension.lepiLearningMachinePose.name": "机器学习-姿态",
-        "gui.extension.lepiLearningMachinePose.description": "加载通过机器学习训练的姿态识别模型.",
+        "gui.extension.lepiLearningMachinePose.description": "加载通过机器学习训练的姿态分类模型.",
         "gui.extension.lepiLearningMachineHand.name": "机器学习-手势",
         "gui.extension.lepiLearningMachineHand.description": "加载通过机器学习训练的手势分类模型.",
         "gui.extension.lepiLearningMachineFace.name": "机器学习-人脸",
-        "gui.extension.lepiLearningMachineFace.description": "加载人脸识别模型.",
+        "gui.extension.lepiLearningMachineFace.description": "加载通过机器学习训练的人脸识别模型.",
         "gui.extension.lepiImageProcess.name": "乐派-图像处理",
         "gui.extension.lepiImageProcess.description": "图像预处理.",
         "gui.extension.lepiSmartAudio.name": "智能语音",
@@ -284,10 +284,10 @@
             "message": "标签检测"
         },
         "lepi.audioDetectConfidence": {
-            "message": "音频预测置信度"
+            "message": "音频分类置信度"
         },
         "lepi.audioDetectResult": {
-            "message": "音频预测结果"
+            "message": "音频分类结果"
         },
         "lepi.b": {
             "message": "B分量"
@@ -428,7 +428,7 @@
             "message": "检测到id为 [TAG] 的标志物?"
         },
         "lepi.detectedAudioClass": {
-            "message": "检测到音频 [CLASS] ?"
+            "message": "检测到音频分类 [CLASS] ?"
         },
         "lepi.detectedBarcode": {
             "message": "检测到内容包含 [TAG] 的二维码?"
@@ -443,7 +443,7 @@
             "message": "检测到手?"
         },
         "lepi.detectedImageClass": {
-            "message": "识别到图像 [CLASS] ?"
+            "message": "识别到图像分类 [CLASS] ?"
         },
         "lepi.detectedKeyPoints": {
             "message": "识别到特征点 ?"
@@ -455,7 +455,7 @@
             "message": "检测到人?"
         },
         "lepi.detectedPoseClass": {
-            "message": "识别到姿态 [CLASS] ?"
+            "message": "识别到姿态分类 [CLASS] ?"
         },
         "lepi.deviceConnected": {
             "message": "串口 [PORT] 已连接?"
@@ -647,10 +647,10 @@
             "message": "ID"
         },
         "lepi.imageDetectConfidence": {
-            "message": "图像识别置信度"
+            "message": "图像分类置信度"
         },
         "lepi.imageDetectResult": {
-            "message": "图像识别结果"
+            "message": "图像分类结果"
         },
         "lepi.image_classify": {
             "message": "图像分类"
@@ -803,28 +803,28 @@
             "message": "更新矫正文件列表"
         },
         "lepi.loadAudioModelFromFile": {
-            "message": "从文件导入音频模型"
+            "message": "从文件导入音频分类模型"
         },
         "lepi.loadAudioModelFromList": {
-            "message": "加载音频模型 [MODEL]"
+            "message": "加载音频分类模型 [MODEL]"
         },
         "lepi.loadCaliFile": {
             "message": "加载矫正文件 [FILE]"
         },
         "lepi.loadImageModelFromFile": {
-            "message": "从文件导入图像模型"
+            "message": "从文件导入图像分类模型"
         },
         "lepi.loadImageModelFromList": {
-            "message": "加载图像模型 [MODEL]"
+            "message": "加载图像分类模型 [MODEL]"
         },
         "lepi.loadPoseModel": {
             "message": "加载人体特征点模型"
         },
         "lepi.loadPoseModelFromFile": {
-            "message": "从文件导入姿态模型"
+            "message": "从文件导入姿态分类模型"
         },
         "lepi.loadPoseModelFromList": {
-            "message": "加载姿态模型 [MODEL]"
+            "message": "加载姿态分类模型 [MODEL]"
         },
         "lepi.lock": {
             "message": "锁定"
@@ -947,10 +947,10 @@
             "message": "打开主机摄像头 [ID] "
         },
         "lepi.openLearningMachineAudio": {
-            "message": "打开音频训练工具"
+            "message": "打开音频分类训练工具"
         },
         "lepi.openLearningMachineImage": {
-            "message": "打开彩色图像训练工具"
+            "message": "打开图像分类训练工具"
         },
         "lepi.openLearningMachinePose": {
             "message": "打开姿态分类训练工具"
@@ -980,10 +980,10 @@
             "message": "暂停/继续"
         },
         "lepi.poseDetectResult": {
-            "message": "姿态识别结果"
+            "message": "姿态分类结果"
         },
         "lepi.poseDetectScore": {
-            "message": "姿态识别置信度"
+            "message": "姿态分类置信度"
         },
         "lepi.poseKeypoints": {
             "message": "人体[N]号特征点 [POINT]"
@@ -995,10 +995,10 @@
             "message": "位置"
         },
         "lepi.predictImage": {
-            "message": "进行图像识别"
+            "message": "进行图像分类"
         },
         "lepi.predictPose": {
-            "message": "进行姿态识别"
+            "message": "进行姿态分类"
         },
         "lepi.previewRecording": {
             "message": "回放录音"
@@ -1142,7 +1142,7 @@
             "message": "舵机角度"
         },
         "lepi.setAudioDetectThreshold": {
-            "message": "将音频检测阈值设为 [VALUE]"
+            "message": "将音频分类阈值设为 [VALUE]"
         },
         "lepi.setBufferSize": {
             "message": "设置样本数量 [SIZE]"
@@ -1181,7 +1181,7 @@
             "message": "切换六足运动模式 [MODE]"
         },
         "lepi.setImageClassifyThreshold": {
-            "message": "将图像识别阈值设为 [VALUE]"
+            "message": "将图像分类阈值设为 [VALUE]"
         },
         "lepi.setImageSize": {
             "message": "设置图像尺寸 宽:[W] 高:[H]"
@@ -1199,7 +1199,7 @@
             "message": "设置图表类型 [TYPE]"
         },
         "lepi.setPoseEstimateThreshold": {
-            "message": "将姿态识别阈值设为 [VALUE]"
+            "message": "将姿态分类阈值设为 [VALUE]"
         },
         "lepi.setPupperBehaviorState": {
             "message": "切换四足运动模式 [MODE]"
@@ -1259,13 +1259,13 @@
             "message": "速度"
         },
         "lepi.startAudioPredict": {
-            "message": "开始音频检测,间隔[GAP]秒,持续[DURATION]秒"
+            "message": "开始音频分类,间隔[GAP]秒,持续[DURATION]秒"
         },
         "lepi.startRecording": {
             "message": "开始录音"
         },
         "lepi.stopAudioPredict": {
-            "message": "停止音频检测"
+            "message": "停止音频分类"
         },
         "lepi.stopRecordingAndSave": {
             "message": "结束录音,[SAVE] [FILE_NAME].wav"
@@ -1319,19 +1319,19 @@
             "message": "运动"
         },
         "lepi.updateAudioModelList": {
-            "message": "更新音频模型列表"
+            "message": "更新音频分类模型列表"
         },
         "lepi.updateDeviceList": {
             "message": "更新设备列表"
         },
         "lepi.updateImageModelList": {
-            "message": "更新图像模型列表"
+            "message": "更新图像分类模型列表"
         },
         "lepi.updateMusicList": {
             "message": "更新音频列表"
         },
         "lepi.updatePoseModelList": {
-            "message": "更新姿态模型列表"
+            "message": "更新姿态分类模型列表"
         },
         "lepi.updateSerialList": {
             "message": "更新串口列表"

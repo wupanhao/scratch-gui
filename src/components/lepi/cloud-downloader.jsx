@@ -43,7 +43,7 @@ class CloudDownloader extends React.Component {
         
         let server = location.origin
 
-        if(server == 'http://106.14.203.61:8000'){
+        if(server == 'http://39.105.8.43:8000'){
             server = 'http://39.105.8.43:8080'
         }else{
             server = `${server}/mapi`
