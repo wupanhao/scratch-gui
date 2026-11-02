@@ -230,7 +230,7 @@
             "message": "朗读结束?"
         },
         "lepi.SpeakOffline": {
-            "message": "电脑离线语音朗读[TEXT], 发音人[SPEAKER], 音量[VOLUME] 速度[RATE] 音调[PITCH]"
+            "message": "电脑语音朗读[TEXT], 发音人[SPEAKER], 音量[VOLUME] 语速[RATE] 音调[PITCH]"
         },
         "lepi.SpeechRecognitionEnd": {
             "message": "识别到语音?"
