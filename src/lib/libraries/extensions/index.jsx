@@ -1101,24 +1101,24 @@ export default [
         tags: ['lepi'],
         featured: true,
     },
-    // {
-    //     name: (<FormattedMessage
-    //         defaultMessage="Collaboration Sheet"
-    //         id="gui.extension.lepiCollaborationSheet.name"
-    //     />),
-    //     extensionId: 'lepiCollaborationSheet',
-    //     collaborator: collaborator,
-    //     iconURL: collaborationSheetIconURL,
-    //     insetIconURL: collaborationSheetInsetIconURL,
-    //     description: (
-    //         <FormattedMessage
-    //             defaultMessage="Collaboration Sheet supports multiple editors."
-    //             id="gui.extension.lepiCollaborationSheet.description"
-    //         />
-    //     ),
-    //     tags: ['lepi', 'internet'],
-    //     featured: true,
-    // },
+    {
+        name: (<FormattedMessage
+            defaultMessage="Collaboration Sheet"
+            id="gui.extension.lepiCollaborationSheet.name"
+        />),
+        extensionId: 'lepiCollaborationSheet',
+        collaborator: collaborator,
+        iconURL: collaborationSheetIconURL,
+        insetIconURL: collaborationSheetInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Collaboration Sheet supports multiple editors."
+                id="gui.extension.lepiCollaborationSheet.description"
+            />
+        ),
+        tags: ['lepi', 'internet'],
+        featured: true,
+    },
     {
         name: (<FormattedMessage
             defaultMessage="模拟点阵屏"
