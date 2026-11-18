@@ -202,6 +202,9 @@ import smartClassroomInsetIconURL from './lepi-banbao-v1/small/智慧教室.jpg'
 import mqttIconURL from './lepi-banbao-v1/big/mqtt.png';
 import mqttInsetIconURL from './lepi-banbao-v1/small/mqtt.png';
 
+import unihikerIconURL from './lepi-banbao-v1/big/unihiker.png';
+import unihikerInsetIconURL from './lepi-banbao-v1/small/unihiker.jpg';
+
 import onegpioArduinoImage from './onegpio/arduino-uno-big.png';
 import onegpioArduinoInsetIconURL from './onegpio/arduino-small.png';
 
@@ -1310,6 +1313,28 @@ export default [
         ),
         tags: ['iot'],
         featured: true
+    },
+    {
+        name: <FormattedMessage
+            defaultMessage="行空板M10"
+            description="Name for the 'lepiUnihiker' extension"
+            id="gui.extension.lepiUnihiker.name"
+        />,
+        extensionId: 'lepiUnihiker',
+        collaborator: collaborator,
+        iconURL: unihikerIconURL,
+        insetIconURL: unihikerInsetIconURL,
+        description: <FormattedMessage
+            defaultMessage="接入行空板M10，需要提前安装好乐派运行环境"
+            description="Description for the 'lepiUnihiker' extension"
+            id="gui.extension.lepiUnihiker.description"
+        />,
+        featured: true,
+        disabled: false,
+        // internetConnectionRequired: true,
+        bluetoothRequired: false,
+        tags: ['iot'],
+        // helpLink: 'https://mryslab.github.io/s3-extend/'
     },
     {
         name: <FormattedMessage
